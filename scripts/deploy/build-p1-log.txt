@@ -1,0 +1,6 @@
+
+> Build error occurred
+Error: [safe-delete][SAFE_DELETE_BULK_CONFIRM_REQUIRED] {"count":50,"threshold":50,"scope":"turn","targets":["C:\\Users\\xing\\Desktop\\oraclemind\\vercel-deploy\\.next\\trace"],"targetCount":1}
+    at checkBulkDeleteGuard (C:\Users\xing\AppData\Local\Programs\WorkBuddy\resources\app.asar.unpacked\cli\vendor\shim\genie-safe-delete.cjs:222:19)
+    at tryTrash (C:\Users\xing\AppData\Local\Programs\WorkBuddy\resources\app.asar.unpacked\cli\vendor\shim\genie-safe-delete.cjs:546:5)
+    at Object.unlinkSync (C:\Users\xing\AppData\Local\Programs\WorkBuddy\resources\app.asar.unpacked\cli\vendor\shim\genie-safe-delete.cjs:609:9)

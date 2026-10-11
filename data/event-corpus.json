@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "description": "OracleMind 事件推演校准语料（种子集）。所有结局均来自公开可核验来源，crisp 0/1。用于 engine-audit 的'真实准度关'与 IntelligenceStore 历史层。古典 substrate 不参与事件判定——事件只用现代情报+集成。",
+  "complianceNote": "对外禁用命理/占卜词。context.keySignals 仅含中性公开事实（市场价格、政策日期、公司财务），不含任何八字/周期/能量 framing。",
+  "events": [
+    {
+      "id": "us-2024-presidential",
+      "question": "Will the Republican candidate win the 2024 US presidential election?",
+      "category": "politics",
+      "openDate": "2024-11-05",
+      "closeDate": "2024-11-05",
+      "resolutionDate": "2024-11-06",
+      "outcome": 1,
+      "outcomeLabel": "Trump won 312 electoral votes; called by major networks Nov 6 2024",
+      "context": {
+        "leadTimeDays": 1,
+        "marketMidpoint": 0.55,
+        "keySignals": [
+          "Pre-election polls showed tossup across 7 swing states",
+          "Called by AP/NBC/CNN on Nov 6 2024",
+          "Republicans also flipped Senate control"
+        ]
+      }
+    },
+    {
+      "id": "btc-4th-halving-2024",
+      "question": "Will Bitcoin's 4th halving occur before May 1, 2024?",
+      "category": "crypto",
+      "openDate": "2024-01-01",
+      "closeDate": "2024-04-30",
+      "resolutionDate": "2024-04-20",
+      "outcome": 1,
+      "outcomeLabel": "Occurred Apr 19-20 2024 at block 840000; reward 6.25->3.125 BTC",
+      "context": {
+        "leadTimeDays": 110,
+        "marketMidpoint": 0.98,
+        "keySignals": [
+          "Protocol-deterministic: every 210000 blocks (~4y)",
+          "Block 840000 mined Apr 19 2024 20:09 ET",
+          "Spot BTC ETFs approved Jan 2024 (IBIT/FBTC)"
+        ]
+      }
+    },
+    {
+      "id": "ftx-bankruptcy-2022",
+      "question": "Will FTX file for Chapter 11 bankruptcy before Dec 31, 2022?",
+      "category": "crypto",
+      "openDate": "2022-11-02",
+      "closeDate": "2022-12-31",
+      "resolutionDate": "2022-11-11",
+      "outcome": 1,
+      "outcomeLabel": "Filed Chapter 11 Nov 11 2022 in Delaware; ~130 affiliates",
+      "context": {
+        "leadTimeDays": 39,
+        "marketMidpoint": 0.80,
+        "keySignals": [
+          "CoinDesk Nov 2 revealed Alameda balance sheet mostly FTT",
+          "Binance announced then walked away from acquisition Nov 8-9",
+          ">$5B withdrawals Nov 6; SBF resigned Nov 11"
+        ]
+      }
+    },
+    {
+      "id": "fed-rate-cut-2024",
+      "question": "Will the US Federal Reserve cut interest rates at least once before Jan 1, 2025?",
+      "category": "economics",
+      "openDate": "2024-01-01",
+      "closeDate": "2024-12-31",
+      "resolutionDate": "2024-09-18",
+      "outcome": 1,
+      "outcomeLabel": "First cut Sep 18 2024 (50bps); 3 cuts total in 2024",
+      "context": {
+        "leadTimeDays": 273,
+        "marketMidpoint": 0.70,
+        "keySignals": [
+          "CPI cooled from 3.5%(Mar) toward 2.4%(Sep)",
+          "Fed held rates 5.25-5.50% through Jul 2024",
+          "Markets priced first cut by Sep 2024"
+        ]
+      }
+    },
+    {
+      "id": "btc-100k-2024",
+      "question": "Will Bitcoin trade above $100,000 before Jan 1, 2025?",
+      "category": "crypto",
+      "openDate": "2024-01-01",
+      "closeDate": "2024-12-31",
+      "resolutionDate": "2024-12-05",
+      "outcome": 1,
+      "outcomeLabel": "Crossed $100k first week of Dec 2024",
+      "context": {
+        "leadTimeDays": 339,
+        "marketMidpoint": 0.45,
+        "keySignals": [
+          "Spot ETF inflows >$30B by Q4 2024",
+          "Trump pro-crypto stance post-election",
+          "Halving reduced new supply Apr 2024"
+        ]
+      }
+    },
+    {
+      "id": "gpt4-release-2023",
+      "question": "Will OpenAI release GPT-4 before Apr 1, 2023?",
+      "category": "tech",
+      "openDate": "2023-01-01",
+      "closeDate": "2023-03-31",
+      "resolutionDate": "2023-03-14",
+      "outcome": 1,
+      "outcomeLabel": "GPT-4 announced Mar 14 2023",
+      "context": {
+        "leadTimeDays": 73,
+        "marketMidpoint": 0.85,
+        "keySignals": [
+          "OpenAI teased multimodal model in Feb 2023",
+          "Microsoft invested $10B Jan 2023",
+          "Rumors of 'GPT-4' since late 2022"
+        ]
+      }
+    },
+    {
+      "id": "who-end-pheic-2023",
+      "question": "Will the WHO declare end of COVID-19 Public Health Emergency before Jun 1, 2023?",
+      "category": "policy",
+      "openDate": "2023-01-01",
+      "closeDate": "2023-05-31",
+      "resolutionDate": "2023-05-05",
+      "outcome": 1,
+      "outcomeLabel": "WHO ended PHEIC May 5 2023",
+      "context": {
+        "leadTimeDays": 150,
+        "marketMidpoint": 0.75,
+        "keySignals": [
+          "WHO downgraded assessment Jan 2023",
+          "Most countries dropped mandates by early 2023",
+          "Director-General signaled wind-down Mar 2023"
+        ]
+      }
+    },
+    {
+      "id": "nvidia-largest-cap-2024",
+      "question": "Will Nvidia become the world's largest company by market cap by Dec 31, 2024?",
+      "category": "economics",
+      "openDate": "2024-06-01",
+      "closeDate": "2024-12-31",
+      "resolutionDate": "2024-12-31",
+      "outcome": 0,
+      "outcomeLabel": "Apple/Microsoft remained larger; Nvidia peaked ~$3.3T but did not lead",
+      "context": {
+        "leadTimeDays": 213,
+        "marketMidpoint": 0.35,
+        "keySignals": [
+          "Nvidia hit $3T briefly Jun 2024",
+          "Apple ~$3.5T, Microsoft ~$3.2T by year end",
+          "AI rally lifted all three; none decisively led"
+        ]
+      }
+    },
+    {
+      "id": "blue-origin-new-glenn-2024",
+      "question": "Will Blue Origin launch its New Glenn rocket before Jan 1, 2025?",
+      "category": "tech",
+      "openDate": "2024-01-01",
+      "closeDate": "2024-12-31",
+      "resolutionDate": "2025-01-16",
+      "outcome": 0,
+      "outcomeLabel": "First launch Jan 16 2025 (missed 2024 window)",
+      "context": {
+        "leadTimeDays": 381,
+        "marketMidpoint": 0.40,
+        "keySignals": [
+          "Multiple slips through 2024",
+          "BE-4 engine qualification delays",
+          "Maiden flight pushed to mid-Jan 2025"
+        ]
+      }
+    },
+    {
+      "id": "ukraine-ceasefire-2025",
+      "question": "Will a bilateral ceasefire in the Russia-Ukraine war be declared before Jan 1, 2025?",
+      "category": "politics",
+      "openDate": "2024-01-01",
+      "closeDate": "2024-12-31",
+      "resolutionDate": "2024-12-31",
+      "outcome": 0,
+      "outcomeLabel": "No declared bilateral ceasefire by Dec 31 2024",
+      "context": {
+        "leadTimeDays": 365,
+        "marketMidpoint": 0.20,
+        "keySignals": [
+          "Active combat continued through 2024",
+          "No formal negotiation track yielding ceasefire",
+          "Metaculus resolved 'No'"
+        ]
+      }
+    },
+    {
+      "id": "fed-funds-below-4-2024",
+      "question": "Will the effective Fed Funds Rate be below 4% on Dec 31, 2024?",
+      "category": "economics",
+      "openDate": "2024-01-01",
+      "closeDate": "2024-12-31",
+      "resolutionDate": "2024-12-31",
+      "outcome": 0,
+      "outcomeLabel": "Rate was 4.25-4.50% at year end (3 cuts, not enough to break 4%)",
+      "context": {
+        "leadTimeDays": 365,
+        "marketMidpoint": 0.30,
+        "keySignals": [
+          "Year-start rate 5.25-5.50%",
+          "3 cuts of 25bps each = -75bps total",
+          "Still above 4% threshold"
+        ]
+      }
+    },
+    {
+      "id": "gpt5-2024",
+      "question": "Will OpenAI release GPT-5 in calendar year 2024?",
+      "category": "tech",
+      "openDate": "2024-01-01",
+      "closeDate": "2024-12-31",
+      "resolutionDate": "2025-02-01",
+      "outcome": 0,
+      "outcomeLabel": "Not released in 2024 (shipped 2025)",
+      "context": {
+        "leadTimeDays": 397,
+        "marketMidpoint": 0.25,
+        "keySignals": [
+          "OpenAI shipped GPT-4o, o1 instead in 2024",
+          "Altman downplayed GPT-5 timeline mid-2024",
+          "Released as GPT-5 in Aug 2025"
+        ]
+      }
+    }
+  ]
+}

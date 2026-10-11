@@ -1,0 +1,41 @@
+# ============================================================
+# OracleMind 根目录仓库（保护 docs / 五本古籍 / data / patent-backup）
+# vercel-deploy/ 是独立 git 仓库，不纳入本仓库（避免嵌套）
+# ============================================================
+
+# ── 独立子仓库（有自己的 .git） ─────────────────────────
+/vercel-deploy/
+
+# ── 环境与密钥（绝不入 git） ─────────────────────────
+.env
+.env.*
+!.env.example
+vercel-deploy/.env*
+*.pem
+*.key
+
+# ── 依赖与构建产物 ─────────────────────────────────
+node_modules/
+_build_trash/
+.next/
+.next-*/
+.vercel/
+dist/
+build/
+out/
+coverage/
+
+# ── 临时与调试残留 ─────────────────────────────────
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+_tmp_*
+
+# ── AI/工具个人目录（跨项目通用，不属本仓库） ─────────
+.workbuddy/
+.workbuddy-ai/
+.opencode/

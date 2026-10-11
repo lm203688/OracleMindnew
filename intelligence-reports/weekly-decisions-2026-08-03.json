@@ -1,0 +1,452 @@
+{
+  "reportMetadata": {
+    "title": "OracleMind Weekly Decision Summary",
+    "date": "2026-08-03",
+    "period": "2026-07-28 to 2026-08-03",
+    "upstream": "daily-closed-loop-reports",
+    "downstream": "daily-closed-loop-adjustments, monthly-summary",
+    "generatedAt": "2026-08-03T00:00:00Z",
+    "loopCompletionRate": 0.65
+  },
+  "platformMetrics": {
+    "collection": {
+      "totalUsers": 75,
+      "totalForecasts": 7,
+      "forecastConversionRate": 0.093,
+      "healthCheckLatencyMs": 595,
+      "dbLatencyMs": 34,
+      "uptimeHours": 11.4,
+      "monitoringCoverageDays": 6,
+      "monitoringCoverageRate": 0.857,
+      "unplannedRestarts": 2,
+      "restartDates": ["2026-07-31", "2026-08-02"]
+    },
+    "trends": {
+      "userGrowth": {
+        "start": 0,
+        "end": 75,
+        "change": 75,
+        "dailyAverage": 10.7,
+        "trend": "slowing"
+      },
+      "forecastGrowth": {
+        "start": 0,
+        "end": 7,
+        "change": 7,
+        "trend": "stagnant"
+      },
+      "latencyTrend": {
+        "startMs": 3109,
+        "endMs": 595,
+        "changePercent": -80.9,
+        "trend": "improving"
+      }
+    },
+    "decisions": [
+      {
+        "id": "WD-20260803-001",
+        "category": "stability",
+        "issue": "Service restart recurrence pattern (2 restarts in 4 days)",
+        "priority": "P0",
+        "decision": "Immediately investigate Vercel logs; auto-escalate to P0 if third restart occurs",
+        "assignee": "DevOps",
+        "dueDate": "2026-08-05",
+        "status": "pending"
+      },
+      {
+        "id": "WD-20260803-002",
+        "category": "monitoring",
+        "issue": "Monitoring gap on 08-02 (daily check missed)",
+        "priority": "P1",
+        "decision": "Verify cron scheduling; add scheduling failure alert to contact@swarmlabs.tools",
+        "assignee": "DevOps",
+        "dueDate": "2026-08-04",
+        "status": "pending"
+      },
+      {
+        "id": "WD-20260803-003",
+        "category": "product",
+        "issue": "Forecast count stagnant at 7 for 2 consecutive days",
+        "priority": "P1",
+        "decision": "Add frontend tracking to identify conversion funnel blockers",
+        "assignee": "Product",
+        "dueDate": "2026-08-06",
+        "status": "pending"
+      },
+      {
+        "id": "WD-20260803-004",
+        "category": "growth",
+        "issue": "User growth slowing (+3/day vs early +10/day)",
+        "priority": "P1",
+        "decision": "Activate marketing channels; evaluate SEO/content traction",
+        "assignee": "Growth",
+        "dueDate": "2026-08-07",
+        "status": "pending"
+      }
+    ]
+  },
+  "intelligence": {
+    "collection": {
+      "githubRepositories": [
+        {
+          "name": "google-research/timesfm",
+          "stars": "22.4k+",
+          "organization": "Google Research",
+          "lastUpdate": "2026-03",
+          "coreCapability": "Decoder-only time series foundation model, 100B time-series pretraining, zero-shot 1000-step forecasting",
+          "url": "https://github.com/google-research/timesfm"
+        },
+        {
+          "name": "deep-learning-time-series",
+          "stars": "N/A",
+          "organization": "Community",
+          "lastUpdate": "Ongoing",
+          "coreCapability": "Deep learning time series forecasting papers/code/experiments collection",
+          "url": "https://gitcode.com/gh_mirrors/de/deep-learning-time-series"
+        }
+      ],
+      "huggingfaceModels": [
+        {
+          "name": "nvidia/nv-tesseract-forecasting",
+          "publisher": "NVIDIA",
+          "releaseDate": "2026-04-07",
+          "size": "2.83GB",
+          "coreCapability": "Memory-Augmented Forecasting, long/short horizon",
+          "url": "https://huggingface.co/nvidia/nv-tesseract-forecasting"
+        },
+        {
+          "name": "taharnbl/TS-ICL",
+          "publisher": "Jua.ai",
+          "releaseDate": "2026-06-04",
+          "size": "219MB",
+          "coreCapability": "Time Series In-Context Learning, probabilistic foundation model",
+          "url": "https://huggingface.co/taharnbl/TS-ICL"
+        },
+        {
+          "name": "stevevaius/best-monthly-forecast-2026",
+          "publisher": "Community",
+          "releaseDate": "2026",
+          "size": "N/A",
+          "coreCapability": "2026 SOTA monthly forecasting, hybrid ensemble",
+          "url": "https://huggingface.co/stevevaius/best-monthly-forecast-2026"
+        }
+      ]
+    },
+    "assessment": {
+      "timesfm": {
+        "fitScore": 9,
+        "deploymentConstraint": "Requires external inference service (HuggingFace API/Replicate/RunPod)",
+        "recommendation": "adopt-immediately"
+      },
+      "tsicl": {
+        "fitScore": 8,
+        "deploymentConstraint": "219MB may fit Edge Runtime; needs testing",
+        "recommendation": "adopt-immediately"
+      },
+      "nvTesseract": {
+        "fitScore": 5,
+        "deploymentConstraint": "2.83GB exceeds all serverless limits; requires dedicated GPU instance",
+        "recommendation": "evaluate-later"
+      },
+      "deepLearningTimeSeries": {
+        "fitScore": 3,
+        "deploymentConstraint": "Learning resource, not directly integratable",
+        "recommendation": "long-term-monitor"
+      }
+    },
+    "decisions": [
+      {
+        "id": "WD-20260803-005",
+        "category": "technology-integration",
+        "technology": "TimesFM",
+        "recommendation": "adopt-immediately",
+        "priority": "P0",
+        "decision": "Initiate POC this week; integrate via HuggingFace Inference API as short-term solution",
+        "assignee": "Engineering",
+        "dueDate": "2026-08-10",
+        "status": "pending"
+      },
+      {
+        "id": "WD-20260803-006",
+        "category": "technology-integration",
+        "technology": "TS-ICL",
+        "recommendation": "adopt-immediately",
+        "priority": "P1",
+        "decision": "Test Edge Runtime deployment; if successful, add as lightweight engine option",
+        "assignee": "Engineering",
+        "dueDate": "2026-08-10",
+        "status": "pending"
+      },
+      {
+        "id": "WD-20260803-007",
+        "category": "technology-integration",
+        "technology": "NV-Tesseract",
+        "recommendation": "evaluate-later",
+        "priority": "P2",
+        "decision": "Schedule evaluation in 2 weeks; assess RunPod/GCP Cloud Run GPU deployment cost",
+        "assignee": "Engineering",
+        "dueDate": "2026-08-17",
+        "status": "planned"
+      },
+      {
+        "id": "WD-20260803-008",
+        "category": "technology-monitoring",
+        "technology": "deep-learning-time-series",
+        "recommendation": "long-term-monitor",
+        "priority": "P2",
+        "decision": "Add to weekly intelligence scan list; monitor for new papers and code",
+        "assignee": "Research",
+        "dueDate": "Ongoing",
+        "status": "active"
+      }
+    ]
+  },
+  "userAnalysis": {
+    "collection": {
+      "totalUsers": 75,
+      "totalForecasts": 7,
+      "forecastConversionRate": 0.093,
+      "userFeedbackCount": 9,
+      "confirmedFeedback": 0,
+      "pageViewData": null
+    },
+    "behaviorAnalysis": {
+      "funnelStages": {
+        "registration": 75,
+        "predictionAttempt": "unknown (no tracking)",
+        "predictionSuccess": 7,
+        "feedbackSubmitted": 9
+      },
+      "anomalies": [
+        "Forecast count stagnant for 2 days (7 on 08-01, 7 on 08-03)",
+        "Feedback count (9) mismatches confirmed feedback (0)",
+        "No page view analytics deployed"
+      ],
+      "churnHypotheses": [
+        "Users cannot find prediction entry point after registration",
+        "Prediction form too complex, low submission rate",
+        "Result wait time too long, users leave",
+        "Missing feedback CTA on results page"
+      ]
+    },
+    "feedbackTopKeywords": [],
+    "decisions": [
+      {
+        "id": "WD-20260803-009",
+        "category": "data-integrity",
+        "issue": "Feedback count mismatch (9 vs 0 confirmed)",
+        "priority": "P0",
+        "decision": "Investigate feedback/stats endpoint SQL logic; fix prediction_id association",
+        "assignee": "Backend",
+        "dueDate": "2026-08-05",
+        "status": "pending"
+      },
+      {
+        "id": "WD-20260803-010",
+        "category": "analytics",
+        "issue": "No page view or funnel tracking",
+        "priority": "P1",
+        "decision": "Deploy Vercel Analytics or Google Analytics 4 with custom events",
+        "assignee": "Frontend",
+        "dueDate": "2026-08-06",
+        "status": "pending"
+      },
+      {
+        "id": "WD-20260803-011",
+        "category": "product",
+        "issue": "Low forecast conversion (9.3%)",
+        "priority": "P1",
+        "decision": "Add onboarding tutorial; simplify prediction flow; add progress indicators",
+        "assignee": "Product",
+        "dueDate": "2026-08-07",
+        "status": "pending"
+      }
+    ]
+  },
+  "seo": {
+    "collection": {
+      "indexedPages": 0,
+      "backlinks": 0,
+      "indexNowStatus": "202 Accepted (2026-07-31)",
+      "indexNowUrlsSubmitted": 6,
+      "bingIndexed": false,
+      "yandexIndexed": false,
+      "googleSubmitted": false,
+      "baiduSubmitted": false,
+      "externalMentions": [
+        {
+          "source": "unifuncs.com",
+          "url": "https://unifuncs.com/s/bSl2nbXL",
+          "mention": "oraclemindai.com (wrong domain)",
+          "isBacklink": false
+        }
+      ]
+    },
+    "analysis": {
+      "indexingStatus": "Day 3 post-IndexNow submission; 0 results visible (within 3-14 day normal range)",
+      "domainRisk": "unifuncs.com mentions wrong domain 'oraclemindai.com', potential user leakage",
+      "competitorStrategy": "Content marketing dominant: tutorials, tool comparisons, industry reports"
+    },
+    "decisions": [
+      {
+        "id": "WD-20260803-012",
+        "category": "seo-indexing",
+        "issue": "Zero indexed pages after 7 days",
+        "priority": "P0",
+        "decision": "If still 0 by 08-07, immediately submit to Google Search Console and Baidu Webmaster Tools",
+        "assignee": "SEO",
+        "dueDate": "2026-08-07",
+        "status": "conditional"
+      },
+      {
+        "id": "WD-20260803-013",
+        "category": "seo-content",
+        "issue": "Lack of SEO content for target keywords",
+        "priority": "P1",
+        "decision": "Generate and publish 3 core articles this week",
+        "contentPlan": [
+          {
+            "title": "AI紫微算命完整指南2026：从入门到精通",
+            "keywords": ["AI紫微算命", "紫微斗数2026", "AI命理"],
+            "wordCount": "3000-4000",
+            "status": "planned"
+          },
+          {
+            "title": "时间序列预测入门：从ARIMA到基础模型",
+            "keywords": ["时间序列预测", "ARIMA", "TimesFM", "零样本预测"],
+            "wordCount": "2500-3500",
+            "status": "planned"
+          },
+          {
+            "title": "2026年AI数据预测工具对比：如何选择适合你的平台",
+            "keywords": ["AI数据预测软件", "预测工具对比", "AI预测平台"],
+            "wordCount": "2000-3000",
+            "status": "planned"
+          }
+        ],
+        "assignee": "Content",
+        "dueDate": "2026-08-07",
+        "status": "pending"
+      },
+      {
+        "id": "WD-20260803-014",
+        "category": "seo-technical",
+        "issue": "Missing structured data and robots.txt verification",
+        "priority": "P2",
+        "decision": "Add JSON-LD structured data (Organization, WebSite, FAQPage); verify robots.txt sitemap directive",
+        "assignee": "Frontend",
+        "dueDate": "2026-08-05",
+        "status": "pending"
+      },
+      {
+        "id": "WD-20260803-015",
+        "category": "seo-risk",
+        "issue": "Domain confusion (oraclemindai.com mentioned externally)",
+        "priority": "P1",
+        "decision": "Check domain availability; if available, purchase and 301 redirect to oraclemind.cc",
+        "assignee": "Growth",
+        "dueDate": "2026-08-05",
+        "status": "pending"
+      }
+    ]
+  },
+  "launchReadiness": {
+    "collection": {
+      "checks": [
+        { "item": "API health status", "status": "pass", "note": "7/7 checks pass" },
+        { "item": "DB connection", "status": "pass", "note": "34-283ms latency" },
+        { "item": "External API keys", "status": "pass", "note": "Creem, GLM, NextAuth healthy" },
+        { "item": "Core functionality", "status": "pass", "note": "All endpoints 200 OK" },
+        { "item": "Service stability", "status": "fail", "note": "2 unplanned restarts" },
+        { "item": "SEO readiness", "status": "fail", "note": "0 indexed pages" },
+        { "item": "Monitoring coverage", "status": "partial", "note": "6/7 days (85.7%)" },
+        { "item": "User feedback mechanism", "status": "partial", "note": "UI present but data mismatch" },
+        { "item": "Forecast activity", "status": "fail", "note": "7 forecasts / 75 users = 9.3%" }
+      ]
+    },
+    "analysis": {
+      "blockers": {
+        "P0": ["Service restart recurrence", "SEO zero indexing"],
+        "P1": ["Forecast stagnation", "Monitoring gap", "Feedback data anomaly"],
+        "P2": ["Latency spikes", "Structured data missing", "User onboarding weak"]
+      },
+      "readinessScore": 4,
+      "vsExpected": {
+        "expectedUsers": 100,
+        "actualUsers": 75,
+        "expectedForecasts": 20,
+        "actualForecasts": 7,
+        "expectedStableDays": 7,
+        "actualStableDays": 0,
+        "expectedIndexedPages": ">=1",
+        "actualIndexedPages": 0
+      }
+    },
+    "decisions": [
+      {
+        "id": "WD-20260803-016",
+        "category": "launch-blocker",
+        "issue": "Service stability below threshold",
+        "priority": "P0",
+        "decision": "Resolve restart root cause before any marketing push",
+        "assignee": "DevOps",
+        "dueDate": "2026-08-05",
+        "status": "pending"
+      },
+      {
+        "id": "WD-20260803-017",
+        "category": "launch-blocker",
+        "issue": "SEO visibility zero",
+        "priority": "P0",
+        "decision": "Complete search engine submission and content publishing by 08-07",
+        "assignee": "SEO",
+        "dueDate": "2026-08-07",
+        "status": "pending"
+      }
+    ]
+  },
+  "weeklyVerificationChecklist": {
+    "dailyLoopItems": [
+      { "date": "2026-08-04", "check": "Monitoring schedule fixed (daily-check generates report)", "status": "pending" },
+      { "date": "2026-08-05", "check": "Vercel log review completed, root cause identified", "status": "pending" },
+      { "date": "2026-08-05", "check": "Feedback stats fixed (confirmed > 0)", "status": "pending" },
+      { "date": "2026-08-06", "check": "Frontend tracking deployed", "status": "pending" },
+      { "date": "2026-08-06", "check": "Forecast count breaks 7", "status": "pending" },
+      { "date": "2026-08-07", "check": "SEO indexing > 0 (Bing/Yandex)", "status": "pending" },
+      { "date": "2026-08-07", "check": "3 SEO articles published", "status": "pending" },
+      { "date": "2026-08-08 to 2026-08-10", "check": "3 consecutive days without restart", "status": "pending" }
+    ],
+    "weeklyLoopItems": [
+      { "check": "TimesFM POC completed, inference latency acceptable", "status": "pending" },
+      { "check": "TS-ICL Edge deployment test passed", "status": "pending" },
+      { "check": "User growth recovered (target: +5/day)", "status": "pending" },
+      { "check": "Forecast conversion improved (target: >15%)", "status": "pending" }
+    ]
+  },
+  "risks": [
+    {
+      "risk": "Third service restart",
+      "level": "high",
+      "trigger": "Another restart before 2026-08-09",
+      "mitigation": "Escalate to P0 immediately; enable Vercel log drains; evaluate migration to stable hosting"
+    },
+    {
+      "risk": "Persistent SEO zero indexing",
+      "level": "high",
+      "trigger": "Still 0 indexed pages after 2026-08-07",
+      "mitigation": "Submit to Google/Baidu immediately; build external backlinks"
+    },
+    {
+      "risk": "Forecast feature unused",
+      "level": "medium",
+      "trigger": "Forecast count < 10 by 2026-08-10",
+      "mitigation": "Add onboarding tutorial; simplify prediction flow; consider free trial strategy"
+    },
+    {
+      "risk": "Technology integration infeasible",
+      "level": "low",
+      "trigger": "TimesFM or TS-ICL POC fails",
+      "mitigation": "Fallback to existing engine; continue monitoring other open-source models"
+    }
+  ]
+}

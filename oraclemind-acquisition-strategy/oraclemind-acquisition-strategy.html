@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OracleMind 自动化获客策略</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+CJK+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #080810;
+    --bg2: #12121e;
+    --ink: #e4e4ef;
+    --muted: #8888a0;
+    --rule: rgba(255,255,255,0.08);
+    --accent: #7c6aff;
+    --accent2: #00d4aa;
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans CJK SC', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--ink);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .page-bg {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    background:
+      radial-gradient(ellipse 60% 50% at 20% 10%, rgba(124,106,255,0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 60% at 80% 90%, rgba(0,212,170,0.06) 0%, transparent 70%),
+      var(--bg);
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  /* ── Cover ── */
+  .cover {
+    text-align: center;
+    padding: 80px 20px 60px;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(124,106,255,0.07) 0%, transparent 70%);
+    border-radius: 24px;
+    pointer-events: none;
+  }
+  .cover-badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent2);
+    border: 1px solid rgba(0,212,170,0.3);
+    padding: 4px 16px;
+    border-radius: 20px;
+    margin-bottom: 28px;
+  }
+  .cover h1 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    background: linear-gradient(135deg, var(--ink) 30%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+  }
+  .cover .subtitle {
+    font-size: 18px;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  .cover .date {
+    font-size: 14px;
+    color: var(--muted);
+    opacity: 0.7;
+  }
+  .cover-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 24px;
+    opacity: 0.85;
+  }
+
+  /* ── Headings ── */
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 56px 0 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--rule);
+    color: var(--ink);
+  }
+  h2 .chapter-num {
+    color: var(--accent);
+    font-weight: 600;
+    margin-right: 8px;
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 36px 0 16px;
+    color: var(--ink);
+  }
+
+  /* ── Glass Card ── */
+  .card {
+    background: rgba(18, 18, 30, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--rule);
+    border-radius: 16px;
+    padding: 28px 28px;
+    margin: 20px 0;
+  }
+
+  /* ── Flywheel ── */
+  .flywheel-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0;
+  }
+  .flywheel-wrap svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ── Lists ── */
+  .content-list {
+    list-style: none;
+    padding: 0;
+  }
+  .content-list li {
+    position: relative;
+    padding: 8px 0 8px 24px;
+    color: var(--ink);
+  }
+  .content-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.6;
+  }
+  .content-list li strong,
+  .content-list li b {
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .numbered-list {
+    list-style: none;
+    counter-reset: cl;
+    padding: 0;
+  }
+  .numbered-list li {
+    counter-increment: cl;
+    position: relative;
+    padding: 10px 0 10px 36px;
+  }
+  .numbered-list li::before {
+    content: counter(cl);
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: var(--bg);
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  /* ── Highlight ── */
+  mark.key {
+    background: none;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* ── pSEO Stats ── */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+  }
+  .stat-card {
+    background: rgba(18, 18, 30, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+  .stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+  }
+  .stat-label {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+
+  /* ── Table ── */
+  .table-wrap {
+    overflow-x: auto;
+    margin: 24px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  thead th {
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--muted);
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+  tbody td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--rule);
+    color: var(--ink);
+    vertical-align: top;
+  }
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+  tbody tr:hover {
+    background: rgba(124,106,255,0.04);
+  }
+  .p-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 10px;
+    letter-spacing: 0.04em;
+  }
+  .p-badge.p0 { background: rgba(124,106,255,0.2); color: var(--accent); }
+  .p-badge.p1 { background: rgba(0,212,170,0.15); color: var(--accent2); }
+  .p-badge.p2 { background: rgba(255,255,255,0.08); color: var(--muted); }
+  .p-badge.p3 { background: rgba(255,255,255,0.05); color: var(--muted); opacity: 0.7; }
+
+  /* ── Roadmap ── */
+  .roadmap {
+    margin: 24px 0;
+  }
+  .week-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 16px;
+  }
+  .week-label {
+    flex-shrink: 0;
+    width: 150px;
+  }
+  .week-label .week-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 2px;
+  }
+  .week-label .week-days {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .week-bar {
+    flex: 1;
+    background: rgba(18, 18, 30, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 16px 20px;
+    border-left: 3px solid var(--accent);
+  }
+  .week-bar:nth-child(2) { border-left-color: var(--accent); }
+  .week-row:nth-child(2) .week-bar { border-left-color: var(--accent2); }
+  .week-row:nth-child(3) .week-bar { border-left-color: #ff6b9d; }
+  .week-row:nth-child(4) .week-bar { border-left-color: #ffc46b; }
+  .week-bar ul {
+    list-style: none;
+    padding: 0;
+  }
+  .week-bar ul li {
+    padding: 4px 0;
+    font-size: 14px;
+    position: relative;
+    padding-left: 18px;
+    color: var(--ink);
+  }
+  .week-bar ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--muted);
+    opacity: 0.5;
+  }
+  .week-theme {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Email Sequence ── */
+  .email-timeline {
+    position: relative;
+    margin: 20px 0 20px 20px;
+    padding-left: 28px;
+  }
+  .email-timeline::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent), var(--accent2), transparent);
+    border-radius: 1px;
+  }
+  .email-item {
+    position: relative;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .email-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .email-item::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg2);
+  }
+  .email-day {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+  .email-subject {
+    font-size: 14px;
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  /* ── Pricing ── */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+  }
+  .pricing-card {
+    background: rgba(18, 18, 30, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 24px 20px;
+    text-align: left;
+  }
+  .pricing-card.featured {
+    border-color: rgba(124,106,255,0.4);
+    background: rgba(124,106,255,0.06);
+  }
+  .pricing-tier {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .pricing-card.featured .pricing-tier {
+    color: var(--accent);
+  }
+  .pricing-price {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 14px;
+  }
+  .pricing-price span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--muted);
+  }
+  .pricing-features {
+    list-style: none;
+    padding: 0;
+  }
+  .pricing-features li {
+    padding: 5px 0;
+    font-size: 13px;
+    color: var(--muted);
+    position: relative;
+    padding-left: 18px;
+  }
+  .pricing-features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background: var(--accent2);
+    opacity: 0.5;
+  }
+
+  /* ── Content Formula ── */
+  .formula-box {
+    background: linear-gradient(135deg, rgba(124,106,255,0.1), rgba(0,212,170,0.08));
+    border: 1px solid rgba(124,106,255,0.2);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 16px 0;
+    font-size: 15px;
+    color: var(--ink);
+  }
+  .formula-box strong {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* ── Video Formula Steps ── */
+  .video-steps {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    gap: 0;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .vs-step {
+    background: rgba(18, 18, 30, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 18px 16px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink);
+  }
+  .vs-step .vs-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .vs-arrow {
+    color: var(--accent);
+    font-size: 20px;
+    opacity: 0.5;
+    padding: 0 6px;
+  }
+
+  /* ── Section Divider ── */
+  .divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--rule), transparent);
+    margin: 48px 0;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+  }
+  .footer h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--muted);
+  }
+  .footer ol {
+    padding-left: 20px;
+    counter-reset: src;
+    list-style: none;
+  }
+  .footer ol li {
+    counter-increment: src;
+    padding: 6px 0;
+    font-size: 13px;
+    color: var(--muted);
+    position: relative;
+    padding-left: 28px;
+    word-break: break-all;
+  }
+  .footer ol li::before {
+    content: counter(src) ".";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .footer ol li a {
+    color: var(--accent);
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  .footer ol li a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .footer-copy {
+    margin-top: 24px;
+    font-size: 12px;
+    color: var(--muted);
+    opacity: 0.5;
+    text-align: center;
+  }
+
+  /* ── Paragraph ── */
+  p {
+    margin: 12px 0;
+    color: var(--ink);
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 640px) {
+    .cover h1 { font-size: 28px; }
+    .cover .subtitle { font-size: 15px; }
+    h2 { font-size: 22px; }
+    .week-row { flex-direction: column; }
+    .week-label { width: auto; }
+    .video-steps {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    .vs-arrow { display: none; }
+    .pricing-grid { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="page-bg"></div>
+<div class="container">
+
+<!-- ═══════════════ COVER ═══════════════ -->
+<div class="cover">
+  <svg class="cover-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="32" cy="32" r="30" stroke="url(#cg)" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="32" cy="32" r="18" stroke="url(#cg)" stroke-width="1" opacity="0.3"/>
+    <circle cx="32" cy="32" r="6" fill="url(#cg)" opacity="0.8"/>
+    <circle cx="32" cy="14" r="3" fill="#7c6aff" opacity="0.6"/>
+    <circle cx="14" cy="32" r="2.5" fill="#00d4aa" opacity="0.5"/>
+    <circle cx="50" cy="32" r="2" fill="#7c6aff" opacity="0.4"/>
+    <circle cx="38" cy="50" r="2" fill="#00d4aa" opacity="0.4"/>
+    <line x1="32" y1="32" x2="32" y2="14" stroke="#7c6aff" stroke-width="0.5" opacity="0.3"/>
+    <line x1="32" y1="32" x2="14" y2="32" stroke="#00d4aa" stroke-width="0.5" opacity="0.3"/>
+    <defs><linearGradient id="cg" x1="0" y1="0" x2="64" y2="64"><stop stop-color="#7c6aff"/><stop offset="1" stop-color="#00d4aa"/></linearGradient></defs>
+  </svg>
+  <div class="cover-badge">Strategic Playbook</div>
+  <h1>OracleMind<br>自动化获客策略</h1>
+  <p class="subtitle">从0到1的自动化增长引擎 — 让产品自己找用户</p>
+  <p class="date">2026年7月</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ 第一章: 核心增长飞轮 ═══════════════ -->
+<h2><span class="chapter-num">01</span>核心增长飞轮</h2>
+
+<p>OracleMind 的增长引擎基于 <mark class="key">PLG (Product-Led Growth)</mark> 理念设计,核心理念是让产品本身成为获客的核心驱动力。用户不需要复杂的营销漏斗 — 产品的使用体验本身就是最好的增长手段。</p>
+
+<p>我们设计了一个由四个阶段组成的增长飞轮,每个阶段输出都是下一阶段的输入,形成自我加速的正向循环:</p>
+
+<div class="flywheel-wrap">
+<svg viewBox="0 0 520 520" width="480" height="480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c6aff"/>
+      <stop offset="100%" stop-color="#00d4aa"/>
+    </linearGradient>
+    <linearGradient id="flyGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4aa"/>
+      <stop offset="100%" stop-color="#7c6aff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Center ring -->
+  <circle cx="260" cy="260" r="160" fill="none" stroke="rgba(124,106,255,0.08)" stroke-width="60"/>
+
+  <!-- Node 1: Top (免费诊断) -->
+  <g transform="translate(260, 70)">
+    <circle r="52" fill="rgba(18,18,30,0.85)" stroke="#7c6aff" stroke-width="1.5" filter="url(#glow)"/>
+    <text text-anchor="middle" y="-10" fill="#7c6aff" font-size="12" font-weight="700" font-family="Noto Sans CJK SC">STEP 1</text>
+    <text text-anchor="middle" y="8" fill="#e4e4ef" font-size="11" font-weight="500" font-family="Noto Sans CJK SC">免费"巴纳姆效应"</text>
+    <text text-anchor="middle" y="24" fill="#e4e4ef" font-size="11" font-weight="500" font-family="Noto Sans CJK SC">诊断做流量钩子</text>
+  </g>
+
+  <!-- Node 2: Right (日活引擎) -->
+  <g transform="translate(450, 260)">
+    <circle r="52" fill="rgba(18,18,30,0.85)" stroke="#00d4aa" stroke-width="1.5" filter="url(#glow)"/>
+    <text text-anchor="middle" y="-10" fill="#00d4aa" font-size="12" font-weight="700" font-family="Noto Sans CJK SC">STEP 2</text>
+    <text text-anchor="middle" y="8" fill="#e4e4ef" font-size="11" font-weight="500" font-family="Noto Sans CJK SC">个性化运势推送</text>
+    <text text-anchor="middle" y="24" fill="#e4e4ef" font-size="11" font-weight="500" font-family="Noto Sans CJK SC">做日活引擎</text>
+  </g>
+
+  <!-- Node 3: Bottom (付费转化) -->
+  <g transform="translate(260, 450)">
+    <circle r="52" fill="rgba(18,18,30,0.85)" stroke="#ff6b9d" stroke-width="1.5" filter="url(#glow)"/>
+    <text text-anchor="middle" y="-10" fill="#ff6b9d" font-size="12" font-weight="700" font-family="Noto Sans CJK SC">STEP 3</text>
+    <text text-anchor="middle" y="8" fill="#e4e4ef" font-size="11" font-weight="500" font-family="Noto Sans CJK SC">焦虑/好奇节点</text>
+    <text text-anchor="middle" y="24" fill="#e4e4ef" font-size="11" font-weight="500" font-family="Noto Sans CJK SC">付费订阅转化</text>
+  </g>
+
+  <!-- Node 4: Left (社交分享) -->
+  <g transform="translate(70, 260)">
+    <circle r="52" fill="rgba(18,18,30,0.85)" stroke="#ffc46b" stroke-width="1.5" filter="url(#glow)"/>
+    <text text-anchor="middle" y="-10" fill="#ffc46b" font-size="12" font-weight="700" font-family="Noto Sans CJK SC">STEP 4</text>
+    <text text-anchor="middle" y="8" fill="#e4e4ef" font-size="11" font-weight="500" font-family="Noto Sans CJK SC">社交分享</text>
+    <text text-anchor="middle" y="24" fill="#e4e4ef" font-size="11" font-weight="500" font-family="Noto Sans CJK SC">带来新用户</text>
+  </g>
+
+  <!-- Arrow 1→2 (Top to Right) -->
+  <path d="M305 85 Q380 120 425 210" fill="none" stroke="url(#flyGrad)" stroke-width="2" marker-end="url(#ah1)" opacity="0.7"/>
+  <!-- Arrow 2→3 (Right to Bottom) -->
+  <path d="M425 310 Q380 400 305 435" fill="none" stroke="url(#flyGrad)" stroke-width="2" marker-end="url(#ah1)" opacity="0.7"/>
+  <!-- Arrow 3→4 (Bottom to Left) -->
+  <path d="M215 435 Q140 400 95 310" fill="none" stroke="url(#flyGrad2)" stroke-width="2" marker-end="url(#ah1)" opacity="0.7"/>
+  <!-- Arrow 4→1 (Left to Top) -->
+  <path d="M95 210 Q140 120 215 85" fill="none" stroke="url(#flyGrad2)" stroke-width="2" marker-end="url(#ah1)" opacity="0.7"/>
+
+  <defs>
+    <marker id="ah1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 L2,4 Z" fill="#7c6aff" opacity="0.8"/>
+    </marker>
+  </defs>
+
+  <!-- Center label -->
+  <text x="260" y="256" text-anchor="middle" fill="#8888a0" font-size="13" font-weight="600" font-family="Noto Sans CJK SC">OracleMind</text>
+  <text x="260" y="274" text-anchor="middle" fill="#8888a0" font-size="11" font-family="Noto Sans CJK SC">增长飞轮</text>
+</svg>
+</div>
+
+<div class="card">
+<ol class="numbered-list">
+  <li><mark class="key">免费"巴纳姆效应"诊断做流量钩子</mark> — 5次免费测算吸引用户进入产品,低门槛体验降低获客阻力</li>
+  <li><mark class="key">个性化运势推送做日活引擎</mark> — 每日登录查看新运势,建立用户日常习惯和粘性</li>
+  <li><mark class="key">焦虑/好奇节点上的付费订阅转化</mark> — L2/L3深度分析设为付费墙,在用户情绪最强烈的时刻触发付费意愿</li>
+  <li><mark class="key">社交分享带来新用户</mark> — 结果页分享功能让每个用户成为增长节点,形成病毒式传播</li>
+</ol>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ 第二章: 程序化SEO ═══════════════ -->
+<h2><span class="chapter-num">02</span>程序化SEO — 自动化内容工厂</h2>
+
+<p>程序化SEO (pSEO) 是 OracleMind 获客的底层引擎。通过<mark class="key">模板化内容矩阵</mark>,我们可以用极低的边际成本覆盖海量长尾搜索需求。</p>
+
+<h3>2.1 模板化着陆页矩阵</h3>
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="stat-number">84</div>
+    <div class="stat-label">深度解读页<br>(12星座 x 7维度)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">4,380</div>
+    <div class="stat-label">日更页面<br>(每日12星座运势)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">66</div>
+    <div class="stat-label">配对组合页<br>(星座配对分析)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">366</div>
+    <div class="stat-label">日期特征页<br>(出生日期命运)</div>
+  </div>
+</div>
+
+<ul class="content-list">
+  <li><mark class="key">12星座 x 7维度 = 84个深度解读页</mark> — 覆盖事业/感情/财运/健康/学业/人际/灵性成长七大维度</li>
+  <li><mark class="key">每日12星座运势 = 4380个日更页面</mark> — 持续产出新鲜内容,保持搜索引擎活跃度</li>
+  <li><mark class="key">星座配对分析 = 66个配对组合页</mark> — 高社交传播潜力的内容类型</li>
+  <li><mark class="key">出生日期命运特征 = 366个日期页</mark> — 精准捕获生日相关搜索长尾词</li>
+</ul>
+
+<h3>2.2 GEO优化 (生成式引擎优化)</h3>
+
+<p>传统SEO之外,OracleMind 还需要针对 <mark class="key">ChatGPT / Perplexity</mark> 等AI搜索引擎做优化:</p>
+
+<div class="card">
+<ul class="content-list">
+  <li>让 ChatGPT / Perplexity 等 AI 搜索引擎<mark class="key">引用 OracleMind 为信源</mark></li>
+  <li>建立结构化知识库,覆盖<mark class="key">占星/命理/预测</mark>领域核心话题</li>
+  <li>通过高质量结构化数据 (Schema.org markup) 提升AI搜索引擎的抓取理解</li>
+</ul>
+</div>
+
+<h3>2.3 自动化实现方案</h3>
+
+<ul class="content-list">
+  <li>使用 <mark class="key">ZAI SDK + 模板引擎</mark>批量生成SEO内容,无需人工逐页编写</li>
+  <li>每日自动更新运势页面,确保内容时效性</li>
+  <li>已有 SEO 定时任务 (每周四) 的强化方向 — 将更新频率提升至每日,覆盖范围扩大至全矩阵</li>
+</ul>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ 第三章: 社交裂变机制 ═══════════════ -->
+<h2><span class="chapter-num">03</span>社交裂变机制</h2>
+
+<h3>3.1 Co-Star模式的OracleMind适配</h3>
+
+<p>参考 Co-Star 的成功经验,OracleMind 可以在社交裂变上做以下适配:</p>
+
+<ul class="content-list">
+  <li><mark class="key">好友星盘匹配</mark>: "你想知道你和TA的合拍指数吗?" — 利用好奇心驱动用户邀请好友</li>
+  <li><mark class="key">结果页截图分享</mark>: 精美的概率场可视化图天然适合 Instagram / TikTok 传播</li>
+  <li><mark class="key">争议性推送</mark>: 有态度的运势文案引发讨论转发,例如 "本周最倒霉的星座"</li>
+</ul>
+
+<h3>3.2 TikTok/IG短视频内容策略</h3>
+
+<div class="formula-box">
+  内容公式: <strong>"情感痛点 + 身份分类"</strong><br>
+  <span style="font-size:13px;color:var(--muted)">参考 Starcross 月入6万美元方法论 — 先击中情绪,再给出身份标签,最后提供解决方案</span>
+</div>
+
+<ul class="content-list">
+  <li><mark class="key">12星座全覆盖视频</mark>: 用户必须看完找自己 + 想了解的人,天然延长观看时长</li>
+  <li>已验证的素材模板:</li>
+</ul>
+
+<div class="video-steps">
+  <div class="vs-step">
+    <div class="vs-label">开场</div>
+    深夜焦虑的女孩<br><span style="color:var(--muted);font-size:12px">"你是否觉得一切都在针对你?"</span>
+  </div>
+  <div class="vs-arrow">&#8594;</div>
+  <div class="vs-step">
+    <div class="vs-label">转折</div>
+    打开OracleMind<br><span style="color:var(--muted);font-size:12px">AI生成概率场预测</span>
+  </div>
+  <div class="vs-arrow">&#8594;</div>
+  <div class="vs-step">
+    <div class="vs-label">结尾</div>
+    CTA链接<br><span style="color:var(--muted);font-size:12px">"立即查看你的命运"</span>
+  </div>
+</div>
+
+<h3>3.3 分享功能产品化</h3>
+
+<div class="card">
+<ul class="content-list">
+  <li>结果页增加 <mark class="key">"Share Destiny"</mark> 按钮 — 一键生成精美的社交卡片</li>
+  <li>生成精美的 <mark class="key">Social Card</mark> — 概率场可视化图 + 个人运势摘要</li>
+  <li>每张分享卡带有 <mark class="key">"Try your own"</mark> 水印引流链接 — 每次分享都是一次免费获客</li>
+</ul>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ 第四章: 产品驱动增长设计 ═══════════════ -->
+<h2><span class="chapter-num">04</span>产品驱动增长设计</h2>
+
+<h3>4.1 Freemium付费墙设计</h3>
+
+<div class="pricing-grid">
+  <div class="pricing-card">
+    <div class="pricing-tier">Free</div>
+    <div class="pricing-price">免费</div>
+    <ul class="pricing-features">
+      <li>5次/日基础预测</li>
+      <li>简短洞察摘要</li>
+      <li>基础运势查看</li>
+    </ul>
+  </div>
+  <div class="pricing-card featured">
+    <div class="pricing-tier">Premium</div>
+    <div class="pricing-price">$9.99 <span>/ 月</span></div>
+    <ul class="pricing-features">
+      <li>无限预测</li>
+      <li>L2 个人命盘分析</li>
+      <li>完整概率场分解</li>
+      <li>高级运势洞察</li>
+    </ul>
+  </div>
+  <div class="pricing-card">
+    <div class="pricing-tier">Deep</div>
+    <div class="pricing-price">$4.99 <span>/ 次</span></div>
+    <ul class="pricing-features">
+      <li>L3 多维度深度推演</li>
+      <li>8轮独立推导向量</li>
+      <li>行动建议方案</li>
+      <li>危机化解指南</li>
+    </ul>
+  </div>
+</div>
+
+<h3>4.2 "渴望答案的极限卡点"付费触发</h3>
+
+<p>付费转化的核心在于<mark class="key">情绪窗口</mark>的设计:</p>
+
+<div class="card">
+<ul class="content-list">
+  <li>免费功能告诉用户 <mark class="key">"会发生什么"</mark> — 建立信任和好奇心</li>
+  <li>付费功能告诉用户 <mark class="key">"怎么应对"</mark> — 提供不可替代的价值</li>
+  <li>当AI说 "你下月感情将出现重大危机" → <mark class="key">焦虑拉满</mark> → "解锁化解方案需 Deep Analysis"</li>
+</ul>
+</div>
+
+<h3>4.3 游戏化留存机制</h3>
+
+<ul class="content-list">
+  <li><mark class="key">每日签到 + 连胜奖励</mark> — 利用损失厌恶心理提升留存</li>
+  <li><mark class="key">天文事件驱动</mark>: 满月/水逆/日食推送特别预测 — 自然制造"必须回来看"的理由</li>
+  <li><mark class="key">"灵力值"系统</mark>: 活跃行为积攒,兑换免费 Deep Analysis — 用游戏化替代付费门槛焦虑</li>
+</ul>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ 第五章: 自动化邮件与重定向 ═══════════════ -->
+<h2><span class="chapter-num">05</span>自动化邮件与重定向</h2>
+
+<h3>5.1 注册到转化邮件序列 (7天自动化)</h3>
+
+<div class="email-timeline">
+  <div class="email-item">
+    <div class="email-day">Day 0</div>
+    <div class="email-subject">欢迎邮件 + "今日运势速览" — 第一印象建立,展示产品价值</div>
+  </div>
+  <div class="email-item">
+    <div class="email-day">Day 1</div>
+    <div class="email-subject">"你的概率场中有3个隐藏信号未解锁" — 制造信息差,激发好奇心</div>
+  </div>
+  <div class="email-item">
+    <div class="email-day">Day 3</div>
+    <div class="email-subject">"木星进入你的第7宫,感情运将发生重大变化" — 利用占星术语制造紧迫感</div>
+  </div>
+  <div class="email-item">
+    <div class="email-day">Day 7</div>
+    <div class="email-subject">"试用期解锁限时年度报告" — 限时优惠推动付费转化</div>
+  </div>
+</div>
+
+<h3>5.2 沉默用户唤醒</h3>
+
+<ul class="content-list">
+  <li>Day 30: <mark class="key">水逆期间星座专属指南</mark> — 利用天文事件自然唤醒</li>
+  <li>天文事件触发: 自动推送相关预测 — 让沉默用户感受到"即使不登录也不会错过"</li>
+</ul>
+
+<h3>5.3 重定向广告</h3>
+
+<ul class="content-list">
+  <li>浏览深度报告页未购买 → <mark class="key">个性化重定向广告</mark> — 精准触达高意向用户</li>
+  <li>基于用户关注维度 (感情/事业/财运) <mark class="key">投放不同素材</mark> — 个性化提升转化率</li>
+</ul>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ 第六章: 渠道策略与优先级 ═══════════════ -->
+<h2><span class="chapter-num">06</span>渠道策略与优先级</h2>
+
+<p>基于投入产出比的渠道优先级矩阵,指导资源分配决策:</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>优先级</th>
+      <th>策略</th>
+      <th>预期效果</th>
+      <th>自动化程度</th>
+      <th>开发成本</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="p-badge p0">P0</span></td>
+      <td>社交分享卡片 (Share Destiny)</td>
+      <td>高</td>
+      <td>全自动</td>
+      <td>低 (1周)</td>
+    </tr>
+    <tr>
+      <td><span class="p-badge p0">P0</span></td>
+      <td>TikTok/IG 情绪驱动内容</td>
+      <td>高</td>
+      <td>半自动</td>
+      <td>低 (内容生产)</td>
+    </tr>
+    <tr>
+      <td><span class="p-badge p1">P1</span></td>
+      <td>pSEO 着陆页矩阵</td>
+      <td>中高</td>
+      <td>全自动</td>
+      <td>中 (2周)</td>
+    </tr>
+    <tr>
+      <td><span class="p-badge p1">P1</span></td>
+      <td>邮件自动化序列</td>
+      <td>中高</td>
+      <td>全自动</td>
+      <td>低 (1周)</td>
+    </tr>
+    <tr>
+      <td><span class="p-badge p1">P1</span></td>
+      <td>游戏化留存机制</td>
+      <td>高</td>
+      <td>全自动</td>
+      <td>中 (2周)</td>
+    </tr>
+    <tr>
+      <td><span class="p-badge p2">P2</span></td>
+      <td>Facebook 广告 (情绪焦虑人群)</td>
+      <td>中</td>
+      <td>半自动</td>
+      <td>中 (素材+投放)</td>
+    </tr>
+    <tr>
+      <td><span class="p-badge p2">P2</span></td>
+      <td>Reddit 社群运营</td>
+      <td>中 (品牌)</td>
+      <td>手动</td>
+      <td>高 (持续投入)</td>
+    </tr>
+    <tr>
+      <td><span class="p-badge p3">P3</span></td>
+      <td>API 生态与联盟计划</td>
+      <td>长期高</td>
+      <td>半自动</td>
+      <td>高</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ 第七章: 30天路线图 ═══════════════ -->
+<h2><span class="chapter-num">07</span>第一个30天执行路线图</h2>
+
+<div class="roadmap">
+  <div class="week-row">
+    <div class="week-label">
+      <div class="week-title">Week 1</div>
+      <div class="week-days">Day 1-7</div>
+    </div>
+    <div class="week-bar">
+      <div class="week-theme">基础建设</div>
+      <ul>
+        <li>实现 Share Destiny 社交卡片功能</li>
+        <li>部署 pSEO 模板引擎,生成首批84个星座解读页</li>
+        <li>配置邮件自动化序列</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="week-row">
+    <div class="week-label">
+      <div class="week-title">Week 2</div>
+      <div class="week-days">Day 8-14</div>
+    </div>
+    <div class="week-bar">
+      <div class="week-theme">内容启动</div>
+      <ul>
+        <li>开始 TikTok/IG 内容日更 (12星座循环)</li>
+        <li>邮件序列上线,开始收集转化数据</li>
+        <li>每日运势自动生成系统上线</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="week-row">
+    <div class="week-label">
+      <div class="week-title">Week 3</div>
+      <div class="week-days">Day 15-21</div>
+    </div>
+    <div class="week-bar">
+      <div class="week-theme">优化迭代</div>
+      <ul>
+        <li>基于数据优化社交卡片分享率</li>
+        <li>开始 pSEO 内容批量生产</li>
+        <li>部署游戏化签到系统</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="week-row">
+    <div class="week-label">
+      <div class="week-title">Week 4</div>
+      <div class="week-days">Day 22-30</div>
+    </div>
+    <div class="week-bar">
+      <div class="week-theme">扩大投放</div>
+      <ul>
+        <li>将表现最好的有机内容转化为付费广告素材</li>
+        <li>启动 Facebook Lookalike 受众投放测试</li>
+        <li>分析30天数据,确定下一步重点方向</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ Footer / Sources ═══════════════ -->
+<div class="footer">
+  <h3>参考来源 / Sources</h3>
+  <ol>
+    <li>腾讯云 - 程序化SEO完全指南 <a href="https://cloud.tencent.com/developer/article/2704580" target="_blank" rel="noopener">https://cloud.tencent.com/developer/article/2704580</a></li>
+    <li>夜雨聆风 - AI占星APP出海增长策略 <a href="https://www.yeyulingfeng.com/467165.html" target="_blank" rel="noopener">https://www.yeyulingfeng.com/467165.html</a></li>
+    <li>深思圈播客 - Starcross拆解 <a href="https://www.xiaoyuzhoufm.com/episode/68bee19e9eb4a493006bca2e" target="_blank" rel="noopener">https://www.xiaoyuzhoufm.com/episode/68bee19e9eb4a493006bca2e</a></li>
+    <li>夜雨聆风 - AI塔罗星盘App情绪变现漏斗 <a href="https://www.yeyulingfeng.com/a/579703.html" target="_blank" rel="noopener">https://www.yeyulingfeng.com/a/579703.html</a></li>
+    <li>创业邦/白鲸出海 - Hint.app增长拆解 <a href="https://m.cyzone.cn/article/818443" target="_blank" rel="noopener">https://m.cyzone.cn/article/818443</a></li>
+    <li>36氪/白鲸出海 - CHANI与Stardust模式分析 <a href="https://m.36kr.com/p/3606749465249029" target="_blank" rel="noopener">https://m.36kr.com/p/3606749465249029</a></li>
+    <li>Digittrix - Build Astrology App <a href="https://www.digittrix.com/blogs/how-to-build-a-custom-astrology-app-like-co-star-or-the-pattern" target="_blank" rel="noopener">https://www.digittrix.com/blogs/how-to-build-a-custom-astrology-app-like-co-star-or-the-pattern</a></li>
+    <li>Midjourney收购Co-Star新闻 <a href="https://fund.cfi.cn/p20260725000006.html" target="_blank" rel="noopener">https://fund.cfi.cn/p20260725000006.html</a></li>
+  </ol>
+  <div class="footer-copy">OracleMind Acquisition Strategy &copy; 2026年7月</div>
+</div>
+
+</div><!-- /container -->
+</body>
+</html>
