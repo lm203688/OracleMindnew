@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>板块 5 · 智能体编排与提示层</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --panel:#ffffff; --ink:#1a1f2b; --ink2:#4a5262; --ink3:#7b8494;
+    --line:#e4e7ec; --accent:#1f6feb; --accent2:#0b8a5f; --red:#d92d20; --amber:#b54708;
+    --code-bg:#f2f4f7; --quote-bg:#f8fafc;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; font-size:15.5px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:980px; margin:0 auto; padding:0 28px 96px;}
+  header.hero{
+    background:linear-gradient(135deg,#0f1b33 0%,#1b3a6b 55%,#1f6feb 100%);
+    color:#fff; margin:0 0 40px; padding:52px 28px 44px; border-bottom:4px solid #0b8a5f;
+  }
+  header.hero .inner{max-width:980px; margin:0 auto;}
+  header.hero h1{font-size:30px; line-height:1.35; margin:0 0 14px; font-weight:700; letter-spacing:.3px;}
+  header.hero .sub{font-size:14px; opacity:.82; line-height:1.7;}
+  header.hero .badges{margin-top:20px; display:flex; flex-wrap:wrap; gap:8px;}
+  header.hero .badge{background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25);
+    padding:4px 12px; border-radius:999px; font-size:12.5px; letter-spacing:.2px;}
+  h1{font-size:26px; margin:44px 0 16px; padding-bottom:10px; border-bottom:2px solid var(--line);}
+  h2{font-size:22px; margin:44px 0 16px; padding:10px 0 10px 14px; border-left:5px solid var(--accent);
+     background:linear-gradient(90deg,rgba(31,111,235,.06),transparent);}
+  h3{font-size:18px; margin:30px 0 12px; color:var(--ink);}
+  h4{font-size:16px; margin:22px 0 10px; color:var(--ink2);}
+  p{margin:12px 0;}
+  a{color:var(--accent); text-decoration:none;} a:hover{text-decoration:underline;}
+  strong{color:#0f1729; font-weight:650;}
+  hr{border:none; border-top:1px solid var(--line); margin:40px 0;}
+  blockquote{
+    margin:16px 0; padding:14px 20px; background:var(--quote-bg);
+    border-left:4px solid #94a3b8; border-radius:0 8px 8px 0; color:var(--ink2);
+  }
+  blockquote p{margin:6px 0;}
+  code{background:var(--code-bg); padding:2px 6px; border-radius:5px;
+    font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace; font-size:13px; color:#b02a37;}
+  pre{background:#0f172a; color:#e2e8f0; padding:18px 20px; border-radius:10px; overflow:auto; line-height:1.6;}
+  pre code{background:none; color:inherit; padding:0; font-size:12.8px;}
+  table{border-collapse:collapse; width:100%; margin:18px 0; font-size:14px; background:var(--panel);
+    border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(16,24,40,.06);}
+  th,td{border:1px solid var(--line); padding:10px 13px; text-align:left; vertical-align:top;}
+  th{background:#f0f3f8; font-weight:650; color:#111827; white-space:nowrap;}
+  tr:nth-child(even) td{background:#fafbfc;}
+  ul,ol{padding-left:26px; margin:12px 0;}
+  li{margin:6px 0;}
+  .wrap > h2:first-child{margin-top:8px;}
+  @media(max-width:720px){
+    .wrap{padding:0 16px 64px;} header.hero{padding:34px 16px;}
+    header.hero h1{font-size:23px;} table{font-size:12.5px;} th,td{padding:7px 9px;}
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="inner">
+    <h1>板块 5 · 智能体编排与提示层</h1>
+    <div class="sub">全仓扫描 · 核心目标对标 · 国际竞品比较 · 技术壁垒深挖 · 最新技术融合 · 提升方案</div>
+    <div class="badges">
+      <span class="badge">综合成熟度 ≈ 62%</span>
+      <span class="badge">工程 78% · 科学 70%</span>
+      <span class="badge">用户/活跃 5% · 商业 15%</span>
+      <span class="badge">Brier 0.136 / 方向 83.3%</span>
+      <span class="badge">扫描 2026-10-12</span>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+<h1>板块 5 · 智能体编排与提示层</h1>
+<blockquote>
+<p>边界：<code>science-layer.ts</code> + <code>agent-factory.ts</code> + <code>react-reasoner.ts</code> + <code>agent-mesh.ts</code> + <code>agent-memory.ts</code> + <code>modern-deep-analysis.ts</code>（2766 行）+ <code>inference-loop.ts</code> + <code>pipeline.ts</code>；API：<code>/api/oracle-core/*</code>、<code>/api/self-eval</code>、<code>/api/agent-trace</code>。</p>
+</blockquote>
+<h2>一、流程合理性 / 走通性 / 人类使用习惯</h2>
+<p><strong>流程链路</strong>：<code>pipeline</code> 编排 → <code>modern-deep-analysis</code>（LLM 多步深析，2766 行最大模块）→ <code>react-reasoner</code>（ReAct 循环）→ <code>agent-mesh</code>（多智能体）→ <code>science-layer</code> 注入校准上下文到 Agent 提示。</p>
+<p><strong>走通性 / 风险</strong>：</p>
+<ul>
+<li><strong>校准注入已修复（2026-10-14 确认）</strong>：<code>science-layer</code> 优先读 <code>db.predictionFeedback</code> 真实样本（断链 #6 已修），<code>getHistoricalAccuracyContext</code> 真实生效。</li>
+<li><strong>过度工程风险</strong>：<code>modern-deep-analysis</code> 单文件 2766 行 + <code>agent-mesh</code> 多智能体 → token/成本/延迟三高；对&quot;给一个概率&quot;的产品，多智能体可能杀鸡用牛刀。</li>
+<li><code>circuit-breaker</code>（324 行）已存在，可做成本护栏，但需确认是否真正拦截 runaway。</li>
+<li><code>/api/agent-trace</code> 存在，透明化&quot;思考过程&quot;是信任资产，但默认可能过冗。</li>
+</ul>
+<p><strong>人类使用习惯</strong>：用户要<strong>快答案 + 可解释</strong>；多智能体慢且贵，且长链推理易让用户等不及。透明（trace）好，但需&quot;摘要优先、详情可展开&quot;。</p>
+<p><strong>结论</strong>：校准注入 8/10，工程克制 4/10，成本护栏 5/10，透明度 7/10。</p>
+<h2>二、市场竞品与需求比较</h2>
+<table>
+<thead>
+<tr>
+<th>框架</th>
+<th>定位</th>
+<th>关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LangGraph</td>
+<td>状态图编排（生产级）</td>
+<td>OracleMind 自研 pipeline 可迁移以降低维护</td>
+</tr>
+<tr>
+<td>CrewAI</td>
+<td>角色化多智能体</td>
+<td>agent-mesh 思路类似，但自建</td>
+</tr>
+<tr>
+<td>AutoGen（微软 1.0 GA）</td>
+<td>对话式多智能体</td>
+<td>生态成熟</td>
+</tr>
+<tr>
+<td>Anthropic/OpenAI Agent SDK</td>
+<td>原生 SDK</td>
+<td>轻量首选</td>
+</tr>
+</tbody></table>
+<p><strong>需求</strong>：预测产品不需要重型多智能体；市场趋势是&quot;框架收敛 + 轻量 SDK&quot;。自研可逆，但维护成本高。</p>
+<h2>三、最新开源技术融合机会</h2>
+<ul>
+<li><strong>LangGraph</strong>：把 <code>pipeline</code> 改为状态图，获得 checkpoint/回溯/可观测，降低自研维护。</li>
+<li><strong>Anthropic/OpenAI Agent SDK</strong>：轻量替代 agent-mesh，省 token。</li>
+<li><strong>circuit-breaker（已有）</strong> 接成本计量，设每预测 token 上限。</li>
+<li><strong>Agent 可观测</strong>：把 <code>/api/agent-trace</code> 做成前端&quot;推理时间线&quot;组件。</li>
+</ul>
+<h2>四、单板块提升方案</h2>
+<ul>
+<li><strong>P1-①</strong>：用 LangGraph 重写 <code>pipeline</code>，保留 <code>modern-deep-analysis</code> 作为节点，获得可观测与回放。</li>
+<li><strong>P1-②</strong>：给 <code>modern-deep-analysis</code> + <code>agent-mesh</code> 加 token/成本预算，circuit-breaker 强制拦截。</li>
+<li><strong>P1-③</strong>：trace 默认出&quot;一句话摘要 + 可展开推理时间线&quot;，平衡透明与速度。</li>
+<li><strong>P2</strong>：评估是否把 agent-mesh 简化为单 Agent + 工具调用（多数预测场景足够）。</li>
+</ul>
+<p><strong>板块健康度评分（0–5）</strong>：校准注入 4 · 工程克制 2 · 成本护栏 3 · 透明度 4 · 开源可融合 4 → <strong>综合 3.4</strong></p>
+<hr>
+<p><em>下一份：M06–M09（情报雷达 / 前瞻注册 / 概率演化 / 商业交付）</em></p>
+
+</div>
+</body>
+</html>

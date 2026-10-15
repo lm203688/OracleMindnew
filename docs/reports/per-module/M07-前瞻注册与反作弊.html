@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>板块 7 · 前瞻注册与反作弊（可验证性根基）</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --panel:#ffffff; --ink:#1a1f2b; --ink2:#4a5262; --ink3:#7b8494;
+    --line:#e4e7ec; --accent:#1f6feb; --accent2:#0b8a5f; --red:#d92d20; --amber:#b54708;
+    --code-bg:#f2f4f7; --quote-bg:#f8fafc;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; font-size:15.5px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:980px; margin:0 auto; padding:0 28px 96px;}
+  header.hero{
+    background:linear-gradient(135deg,#0f1b33 0%,#1b3a6b 55%,#1f6feb 100%);
+    color:#fff; margin:0 0 40px; padding:52px 28px 44px; border-bottom:4px solid #0b8a5f;
+  }
+  header.hero .inner{max-width:980px; margin:0 auto;}
+  header.hero h1{font-size:30px; line-height:1.35; margin:0 0 14px; font-weight:700; letter-spacing:.3px;}
+  header.hero .sub{font-size:14px; opacity:.82; line-height:1.7;}
+  header.hero .badges{margin-top:20px; display:flex; flex-wrap:wrap; gap:8px;}
+  header.hero .badge{background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25);
+    padding:4px 12px; border-radius:999px; font-size:12.5px; letter-spacing:.2px;}
+  h1{font-size:26px; margin:44px 0 16px; padding-bottom:10px; border-bottom:2px solid var(--line);}
+  h2{font-size:22px; margin:44px 0 16px; padding:10px 0 10px 14px; border-left:5px solid var(--accent);
+     background:linear-gradient(90deg,rgba(31,111,235,.06),transparent);}
+  h3{font-size:18px; margin:30px 0 12px; color:var(--ink);}
+  h4{font-size:16px; margin:22px 0 10px; color:var(--ink2);}
+  p{margin:12px 0;}
+  a{color:var(--accent); text-decoration:none;} a:hover{text-decoration:underline;}
+  strong{color:#0f1729; font-weight:650;}
+  hr{border:none; border-top:1px solid var(--line); margin:40px 0;}
+  blockquote{
+    margin:16px 0; padding:14px 20px; background:var(--quote-bg);
+    border-left:4px solid #94a3b8; border-radius:0 8px 8px 0; color:var(--ink2);
+  }
+  blockquote p{margin:6px 0;}
+  code{background:var(--code-bg); padding:2px 6px; border-radius:5px;
+    font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace; font-size:13px; color:#b02a37;}
+  pre{background:#0f172a; color:#e2e8f0; padding:18px 20px; border-radius:10px; overflow:auto; line-height:1.6;}
+  pre code{background:none; color:inherit; padding:0; font-size:12.8px;}
+  table{border-collapse:collapse; width:100%; margin:18px 0; font-size:14px; background:var(--panel);
+    border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(16,24,40,.06);}
+  th,td{border:1px solid var(--line); padding:10px 13px; text-align:left; vertical-align:top;}
+  th{background:#f0f3f8; font-weight:650; color:#111827; white-space:nowrap;}
+  tr:nth-child(even) td{background:#fafbfc;}
+  ul,ol{padding-left:26px; margin:12px 0;}
+  li{margin:6px 0;}
+  .wrap > h2:first-child{margin-top:8px;}
+  @media(max-width:720px){
+    .wrap{padding:0 16px 64px;} header.hero{padding:34px 16px;}
+    header.hero h1{font-size:23px;} table{font-size:12.5px;} th,td{padding:7px 9px;}
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="inner">
+    <h1>板块 7 · 前瞻注册与反作弊（可验证性根基）</h1>
+    <div class="sub">全仓扫描 · 核心目标对标 · 国际竞品比较 · 技术壁垒深挖 · 最新技术融合 · 提升方案</div>
+    <div class="badges">
+      <span class="badge">综合成熟度 ≈ 62%</span>
+      <span class="badge">工程 78% · 科学 70%</span>
+      <span class="badge">用户/活跃 5% · 商业 15%</span>
+      <span class="badge">Brier 0.136 / 方向 83.3%</span>
+      <span class="badge">扫描 2026-10-12</span>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+<h1>板块 7 · 前瞻注册与反作弊（可验证性根基）</h1>
+<blockquote>
+<p>边界：<code>engines/commit-seal.ts</code>（73 行）+ <code>event-outcome-ledger.ts</code>（153 行）+ <code>automation/job-ledger.ts</code> + <code>calibration-backfill.ts</code>；API：<code>/api/oracle-core/mirror</code>、<code>/api/automation/calibration-backfill</code>。</p>
+</blockquote>
+<h2>一、流程合理性 / 走通性 / 人类使用习惯</h2>
+<p><strong>流程链路</strong>：推演完成、结局未回填时 → <code>sealSimulation</code> 对&quot;预测创建时规范载荷&quot;（<strong>刻意不含结局</strong>）做 sha256 封存 → 存 <code>commitHash</code> → 结局揭晓后 <code>event-outcome-ledger</code> 按 <code>corpusId</code> 命中自动回写真实结局 → <code>job-ledger</code> 记录自动化运行审计。</p>
+<p><strong>走通性 / 风险（最干净、最稀有的资产）</strong>：</p>
+<ul>
+<li><code>commit-seal</code> 实现<strong>正确且严谨</strong>：规范载荷 <code>{id,userId,type,seedInput,createdAt,scenarioOutcomes}</code> 按 path 排序后序列化，保证&quot;同义载荷=同 hash（与字段顺序无关）&quot;；<code>canonicalSealString</code> 让用户可独立复算验证未篡改。这正是预测市场&quot;锁仓即公示、公示早于结果&quot;的纪律。</li>
+<li><code>event-outcome-ledger</code> 自动回写仅在 <code>corpusId</code> 命中（55 条语料）时发生——<strong>覆盖窄</strong>，但设计正确（不编造结局）。</li>
+<li><strong>未释放价值</strong>：哈希只存自有 DB，未锚定去中心化时间戳；无公开验证页，用户/审计方看不到&quot;这预测确实事前封存&quot;。</li>
+</ul>
+<p><strong>人类使用习惯</strong>：可验证性是信任底层，普通用户无感直到&quot;看到作弊证明&quot;；应做公开验证页 + &quot;本预测已事前封存&quot;徽章。</p>
+<p><strong>结论</strong>：实现正确性 9/10，覆盖 3/10，用户可见度 2/10，独特性 9/10。</p>
+<h2>二、市场竞品与需求比较</h2>
+<table>
+<thead>
+<tr>
+<th>参照</th>
+<th>定位</th>
+<th>关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>OSF 预注册</td>
+<td>学术研究事前注册</td>
+<td>方法论同源，OracleMind 首用于&quot;预测&quot;</td>
+</tr>
+<tr>
+<td>OpenTimestamps</td>
+<td>比特币免费时间戳</td>
+<td>去中心化证明可借用</td>
+</tr>
+<tr>
+<td>预测市场锁仓</td>
+<td>公示早于结果</td>
+<td>直接对标纪律</td>
+</tr>
+</tbody></table>
+<p><strong>需求</strong>：AI 预测泛滥、信任稀缺，&quot;可证明未事后篡改&quot;是稀缺信任资产；<strong>无消费级预测产品公开做此</strong>，OracleMind 领先 1–2 年。</p>
+<h2>三、最新开源技术融合机会</h2>
+<ul>
+<li><strong>OpenTimestamps</strong>：把 commitHash 锚定比特币/以太坊时间戳，零成本去中心化证明（比仅存 DB 强）。</li>
+<li><strong>OSF / HashML / Model Cards</strong>：预注册范式与可验证 AI 标准可对接。</li>
+<li><strong>JobRun 账本（已有）</strong>：扩展为全链路不可变审计日志。</li>
+</ul>
+<h2>四、单板块提升方案</h2>
+<ul>
+<li><strong>P1-①</strong>：commitHash 锚定 OpenTimestamps（或以太坊 calldata），实现去中心化不可篡改证明。</li>
+<li><strong>P1-②</strong>：做公开验证页（<code>/api/oracle-core/mirror</code> 已有） + &quot;已事前封存&quot;徽章，营销为&quot;可证明不马后炮&quot;。</li>
+<li><strong>P1-③</strong>：扩大 <code>event-outcome-ledger</code> 触发面（接 GDELT 回填使更多事件可自动对账）。</li>
+<li><strong>P2</strong>：把&quot;可验证预测&quot;作为独立品类对外发声，建立标准话语权。</li>
+</ul>
+<p><strong>板块健康度评分（0–5）</strong>：实现正确 5 · 覆盖 2 · 用户可见度 1 · 独特性 5 · 开源可融合 4 → <strong>综合 3.4</strong></p>
+<hr>
+<p><em>下一份：M08-概率演化与个人战绩</em></p>
+
+</div>
+</body>
+</html>

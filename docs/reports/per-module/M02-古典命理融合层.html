@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>板块 2 · 古典命理融合层</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --panel:#ffffff; --ink:#1a1f2b; --ink2:#4a5262; --ink3:#7b8494;
+    --line:#e4e7ec; --accent:#1f6feb; --accent2:#0b8a5f; --red:#d92d20; --amber:#b54708;
+    --code-bg:#f2f4f7; --quote-bg:#f8fafc;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; font-size:15.5px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:980px; margin:0 auto; padding:0 28px 96px;}
+  header.hero{
+    background:linear-gradient(135deg,#0f1b33 0%,#1b3a6b 55%,#1f6feb 100%);
+    color:#fff; margin:0 0 40px; padding:52px 28px 44px; border-bottom:4px solid #0b8a5f;
+  }
+  header.hero .inner{max-width:980px; margin:0 auto;}
+  header.hero h1{font-size:30px; line-height:1.35; margin:0 0 14px; font-weight:700; letter-spacing:.3px;}
+  header.hero .sub{font-size:14px; opacity:.82; line-height:1.7;}
+  header.hero .badges{margin-top:20px; display:flex; flex-wrap:wrap; gap:8px;}
+  header.hero .badge{background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25);
+    padding:4px 12px; border-radius:999px; font-size:12.5px; letter-spacing:.2px;}
+  h1{font-size:26px; margin:44px 0 16px; padding-bottom:10px; border-bottom:2px solid var(--line);}
+  h2{font-size:22px; margin:44px 0 16px; padding:10px 0 10px 14px; border-left:5px solid var(--accent);
+     background:linear-gradient(90deg,rgba(31,111,235,.06),transparent);}
+  h3{font-size:18px; margin:30px 0 12px; color:var(--ink);}
+  h4{font-size:16px; margin:22px 0 10px; color:var(--ink2);}
+  p{margin:12px 0;}
+  a{color:var(--accent); text-decoration:none;} a:hover{text-decoration:underline;}
+  strong{color:#0f1729; font-weight:650;}
+  hr{border:none; border-top:1px solid var(--line); margin:40px 0;}
+  blockquote{
+    margin:16px 0; padding:14px 20px; background:var(--quote-bg);
+    border-left:4px solid #94a3b8; border-radius:0 8px 8px 0; color:var(--ink2);
+  }
+  blockquote p{margin:6px 0;}
+  code{background:var(--code-bg); padding:2px 6px; border-radius:5px;
+    font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace; font-size:13px; color:#b02a37;}
+  pre{background:#0f172a; color:#e2e8f0; padding:18px 20px; border-radius:10px; overflow:auto; line-height:1.6;}
+  pre code{background:none; color:inherit; padding:0; font-size:12.8px;}
+  table{border-collapse:collapse; width:100%; margin:18px 0; font-size:14px; background:var(--panel);
+    border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(16,24,40,.06);}
+  th,td{border:1px solid var(--line); padding:10px 13px; text-align:left; vertical-align:top;}
+  th{background:#f0f3f8; font-weight:650; color:#111827; white-space:nowrap;}
+  tr:nth-child(even) td{background:#fafbfc;}
+  ul,ol{padding-left:26px; margin:12px 0;}
+  li{margin:6px 0;}
+  .wrap > h2:first-child{margin-top:8px;}
+  @media(max-width:720px){
+    .wrap{padding:0 16px 64px;} header.hero{padding:34px 16px;}
+    header.hero h1{font-size:23px;} table{font-size:12.5px;} th,td{padding:7px 9px;}
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="inner">
+    <h1>板块 2 · 古典命理融合层</h1>
+    <div class="sub">全仓扫描 · 核心目标对标 · 国际竞品比较 · 技术壁垒深挖 · 最新技术融合 · 提升方案</div>
+    <div class="badges">
+      <span class="badge">综合成熟度 ≈ 62%</span>
+      <span class="badge">工程 78% · 科学 70%</span>
+      <span class="badge">用户/活跃 5% · 商业 15%</span>
+      <span class="badge">Brier 0.136 / 方向 83.3%</span>
+      <span class="badge">扫描 2026-10-12</span>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+<h1>板块 2 · 古典命理融合层</h1>
+<blockquote>
+<p>边界：<code>lib/bazi-engine.ts</code> + <code>lib/classical/*</code>（12 文件）+ <code>engines/ancient-frame-features.ts</code> + <code>tendency-field.ts</code> + <code>mirror-engine.ts</code>；API：<code>/api/divine/[domain]</code>、<code>/api/tuivan/*</code>、<code>/api/horoscope/*</code>、<code>/api/zodiac/*</code>、<code>/api/compatibility/*</code>；页面：tuivan、horoscope、resonance、zodiac、compatibility。</p>
+</blockquote>
+<h2>一、流程合理性 / 走通性 / 人类使用习惯</h2>
+<p><strong>流程链路</strong>：<code>bazi-engine</code>（确定性排盘：年/月/日/时四柱，天干地支/五行/藏干硬编码）→ <code>classical-orchestrator</code>（5 书并行 + RAG + GoT 学派共识 + 分歧检测）→ <code>classical-deep-analysis</code>（每书多维推理链）→ <code>classical-llm-enhancer</code>（白话解盘）。这恰是 <strong>2026 玄学 App 市场胜出架构</strong>（搜索证实：玄易/灵机均采用&quot;硬编码排盘 + 大模型解盘&quot;，规避 LLM 历法数学幻觉）。OracleMind 已自发对齐市场，结构正确。</p>
+<p><strong>走通性 / 风险（重大）</strong>：</p>
+<ul>
+<li><strong>古典 substrate 严重残缺（已实测）</strong>：5 本古籍实体文本仅 <strong>2/5</strong> 就位——渊海子平 2467 行、三命通会 8780 行是真文本；<strong>子平真诠 27 行、滴天髓 121 行、穷通宝鉴 53 行近乎空壳</strong>。所谓&quot;5 书并行验证&quot;实际是 2 书真跑 + 3 书在空文本上&quot;表演&quot;。</li>
+<li><strong>节气边界为近似值</strong>：<code>SOLAR_TERM_BOUNDS</code> 用固定月/日（如立春 2/4）判定月柱，未做天文精确计算。出生在立春前后 1–2 天的用户<strong>月柱可能算错</strong>——这是命理产品的致命准确性 bug。</li>
+<li><code>classical-orchestrator</code> 产出 5 份报告 + 分歧分析，信息密度高但对小白<strong>过载</strong>；用户要的是一句可信叙事，不是 5 份互相打架的报告。</li>
+</ul>
+<p><strong>人类使用习惯</strong>：排盘准确 + 白话解盘是用户核心诉求，已满足方向；但缺&quot;命理师人工兜底/咨询预约&quot;闭环（竞品标配），且分歧未转化为&quot;你该信哪派&quot;的决策建议。</p>
+<p><strong>结论</strong>：架构方向 8/10，substrate 完整度 3/10，准确性 4/10，人类叙事 5/10。</p>
+<h2>二、市场竞品与需求比较</h2>
+<table>
+<thead>
+<tr>
+<th>竞品</th>
+<th>规模/模式</th>
+<th>启示</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>灵机八字</td>
+<td>生态整合（八字+紫微+风水+黄历+占卜+命理师预约）</td>
+<td>OracleMind 缺生态与人工咨询桥</td>
+</tr>
+<tr>
+<td>玄易 APP</td>
+<td>宣称&quot;独家 AI 模型融合《三命通会》&quot;</td>
+<td>OracleMind <strong>真有</strong>三命通会 8780 行文本，资产被低估未营销</td>
+</tr>
+<tr>
+<td>八字紫微排盘（小米）</td>
+<td>装机量型工具</td>
+<td>纯工具无 AI，易复制</td>
+</tr>
+<tr>
+<td>紫微斗数 AI（2026 交付 132 套）</td>
+<td>垂类工作室 SaaS</td>
+<td>垂类化趋势明确</td>
+</tr>
+</tbody></table>
+<p><strong>需求</strong>：市场正从&quot;小程序割韭菜&quot;转向&quot;专业级垂类模型 + 可解释 + 人工兜底&quot;。OracleMind 的 GoT 分歧检测 + 三命通会真文本是差异化素材，但<strong>空壳 3 书与节气 bug 直接削弱可信度</strong>。</p>
+<h2>三、最新开源技术融合机会</h2>
+<ul>
+<li><strong>lunar-typescript / lunar-java</strong>：精确节气与干支计算（天文算法），替换近似边界，修复月柱 bug。</li>
+<li><strong>OCR + 古籍结构化</strong>：对子平真诠/滴天髓/穷通宝鉴做版面 OCR + 段落切分，补齐 3 本空壳 substrate（成本低于重写）。</li>
+<li><strong>classical-knowledge-rag（已有）</strong> 可升级为向量库 + 规则图谱双检索。</li>
+<li><strong>命理规则知识图谱</strong>（OpenSPG / Neo4j）：把&quot;格局/用神/旺衰&quot;结构化，支撑 GoT 共识而非纯 LLM 自由发挥。</li>
+</ul>
+<h2>四、单板块提升方案</h2>
+<ul>
+<li><strong>P0-①（准确性阻断）</strong>：用 lunar-typescript 替换节气近似算法，加单测覆盖立春边界用例。</li>
+<li><strong>P0-②（substrate 补全）</strong>：OCR 补齐 3 本空壳书，使其从&quot;27/121/53 行&quot;到完整；否则&quot;5 书并行&quot;是伪命题。</li>
+<li><strong>P1-①</strong>：分歧检测升级为&quot;决策建议&quot;——高共识直接给结论，低共识说明不确定，而非堆 5 份报告。</li>
+<li><strong>P1-②</strong>：加&quot;命理师人工咨询&quot;桥（对接预约/分成），对齐竞品变现路径。</li>
+<li><strong>P2</strong>：把三命通会真文本作为营销资产对外讲&quot;真·古籍融合&quot;，区别于套壳竞品。</li>
+</ul>
+<p><strong>板块健康度评分（0–5）</strong>：架构方向 4 · substrate 完整 2 · 准确性 2 · 人类叙事 3 · 竞品差异化 4 → <strong>综合 3.0</strong></p>
+<hr>
+<p><em>下一份：M03-事件语料与知识库</em></p>
+
+</div>
+</body>
+</html>

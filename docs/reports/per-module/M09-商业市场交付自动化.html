@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>板块 9 · 商业 / 市场 / 交付自动化</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --panel:#ffffff; --ink:#1a1f2b; --ink2:#4a5262; --ink3:#7b8494;
+    --line:#e4e7ec; --accent:#1f6feb; --accent2:#0b8a5f; --red:#d92d20; --amber:#b54708;
+    --code-bg:#f2f4f7; --quote-bg:#f8fafc;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; font-size:15.5px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:980px; margin:0 auto; padding:0 28px 96px;}
+  header.hero{
+    background:linear-gradient(135deg,#0f1b33 0%,#1b3a6b 55%,#1f6feb 100%);
+    color:#fff; margin:0 0 40px; padding:52px 28px 44px; border-bottom:4px solid #0b8a5f;
+  }
+  header.hero .inner{max-width:980px; margin:0 auto;}
+  header.hero h1{font-size:30px; line-height:1.35; margin:0 0 14px; font-weight:700; letter-spacing:.3px;}
+  header.hero .sub{font-size:14px; opacity:.82; line-height:1.7;}
+  header.hero .badges{margin-top:20px; display:flex; flex-wrap:wrap; gap:8px;}
+  header.hero .badge{background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25);
+    padding:4px 12px; border-radius:999px; font-size:12.5px; letter-spacing:.2px;}
+  h1{font-size:26px; margin:44px 0 16px; padding-bottom:10px; border-bottom:2px solid var(--line);}
+  h2{font-size:22px; margin:44px 0 16px; padding:10px 0 10px 14px; border-left:5px solid var(--accent);
+     background:linear-gradient(90deg,rgba(31,111,235,.06),transparent);}
+  h3{font-size:18px; margin:30px 0 12px; color:var(--ink);}
+  h4{font-size:16px; margin:22px 0 10px; color:var(--ink2);}
+  p{margin:12px 0;}
+  a{color:var(--accent); text-decoration:none;} a:hover{text-decoration:underline;}
+  strong{color:#0f1729; font-weight:650;}
+  hr{border:none; border-top:1px solid var(--line); margin:40px 0;}
+  blockquote{
+    margin:16px 0; padding:14px 20px; background:var(--quote-bg);
+    border-left:4px solid #94a3b8; border-radius:0 8px 8px 0; color:var(--ink2);
+  }
+  blockquote p{margin:6px 0;}
+  code{background:var(--code-bg); padding:2px 6px; border-radius:5px;
+    font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace; font-size:13px; color:#b02a37;}
+  pre{background:#0f172a; color:#e2e8f0; padding:18px 20px; border-radius:10px; overflow:auto; line-height:1.6;}
+  pre code{background:none; color:inherit; padding:0; font-size:12.8px;}
+  table{border-collapse:collapse; width:100%; margin:18px 0; font-size:14px; background:var(--panel);
+    border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(16,24,40,.06);}
+  th,td{border:1px solid var(--line); padding:10px 13px; text-align:left; vertical-align:top;}
+  th{background:#f0f3f8; font-weight:650; color:#111827; white-space:nowrap;}
+  tr:nth-child(even) td{background:#fafbfc;}
+  ul,ol{padding-left:26px; margin:12px 0;}
+  li{margin:6px 0;}
+  .wrap > h2:first-child{margin-top:8px;}
+  @media(max-width:720px){
+    .wrap{padding:0 16px 64px;} header.hero{padding:34px 16px;}
+    header.hero h1{font-size:23px;} table{font-size:12.5px;} th,td{padding:7px 9px;}
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="inner">
+    <h1>板块 9 · 商业 / 市场 / 交付自动化</h1>
+    <div class="sub">全仓扫描 · 核心目标对标 · 国际竞品比较 · 技术壁垒深挖 · 最新技术融合 · 提升方案</div>
+    <div class="badges">
+      <span class="badge">综合成熟度 ≈ 62%</span>
+      <span class="badge">工程 78% · 科学 70%</span>
+      <span class="badge">用户/活跃 5% · 商业 15%</span>
+      <span class="badge">Brier 0.136 / 方向 83.3%</span>
+      <span class="badge">扫描 2026-10-12</span>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+<h1>板块 9 · 商业 / 市场 / 交付自动化</h1>
+<blockquote>
+<p>边界：<code>lib/payment/*</code>（creem/paypal/paypal-grant/products）+ <code>api/payment/*</code> + <code>api/billing/plans</code> + <code>api/credits</code> + <code>api/referral</code> + <code>/pricing</code> + <code>automation/scheduler</code> + <code>self-heal</code> + <code>self-heal-supervisor</code> + <code>seo-factory</code> + <code>social-content</code> + <code>retargeting</code> + <code>deploy-probe</code>。</p>
+</blockquote>
+<h2>一、流程合理性 / 走通性 / 人类使用习惯</h2>
+<p><strong>流程链路</strong>：<code>payment</code>（多供应商：Creem/PayPal）+ <code>billing/plans</code> + <code>credits</code> 额度 + <code>referral</code> 裂变 → <code>scheduler</code> 定时任务 + <code>self-heal</code> 自愈 + <code>seo-factory</code>/<code>social-content</code>/<code>retargeting</code> 增长 → <code>deploy-probe</code> 部署探针。</p>
+<p><strong>走通性 / 风险</strong>：</p>
+<ul>
+<li><strong>支付多供应商已就位</strong>（Creem/PayPal/grant），<code>/pricing</code>、<code>/payment/success|cancel</code> 页面齐全，基础设施完整度 90%（prior 评估）。</li>
+<li><code>self-heal-supervisor</code> + <code>deploy-probe</code> 是可靠性亮点，运维成熟度高于多数个人项目。</li>
+<li><strong>0 付费用户</strong>：变现依赖&quot;校准价值&quot;，而价值因冷启动未显形——<strong>商业化飞轮未转</strong>。</li>
+<li><strong>增长自动化风险</strong>：<code>seo-factory</code>/<code>retargeting</code> 自动产内容，若不设质量门会制造低质 SEO 噪音，反伤品牌。</li>
+</ul>
+<p><strong>人类使用习惯</strong>：定价页 + 试用（<code>/api/payment/trial</code>）符合 SaaS 习惯；referral 裂变合理。但&quot;为什么付费&quot;的故事（校准证书/arena/个人追踪）尚未在付费墙前讲清。</p>
+<p><strong>结论</strong>：基础设施 9/10，付费走通 1/10，增长质量 4/10，可靠性 8/10。</p>
+<h2>二、市场竞品与需求比较</h2>
+<table>
+<thead>
+<tr>
+<th>竞品/参照</th>
+<th>模式</th>
+<th>关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>玄学 App（灵机/玄易）</td>
+<td>会员+咨询预约+广告</td>
+<td>OracleMind 缺人工咨询桥</td>
+</tr>
+<tr>
+<td>Stripe / Paddle / LemonSqueezy</td>
+<td>全球订阅收款</td>
+<td>已具备（Creem 类 Stripe）</td>
+</tr>
+<tr>
+<td>Airwallex 空中云汇</td>
+<td>中国 AI 出海跨境收款（87 牌照）</td>
+<td>若出海中国用户，需此级合规</td>
+</tr>
+<tr>
+<td>A2SaaS 模板</td>
+<td>开源 SaaS 脚手架</td>
+<td>可加速前端/计费</td>
+</tr>
+</tbody></table>
+<p><strong>需求</strong>：AI 预测产品变现靠&quot;订阅 + 增值（校准证书/arena/追踪）&quot;；跨境需 Airwallex 级合规。OracleMind 有骨架，差&quot;付费价值叙事 + 首批付费转化&quot;。</p>
+<h2>三、最新开源技术融合机会</h2>
+<ul>
+<li><strong>Airwallex / Paddle</strong>：中国出海跨境收款与发票合规（若目标海外华语市场）。</li>
+<li><strong>PostHog</strong>：产品分析 + 漏斗，定位付费转化断点。</li>
+<li><strong>Resend</strong>：交易/留存邮件（referral/回访）。</li>
+<li><strong>A2SaaS</strong>：开源 SaaS 模板补齐 auth/计费/邮件脚手架。</li>
+</ul>
+<h2>四、单板块提升方案</h2>
+<ul>
+<li><strong>P1-①</strong>：明确定价价值锚——免费=基础预测，付费=校准证书+arena+个人追踪+无限深度分析；付费墙前用空态引导先体验价值。</li>
+<li><strong>P1-②</strong>：增长自动化加质量门（SEO 内容需人工/模型审核过），避免低质噪音。</li>
+<li><strong>P1-③</strong>：若触达中国出海用户，接入 Airwallex 级跨境合规；否则 Creem/PayPal 先跑通。</li>
+<li><strong>P2</strong>：referral 与 arena/战绩分享联动，形成增长闭环。</li>
+</ul>
+<p><strong>板块健康度评分（0–5）</strong>：基础设施 5 · 付费走通 1 · 增长质量 2 · 可靠性 4 · 开源可融合 4 → <strong>综合 3.2</strong></p>
+<hr>
+<p><em>汇总报告见：OracleMind-逐板块提升评估总报告-2026-10-14.md</em></p>
+
+</div>
+</body>
+</html>

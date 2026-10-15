@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OracleMind 逐板块提升评估总报告</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --panel:#ffffff; --ink:#1a1f2b; --ink2:#4a5262; --ink3:#7b8494;
+    --line:#e4e7ec; --accent:#1f6feb; --accent2:#0b8a5f; --red:#d92d20; --amber:#b54708;
+    --code-bg:#f2f4f7; --quote-bg:#f8fafc;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; font-size:15.5px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:980px; margin:0 auto; padding:0 28px 96px;}
+  header.hero{
+    background:linear-gradient(135deg,#0f1b33 0%,#1b3a6b 55%,#1f6feb 100%);
+    color:#fff; margin:0 0 40px; padding:52px 28px 44px; border-bottom:4px solid #0b8a5f;
+  }
+  header.hero .inner{max-width:980px; margin:0 auto;}
+  header.hero h1{font-size:30px; line-height:1.35; margin:0 0 14px; font-weight:700; letter-spacing:.3px;}
+  header.hero .sub{font-size:14px; opacity:.82; line-height:1.7;}
+  header.hero .badges{margin-top:20px; display:flex; flex-wrap:wrap; gap:8px;}
+  header.hero .badge{background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25);
+    padding:4px 12px; border-radius:999px; font-size:12.5px; letter-spacing:.2px;}
+  h1{font-size:26px; margin:44px 0 16px; padding-bottom:10px; border-bottom:2px solid var(--line);}
+  h2{font-size:22px; margin:44px 0 16px; padding:10px 0 10px 14px; border-left:5px solid var(--accent);
+     background:linear-gradient(90deg,rgba(31,111,235,.06),transparent);}
+  h3{font-size:18px; margin:30px 0 12px; color:var(--ink);}
+  h4{font-size:16px; margin:22px 0 10px; color:var(--ink2);}
+  p{margin:12px 0;}
+  a{color:var(--accent); text-decoration:none;} a:hover{text-decoration:underline;}
+  strong{color:#0f1729; font-weight:650;}
+  hr{border:none; border-top:1px solid var(--line); margin:40px 0;}
+  blockquote{
+    margin:16px 0; padding:14px 20px; background:var(--quote-bg);
+    border-left:4px solid #94a3b8; border-radius:0 8px 8px 0; color:var(--ink2);
+  }
+  blockquote p{margin:6px 0;}
+  code{background:var(--code-bg); padding:2px 6px; border-radius:5px;
+    font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace; font-size:13px; color:#b02a37;}
+  pre{background:#0f172a; color:#e2e8f0; padding:18px 20px; border-radius:10px; overflow:auto; line-height:1.6;}
+  pre code{background:none; color:inherit; padding:0; font-size:12.8px;}
+  table{border-collapse:collapse; width:100%; margin:18px 0; font-size:14px; background:var(--panel);
+    border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(16,24,40,.06);}
+  th,td{border:1px solid var(--line); padding:10px 13px; text-align:left; vertical-align:top;}
+  th{background:#f0f3f8; font-weight:650; color:#111827; white-space:nowrap;}
+  tr:nth-child(even) td{background:#fafbfc;}
+  ul,ol{padding-left:26px; margin:12px 0;}
+  li{margin:6px 0;}
+  .wrap > h2:first-child{margin-top:8px;}
+  @media(max-width:720px){
+    .wrap{padding:0 16px 64px;} header.hero{padding:34px 16px;}
+    header.hero h1{font-size:23px;} table{font-size:12.5px;} th,td{padding:7px 9px;}
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="inner">
+    <h1>OracleMind 逐板块提升评估总报告</h1>
+    <div class="sub">全仓扫描 · 核心目标对标 · 国际竞品比较 · 技术壁垒深挖 · 最新技术融合 · 提升方案</div>
+    <div class="badges">
+      <span class="badge">综合成熟度 ≈ 62%</span>
+      <span class="badge">工程 78% · 科学 70%</span>
+      <span class="badge">用户/活跃 5% · 商业 15%</span>
+      <span class="badge">Brier 0.136 / 方向 83.3%</span>
+      <span class="badge">扫描 2026-10-12</span>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+<h1>OracleMind 逐板块提升评估总报告</h1>
+<blockquote>
+<p>方法：对 <code>C:\Users\xing\Desktop\oraclemind</code> 全仓做独立扫描，把项目拆成 <strong>9 个产品板块</strong>，每个板块单独评估 ① 流程合理性/走通性/人类使用习惯 ② 市场竞品与需求 ③ 最新开源技术融合 ④ 单板块提升方案，并打 5 维健康度分（0–5）。
+配套 9 份独立报告见 <code>docs/reports/per-module/M01–M09-*.md</code>。
+外部标尺截至 2026-10-14（ForecastBench / 玄学 App 市场 / 各开源库）。</p>
+</blockquote>
+<hr>
+<h2>0. 板块拆分依据（来自真实代码边界）</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>板块</th>
+<th>核心代码边界</th>
+<th>关键 API / 页面</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>M01</td>
+<td>核心校准预测引擎</td>
+<td>prediction-engine + calibration + conformal + forecast-guard + scientific-metrics</td>
+<td>/api/predict, /api/forecast</td>
+</tr>
+<tr>
+<td>M02</td>
+<td>古典命理融合层</td>
+<td>bazi-engine + classical/(12) + ancient-frame-features + tendency-field</td>
+<td>/api/divine, /api/tuivan</td>
+</tr>
+<tr>
+<td>M03</td>
+<td>事件语料与知识库</td>
+<td>event-corpus + event-graph-builder + graph/(2) + personal-graph-builder</td>
+<td>/api/events, /api/graph</td>
+</tr>
+<tr>
+<td>M04</td>
+<td>竞技场 Arena</td>
+<td>automation/arena(1075) + api/arena/* + /arena</td>
+<td>/api/arena/submit</td>
+</tr>
+<tr>
+<td>M05</td>
+<td>智能体编排与提示层</td>
+<td>science-layer + agent-factory + react-reasoner + agent-mesh + modern-deep-analysis(2766)</td>
+<td>/api/oracle-core, /api/agent-trace</td>
+</tr>
+<tr>
+<td>M06</td>
+<td>情报雷达层</td>
+<td>intelligence/(2) + expansion/marketing/tech-radar chains + weekly-scan</td>
+<td>/api/intelligence-gather</td>
+</tr>
+<tr>
+<td>M07</td>
+<td>前瞻注册与反作弊</td>
+<td>commit-seal + event-outcome-ledger + job-ledger + calibration-backfill</td>
+<td>/api/oracle-core/mirror</td>
+</tr>
+<tr>
+<td>M08</td>
+<td>概率演化与个人战绩</td>
+<td>streak + prediction-feedback + quality-evolution + journal</td>
+<td>/quality-evolution, /accuracy</td>
+</tr>
+<tr>
+<td>M09</td>
+<td>商业/市场/交付自动化</td>
+<td>payment/(4) + billing/credits/referral + scheduler/self-heal/seo</td>
+<td>/pricing, /api/payment</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>1. 九板块健康度对比矩阵（0–5）</h2>
+<table>
+<thead>
+<tr>
+<th>板块</th>
+<th>架构完整</th>
+<th>数据走通</th>
+<th>人类主路径</th>
+<th>竞品差异化</th>
+<th>开源可融合</th>
+<th><strong>综合</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>M01 校准引擎</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td><strong>3.6</strong></td>
+</tr>
+<tr>
+<td>M02 古典融合</td>
+<td>4</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td><strong>3.0</strong></td>
+</tr>
+<tr>
+<td>M03 事件语料</td>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td><strong>3.4</strong></td>
+</tr>
+<tr>
+<td>M04 竞技场</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td><strong>3.2</strong></td>
+</tr>
+<tr>
+<td>M05 智能体层</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td><strong>3.4</strong></td>
+</tr>
+<tr>
+<td>M06 情报雷达</td>
+<td>5</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td><strong>3.4</strong></td>
+</tr>
+<tr>
+<td>M07 前瞻注册</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+<td>5</td>
+<td>4</td>
+<td><strong>3.4</strong></td>
+</tr>
+<tr>
+<td>M08 概率演化</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>5</td>
+<td>4</td>
+<td><strong>3.2</strong></td>
+</tr>
+<tr>
+<td>M09 商业交付</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td><strong>3.2</strong></td>
+</tr>
+<tr>
+<td><strong>均值</strong></td>
+<td><strong>4.7</strong></td>
+<td><strong>1.8</strong></td>
+<td><strong>3.0</strong></td>
+<td><strong>4.0</strong></td>
+<td><strong>4.0</strong></td>
+<td><strong>≈3.3</strong></td>
+</tr>
+</tbody></table>
+<p><strong>读图结论</strong>：</p>
+<ul>
+<li><strong>架构完整度极高（4.7）</strong>——9 板块都&quot;造好了&quot;，无空白模块。</li>
+<li><strong>数据走通度极低（1.8）</strong>——全局被&quot;0 真实验证样本&quot;卡死：M01/M04/M08 的仪表盘全是空态，M07 自动回写仅覆盖 55 条语料。</li>
+<li><strong>竞品差异化（4.0）与开源可融合（4.0）都高</strong>——说明&quot;做什么&quot;对了、&quot;怎么借力&quot;也清楚，卡在&quot;跑起来&quot;。</li>
+</ul>
+<hr>
+<h2>2. 跨板块三大共性断裂（必须连根拔）</h2>
+<ol>
+<li><strong>冷启动死锁（M01∩M04∩M08）</strong>：校准证书、arena 飞轮、个人战绩都依赖 <code>PredictionFeedback</code> 真样本，而全仓 0 verified。→ 任何单板块优化都救不了，必须<strong>统一注入首批真实样本</strong>（arena 种子账号 + <code>event-outcome-ledger</code> 接 GDELT 回填）。</li>
+<li><strong>古典 substrate 残缺（M02）</strong>：5 书仅 2 本有真文本、节气为近似值 → 准确性硬伤 + &quot;5 书并行&quot;名不副实。→ 这是<strong>唯一会直接砸用户信任的准确性 bug</strong>，优先级高于所有&quot;锦上添花&quot;。</li>
+<li><strong>用户可见度塌陷（M06∩M07∩M08）</strong>：情报锚点、事前封存、个人校准曲线都是强信任资产，但<strong>没有进主 UI / 无公开页 / 空态未设计</strong> → 差异化无法被用户感知，等于没有。</li>
+</ol>
+<hr>
+<h2>3. 跨板块优先级路线图</h2>
+<h3>P0 · 本周（拔断裂 #1/#2，让已有架构产生可感知价值）</h3>
+<ul>
+<li><strong>M02-① 节气 bug</strong>：用 <code>lunar-typescript</code> 替换近似边界，加立春边界单测（准确性阻断）。</li>
+<li><strong>M02-② OCR 补 3 本空壳书</strong>（子平真诠/滴天髓/穷通宝鉴）→ &quot;5 书并行&quot;从表演变真。</li>
+<li><strong>M03-① 语料 55→150+</strong>：GDELT 历史已解决事件回填，让自动回写高频触发。</li>
+<li><strong>M01/M04/M08 冷启动注入</strong>：arena 种子账号先跑出排行榜 + 把语料 55 条 + 既有 11 条灌进 <code>PredictionFeedback</code>，72h 内校准证书/曲线/战绩有形。</li>
+</ul>
+<h3>P1 · 本月（把差异化资产变成用户可感知产品）</h3>
+<ul>
+<li><strong>M07 前瞻注册对外化</strong>：commitHash 锚定 <strong>OpenTimestamps</strong> + 公开验证页 + &quot;已事前封存&quot;徽章（全球唯一&quot;可证明不马后炮&quot;）。</li>
+<li><strong>M08 校准曲线设 Hero</strong>：一句话&quot;你比大众准 X%&quot; + 强空态引导。</li>
+<li><strong>M04 TrueSkill 排位</strong> + 公开榜 + 分享卡。</li>
+<li><strong>M05 LangGraph 重写 pipeline</strong> + token 成本护栏。</li>
+<li><strong>M06 GDELT/EventRegistry 多源</strong> + 共识&quot;依据卡片&quot;进预测 UI。</li>
+<li><strong>M09 定价价值叙事</strong> + 增长内容质量门。</li>
+<li><strong>M01 ACI 在线校准</strong> 替换固定 K 先验。</li>
+</ul>
+<h3>P2 · 加固（赢者通吃壁垒）</h3>
+<ul>
+<li><strong>M01 MAPIE</strong> 对照实验验证自研共形层。</li>
+<li><strong>M03 GraphRAG</strong> 统一古典+现代+图谱检索。</li>
+<li><strong>M02 命理师人工咨询桥</strong>（对齐灵机/玄易变现）。</li>
+<li><strong>M08/M04 社交裂变</strong>（战绩分享 + arena 邀请）。</li>
+</ul>
+<hr>
+<h2>4. 如果只能做三件事（跨板块最高杠杆）</h2>
+<ol>
+<li><strong>修 M02 节气 bug + OCR 补 3 书</strong>——准确性是命门，且成本最低（库替换 + OCR）。</li>
+<li><strong>打通冷启动数据 injection</strong>（M01/M04/M08 共用一根水管）→ 一次注入，三个仪表盘同时活。</li>
+<li><strong>M07 公开验证页 + OpenTimestamps</strong>——把唯一&quot;全球无竞品&quot;的资产变成可对外讲的信任标准。</li>
+</ol>
+<blockquote>
+<p>注：2026-10-13 报告点名的&quot;断链 #6（校准证书读错静态表）&quot;<strong>已于本次复扫确认修复</strong>（science-layer 现优先读 <code>db.predictionFeedback</code>），故不再列入行动项；arena 断链 #5 亦已修。</p>
+</blockquote>
+<hr>
+<h2>5. 各板块报告索引</h2>
+<ul>
+<li><a href="per-module/M01-%E6%A0%B8%E5%BF%83%E6%A0%A1%E5%87%86%E9%A2%84%E6%B5%8B%E5%BC%95%E6%93%8E.md">M01-核心校准预测引擎</a></li>
+<li><a href="per-module/M02-%E5%8F%A4%E5%85%B8%E5%91%BD%E7%90%86%E8%9E%8D%E5%90%88%E5%B1%82.md">M02-古典命理融合层</a></li>
+<li><a href="per-module/M03-%E4%BA%8B%E4%BB%B6%E8%AF%AD%E6%96%99%E4%B8%8E%E7%9F%A5%E8%AF%86%E5%BA%93.md">M03-事件语料与知识库</a></li>
+<li><a href="per-module/M04-%E7%AB%9E%E6%8A%80%E5%9C%BAArena.md">M04-竞技场Arena</a></li>
+<li><a href="per-module/M05-%E6%99%BA%E8%83%BD%E4%BD%93%E7%BC%96%E6%8E%92%E4%B8%8E%E6%8F%90%E7%A4%BA%E5%B1%82.md">M05-智能体编排与提示层</a></li>
+<li><a href="per-module/M06-%E6%83%85%E6%8A%A5%E9%9B%B7%E8%BE%BE%E5%B1%82.md">M06-情报雷达层</a></li>
+<li><a href="per-module/M07-%E5%89%8D%E7%9E%BB%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%8D%E4%BD%9C%E5%BC%8A.md">M07-前瞻注册与反作弊</a></li>
+<li><a href="per-module/M08-%E6%A6%82%E7%8E%87%E6%BC%94%E5%8C%96%E4%B8%8E%E4%B8%AA%E4%BA%BA%E6%88%98%E7%BB%A9.md">M08-概率演化与个人战绩</a></li>
+<li><a href="per-module/M09-%E5%95%86%E4%B8%9A%E5%B8%82%E5%9C%BA%E4%BA%A4%E4%BB%98%E8%87%AA%E5%8A%A8%E5%8C%96.md">M09-商业市场交付自动化</a></li>
+</ul>
+<p><em>本总报告与 9 份分报告构成完整的&quot;逐板块评估 + 提升方案&quot;交付物。</em></p>
+
+</div>
+</body>
+</html>

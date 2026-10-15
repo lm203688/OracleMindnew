@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>板块 4 · 竞技场 Arena（你 vs 人群 vs 引擎）</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --panel:#ffffff; --ink:#1a1f2b; --ink2:#4a5262; --ink3:#7b8494;
+    --line:#e4e7ec; --accent:#1f6feb; --accent2:#0b8a5f; --red:#d92d20; --amber:#b54708;
+    --code-bg:#f2f4f7; --quote-bg:#f8fafc;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; font-size:15.5px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:980px; margin:0 auto; padding:0 28px 96px;}
+  header.hero{
+    background:linear-gradient(135deg,#0f1b33 0%,#1b3a6b 55%,#1f6feb 100%);
+    color:#fff; margin:0 0 40px; padding:52px 28px 44px; border-bottom:4px solid #0b8a5f;
+  }
+  header.hero .inner{max-width:980px; margin:0 auto;}
+  header.hero h1{font-size:30px; line-height:1.35; margin:0 0 14px; font-weight:700; letter-spacing:.3px;}
+  header.hero .sub{font-size:14px; opacity:.82; line-height:1.7;}
+  header.hero .badges{margin-top:20px; display:flex; flex-wrap:wrap; gap:8px;}
+  header.hero .badge{background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25);
+    padding:4px 12px; border-radius:999px; font-size:12.5px; letter-spacing:.2px;}
+  h1{font-size:26px; margin:44px 0 16px; padding-bottom:10px; border-bottom:2px solid var(--line);}
+  h2{font-size:22px; margin:44px 0 16px; padding:10px 0 10px 14px; border-left:5px solid var(--accent);
+     background:linear-gradient(90deg,rgba(31,111,235,.06),transparent);}
+  h3{font-size:18px; margin:30px 0 12px; color:var(--ink);}
+  h4{font-size:16px; margin:22px 0 10px; color:var(--ink2);}
+  p{margin:12px 0;}
+  a{color:var(--accent); text-decoration:none;} a:hover{text-decoration:underline;}
+  strong{color:#0f1729; font-weight:650;}
+  hr{border:none; border-top:1px solid var(--line); margin:40px 0;}
+  blockquote{
+    margin:16px 0; padding:14px 20px; background:var(--quote-bg);
+    border-left:4px solid #94a3b8; border-radius:0 8px 8px 0; color:var(--ink2);
+  }
+  blockquote p{margin:6px 0;}
+  code{background:var(--code-bg); padding:2px 6px; border-radius:5px;
+    font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace; font-size:13px; color:#b02a37;}
+  pre{background:#0f172a; color:#e2e8f0; padding:18px 20px; border-radius:10px; overflow:auto; line-height:1.6;}
+  pre code{background:none; color:inherit; padding:0; font-size:12.8px;}
+  table{border-collapse:collapse; width:100%; margin:18px 0; font-size:14px; background:var(--panel);
+    border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(16,24,40,.06);}
+  th,td{border:1px solid var(--line); padding:10px 13px; text-align:left; vertical-align:top;}
+  th{background:#f0f3f8; font-weight:650; color:#111827; white-space:nowrap;}
+  tr:nth-child(even) td{background:#fafbfc;}
+  ul,ol{padding-left:26px; margin:12px 0;}
+  li{margin:6px 0;}
+  .wrap > h2:first-child{margin-top:8px;}
+  @media(max-width:720px){
+    .wrap{padding:0 16px 64px;} header.hero{padding:34px 16px;}
+    header.hero h1{font-size:23px;} table{font-size:12.5px;} th,td{padding:7px 9px;}
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="inner">
+    <h1>板块 4 · 竞技场 Arena（你 vs 人群 vs 引擎）</h1>
+    <div class="sub">全仓扫描 · 核心目标对标 · 国际竞品比较 · 技术壁垒深挖 · 最新技术融合 · 提升方案</div>
+    <div class="badges">
+      <span class="badge">综合成熟度 ≈ 62%</span>
+      <span class="badge">工程 78% · 科学 70%</span>
+      <span class="badge">用户/活跃 5% · 商业 15%</span>
+      <span class="badge">Brier 0.136 / 方向 83.3%</span>
+      <span class="badge">扫描 2026-10-12</span>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+<h1>板块 4 · 竞技场 Arena（你 vs 人群 vs 引擎）</h1>
+<blockquote>
+<p>边界：<code>automation/arena.ts</code>（1075 行）+ <code>api/arena/*</code>（submit/markets/leaderboard）+ <code>/arena</code> 页面 + <code>mirrorArenaPicksToFlywheel()</code> + <code>automation/run</code> cron + 4 套单测。</p>
+</blockquote>
+<h2>一、流程合理性 / 走通性 / 人类使用习惯</h2>
+<p><strong>流程链路</strong>：提交预测 → 对练场结算（你 vs 人群 vs 引擎三方可比 Brier）→ <code>mirrorArenaPicksToFlywheel()</code> 把真实结算 Brier 镜像进 <code>db.predictionFeedback</code> → 校准飞轮吃到真实样本 → command-center 仪表读取 → <code>automation/run</code> 定时对账。</p>
+<p><strong>走通性 / 风险（已实质完成）</strong>：</p>
+<ul>
+<li><strong>断链 #5（prior 报告点名）已被主动修复</strong>：<code>mirrorArenaPicksToFlywheel</code> 真实写回 PredictionFeedback，<code>getHistoricalAccuracyContext</code> 读同一张表——飞轮一旦转即生效。</li>
+<li>有 submit/markets/leaderboard 三 API + 页面 + 4 单测，<strong>架构与测试都齐备</strong>。</li>
+<li><strong>未走通点</strong>：① 仍 <strong>0 真实用户</strong>，arena 是&quot;空场&quot;；② 市场源来自何处未明——<code>markets</code> API 需接真实市场（Manifold/Metaculus）才有&quot;人群 vs 引擎&quot;对照；③ 排行榜无公开化与邀请机制，gamification 价值未释放。</li>
+</ul>
+<p><strong>人类使用习惯</strong>：<strong>&quot;你 vs 人群 vs 引擎&quot;是强留存设计</strong>（类似游戏排位），叠加 <code>/api/...use-streak</code> 每日连续——但需实时市场和可见排行榜才好玩；当前空场态对首批用户劝退。</p>
+<p><strong>结论</strong>：架构 9/10，实测走通 2/10（0 用户），gamification 设计 8/10，对照数据源 3/10。</p>
+<h2>二、市场竞品与需求比较</h2>
+<table>
+<thead>
+<tr>
+<th>竞品</th>
+<th>模式</th>
+<th>关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Metaculus 锦标赛</td>
+<td>社区锦标赛、无金钱</td>
+<td>方法论标杆，OracleMind arena 更像&quot;个人练习场&quot;</td>
+</tr>
+<tr>
+<td>PredictIt / Kalshi</td>
+<td>真金（美国合规）</td>
+<td>合规冲突，不可照搬</td>
+</tr>
+<tr>
+<td>Manifold</td>
+<td>玩金（免 key API）</td>
+<td><strong>OracleMind 已接入其共识情报</strong>，可直接喂 arena 市场</td>
+</tr>
+<tr>
+<td>Good Judgment Open</td>
+<td>超预训练</td>
+<td>可借鉴其 Brier 文化</td>
+</tr>
+</tbody></table>
+<p><strong>需求</strong>：用户要&quot;我和大众/AI 谁更准&quot;的即时反馈与排位；OracleMind 已有骨架，差的是&quot;接真市场 + 公开榜 + 首批冷启动用户&quot;。</p>
+<h2>三、最新开源技术融合机会</h2>
+<ul>
+<li><strong>Manifold API（已用共识）</strong> 可扩展为 arena 的实时市场源（免 key、play-money）。</li>
+<li><strong>TrueSkill / ELO</strong>：为 arena 排位做技能评分（比单纯 Brier 平均更适合跨人比较）。</li>
+<li><strong>ForecastBench 评测框架</strong>：把 arena 产出直接对接 ForecastBench 风格的评测，对外宣称&quot;你的水平 vs SOTA AI&quot;。</li>
+<li><strong>开源排行榜组件</strong>（如 leaderboard 库）：快速上线公开榜。</li>
+</ul>
+<h2>四、单板块提升方案</h2>
+<ul>
+<li><strong>P0-①</strong>：arena <code>markets</code> 接 Manifold/Metaculus 真实未结算市场，让&quot;人群 vs 引擎&quot;有真对照。</li>
+<li><strong>P0-②</strong>：冷启动——用内部/种子账号先跑出可见排行榜，避免空场劝退首批用户。</li>
+<li><strong>P1-①</strong>：引入 TrueSkill 排位，替代纯 Brier 均值。</li>
+<li><strong>P1-②</strong>：公开排行榜 + 分享卡 + 邀请机制，释放 gamification 留存。</li>
+<li><strong>P2</strong>：arena 成绩与&quot;个人战绩/校准证书&quot;打通，形成&quot;练习→证书→排行&quot;闭环。</li>
+</ul>
+<p><strong>板块健康度评分（0–5）</strong>：架构 5 · 实测走通 1 · gamification 设计 4 · 对照数据源 2 · 开源可融合 4 → <strong>综合 3.2</strong></p>
+<hr>
+<p><em>下一份：M05-智能体编排与提示层</em></p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>板块 6 · 情报雷达层</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --panel:#ffffff; --ink:#1a1f2b; --ink2:#4a5262; --ink3:#7b8494;
+    --line:#e4e7ec; --accent:#1f6feb; --accent2:#0b8a5f; --red:#d92d20; --amber:#b54708;
+    --code-bg:#f2f4f7; --quote-bg:#f8fafc;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; font-size:15.5px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:980px; margin:0 auto; padding:0 28px 96px;}
+  header.hero{
+    background:linear-gradient(135deg,#0f1b33 0%,#1b3a6b 55%,#1f6feb 100%);
+    color:#fff; margin:0 0 40px; padding:52px 28px 44px; border-bottom:4px solid #0b8a5f;
+  }
+  header.hero .inner{max-width:980px; margin:0 auto;}
+  header.hero h1{font-size:30px; line-height:1.35; margin:0 0 14px; font-weight:700; letter-spacing:.3px;}
+  header.hero .sub{font-size:14px; opacity:.82; line-height:1.7;}
+  header.hero .badges{margin-top:20px; display:flex; flex-wrap:wrap; gap:8px;}
+  header.hero .badge{background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25);
+    padding:4px 12px; border-radius:999px; font-size:12.5px; letter-spacing:.2px;}
+  h1{font-size:26px; margin:44px 0 16px; padding-bottom:10px; border-bottom:2px solid var(--line);}
+  h2{font-size:22px; margin:44px 0 16px; padding:10px 0 10px 14px; border-left:5px solid var(--accent);
+     background:linear-gradient(90deg,rgba(31,111,235,.06),transparent);}
+  h3{font-size:18px; margin:30px 0 12px; color:var(--ink);}
+  h4{font-size:16px; margin:22px 0 10px; color:var(--ink2);}
+  p{margin:12px 0;}
+  a{color:var(--accent); text-decoration:none;} a:hover{text-decoration:underline;}
+  strong{color:#0f1729; font-weight:650;}
+  hr{border:none; border-top:1px solid var(--line); margin:40px 0;}
+  blockquote{
+    margin:16px 0; padding:14px 20px; background:var(--quote-bg);
+    border-left:4px solid #94a3b8; border-radius:0 8px 8px 0; color:var(--ink2);
+  }
+  blockquote p{margin:6px 0;}
+  code{background:var(--code-bg); padding:2px 6px; border-radius:5px;
+    font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace; font-size:13px; color:#b02a37;}
+  pre{background:#0f172a; color:#e2e8f0; padding:18px 20px; border-radius:10px; overflow:auto; line-height:1.6;}
+  pre code{background:none; color:inherit; padding:0; font-size:12.8px;}
+  table{border-collapse:collapse; width:100%; margin:18px 0; font-size:14px; background:var(--panel);
+    border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(16,24,40,.06);}
+  th,td{border:1px solid var(--line); padding:10px 13px; text-align:left; vertical-align:top;}
+  th{background:#f0f3f8; font-weight:650; color:#111827; white-space:nowrap;}
+  tr:nth-child(even) td{background:#fafbfc;}
+  ul,ol{padding-left:26px; margin:12px 0;}
+  li{margin:6px 0;}
+  .wrap > h2:first-child{margin-top:8px;}
+  @media(max-width:720px){
+    .wrap{padding:0 16px 64px;} header.hero{padding:34px 16px;}
+    header.hero h1{font-size:23px;} table{font-size:12.5px;} th,td{padding:7px 9px;}
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="inner">
+    <h1>板块 6 · 情报雷达层</h1>
+    <div class="sub">全仓扫描 · 核心目标对标 · 国际竞品比较 · 技术壁垒深挖 · 最新技术融合 · 提升方案</div>
+    <div class="badges">
+      <span class="badge">综合成熟度 ≈ 62%</span>
+      <span class="badge">工程 78% · 科学 70%</span>
+      <span class="badge">用户/活跃 5% · 商业 15%</span>
+      <span class="badge">Brier 0.136 / 方向 83.3%</span>
+      <span class="badge">扫描 2026-10-12</span>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+<h1>板块 6 · 情报雷达层</h1>
+<blockquote>
+<p>边界：<code>lib/intelligence/*</code>（prediction-market.ts 175 行 + intelligence-calibrator.ts）+ <code>automation/expansion-chains.ts</code> + <code>marketing-chains.ts</code> + <code>tech-radar-ledger.ts</code> + <code>api/intelligence-gather</code> + <code>api/automation/weekly-scan</code> + <code>api/tech-radar/improvement-ledger</code>。</p>
+</blockquote>
+<h2>一、流程合理性 / 走通性 / 人类使用习惯</h2>
+<p><strong>流程链路</strong>：<code>prediction-market.ts</code> 拉 Manifold 免 key 共识 → <code>intelligence-calibrator</code> 融合 → <code>weekly-scan</code> cron 产出 <code>docs/intelligence-reports</code> → <code>tech-radar-ledger</code> 跟踪技术演进。</p>
+<p><strong>走通性 / 风险（设计最干净之一）</strong>：</p>
+<ul>
+<li><code>prediction-market.ts</code> 是<strong>教科书级实现</strong>：免 key、9s 超时、流动性加权置信、关键词匹配缩放融合权重（防弱相关硬拽）、失败一律 <code>found:false</code> 优雅降级——工程纪律极佳。</li>
+<li><strong>单一来源局限</strong>：只接 Manifold（英文市场），中文事件/国内议题覆盖几乎为 0；<code>weekly-scan</code> 产出是静态 md，未结构化进可检索层。</li>
+<li>情报层是后端，<strong>用户侧价值未释放</strong>：预测 UI 没把&quot;市场共识锚点&quot;显式呈现，用户看不到&quot;为什么这个值&quot;。</li>
+</ul>
+<p><strong>人类使用习惯</strong>：用户要&quot;这预测有依据吗&quot;——情报锚点是信任证明，但需以&quot;依据卡片&quot;形式进主 UI，而非藏在报告里。</p>
+<p><strong>结论</strong>：工程实现 9/10，覆盖广度 3/10，用户可见度 3/10。</p>
+<h2>二、市场竞品与需求比较</h2>
+<table>
+<thead>
+<tr>
+<th>竞品</th>
+<th>定位</th>
+<th>关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AlphaSense</td>
+<td>企业级市场/竞争情报（Forrester 领导者）</td>
+<td>昂贵，OracleMind 角度=预测锚定情报，垂直差异</td>
+</tr>
+<tr>
+<td>Similarweb / Crayon</td>
+<td>数字/竞争情报</td>
+<td>流量数据，非事件共识</td>
+</tr>
+<tr>
+<td>GDELT / EventRegistry</td>
+<td>开源全球事件流</td>
+<td>可补齐多源</td>
+</tr>
+</tbody></table>
+<p><strong>需求</strong>：预测类产品用户要&quot;可验证依据&quot;；通用 CI 工具贵且不贴预测。OracleMind 的&quot;预测接地情报&quot;是空白定位，但单源 + 不可见削弱价值。</p>
+<h2>三、最新开源技术融合机会</h2>
+<ul>
+<li><strong>GDELT / EventRegistry</strong>：实时多语事件流，补齐 Manifold 单一英文源，中文覆盖。</li>
+<li><strong>Firecrawl / Crawl4AI</strong>：定向抓取权威源做 RAG 摘要。</li>
+<li><strong>Ollama 本地摘要</strong>：敏感/离线情报本地化，降成本。</li>
+<li><strong>GraphRAG（见 M03）</strong>：情报与古典/事件图谱统一检索。</li>
+</ul>
+<h2>四、单板块提升方案</h2>
+<ul>
+<li><strong>P1-①</strong>：接 GDELT/EventRegistry 做第二/三情报源，中文事件至少一条本地源。</li>
+<li><strong>P1-②</strong>：把共识锚点做成预测 UI 的&quot;依据卡片&quot;（含市场链接 + 偏离度）。</li>
+<li><strong>P1-③</strong>：<code>weekly-scan</code> 输出结构化（JSON + 向量），进检索层而非仅静态 md。</li>
+<li><strong>P2</strong>：情报置信度与校准层联动——低共识时主动下调可声明置信。</li>
+</ul>
+<p><strong>板块健康度评分（0–5）</strong>：工程实现 5 · 覆盖广度 2 · 用户可见度 2 · 竞品差异化 4 · 开源可融合 4 → <strong>综合 3.4</strong></p>
+<hr>
+<p><em>下一份：M07-前瞻注册与反作弊</em></p>
+
+</div>
+</body>
+</html>
