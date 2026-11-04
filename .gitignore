@@ -39,3 +39,6 @@ _tmp_*
 .workbuddy/
 .workbuddy-ai/
 .opencode/
+
+# ── 孤儿源码（数据治理：根目录 src/ 是迁移前的死代码） ──
+/src/
