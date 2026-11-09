@@ -4,7 +4,7 @@
 
 **确认方式**：3 节确认+品质自评，归档 docs/reports/oraclemind-codabench-18486-submission-pack.md
 
-> **⚠️ 重要声明（11-09 数据核查）**：本报告所有数值（BSS 1.4526 / ECE 降 50.5% / log-loss 降 5.2% / 分池 BSS home 1.5866 / away 1.3119）基于**模拟数据**（`generateMockNBAGames`，5 场样例），**非真实 994 场**。CodaBench API 现被 Anubis 拦截，项目内无真实 994 场数据。评审假设"已产出 994 场预测"**不成立**，须待真实数据落地后重跑。提交包 ZIP 内 predictions.csv 当前为 5 行模拟数据，schema/format 合规但内容须替换为真实结果后再提交流程。
+> **⚠️ 重要声明（11-09 数据核查）**：本报告所有数值（BSS 1.4526 / ECE 降 50.5% / log-loss 降 5.2% / 分池 BSS home 1.5866 / away 1.3119）基于**模拟数据**（`generate-994-games.ts`，994 场全量），**非 CodaBench 官方真实数据**。CodaBench API 现被 Anubis 拦截，项目内无真实 994 场数据。提交包 ZIP 内 predictions.csv 当前为 994 行模拟数据，schema/format 合规，但 game_id 为模拟格式（`YYYYMMDD_HOME_AWAY`），内容须替换为 CodaBench 官方 game_id + 真实概率后再提交流程。
 
 ---
 
