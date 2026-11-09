@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OracleMind 查缺报告——细节拉满的全仓缺口清单</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --panel:#ffffff; --ink:#1a1f2b; --ink2:#4a5262; --ink3:#7b8494;
+    --line:#e4e7ec; --accent:#1f6feb; --accent2:#0b8a5f; --red:#d92d20; --amber:#b54708;
+    --code-bg:#f2f4f7; --quote-bg:#f8fafc;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; font-size:15.5px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:980px; margin:0 auto; padding:0 28px 96px;}
+  header.hero{
+    background:linear-gradient(135deg,#0f1b33 0%,#1b3a6b 55%,#1f6feb 100%);
+    color:#fff; margin:0 0 40px; padding:52px 28px 44px; border-bottom:4px solid #0b8a5f;
+  }
+  header.hero .inner{max-width:980px; margin:0 auto;}
+  header.hero h1{font-size:30px; line-height:1.35; margin:0 0 14px; font-weight:700; letter-spacing:.3px;}
+  header.hero .sub{font-size:14px; opacity:.82; line-height:1.7;}
+  header.hero .badges{margin-top:20px; display:flex; flex-wrap:wrap; gap:8px;}
+  header.hero .badge{background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25);
+    padding:4px 12px; border-radius:999px; font-size:12.5px; letter-spacing:.2px;}
+  h1{font-size:26px; margin:44px 0 16px; padding-bottom:10px; border-bottom:2px solid var(--line);}
+  h2{font-size:22px; margin:44px 0 16px; padding:10px 0 10px 14px; border-left:5px solid var(--accent);
+     background:linear-gradient(90deg,rgba(31,111,235,.06),transparent);}
+  h3{font-size:18px; margin:30px 0 12px; color:var(--ink);}
+  h4{font-size:16px; margin:22px 0 10px; color:var(--ink2);}
+  p{margin:12px 0;}
+  a{color:var(--accent); text-decoration:none;} a:hover{text-decoration:underline;}
+  strong{color:#0f1729; font-weight:650;}
+  hr{border:none; border-top:1px solid var(--line); margin:40px 0;}
+  blockquote{
+    margin:16px 0; padding:14px 20px; background:var(--quote-bg);
+    border-left:4px solid #94a3b8; border-radius:0 8px 8px 0; color:var(--ink2);
+  }
+  blockquote p{margin:6px 0;}
+  code{background:var(--code-bg); padding:2px 6px; border-radius:5px;
+    font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace; font-size:13px; color:#b02a37;}
+  pre{background:#0f172a; color:#e2e8f0; padding:18px 20px; border-radius:10px; overflow:auto; line-height:1.6;}
+  pre code{background:none; color:inherit; padding:0; font-size:12.8px;}
+  table{border-collapse:collapse; width:100%; margin:18px 0; font-size:14px; background:var(--panel);
+    border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(16,24,40,.06);}
+  th,td{border:1px solid var(--line); padding:10px 13px; text-align:left; vertical-align:top;}
+  th{background:#f0f3f8; font-weight:650; color:#111827; white-space:nowrap;}
+  tr:nth-child(even) td{background:#fafbfc;}
+  ul,ol{padding-left:26px; margin:12px 0;}
+  li{margin:6px 0;}
+  .wrap > h2:first-child{margin-top:8px;}
+  @media(max-width:720px){
+    .wrap{padding:0 16px 64px;} header.hero{padding:34px 16px;}
+    header.hero h1{font-size:23px;} table{font-size:12.5px;} th,td{padding:7px 9px;}
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="inner">
+    <h1>OracleMind 查缺报告——细节拉满的全仓缺口清单</h1>
+    <div class="sub">全仓扫描 · 核心目标对标 · 国际竞品比较 · 技术壁垒深挖 · 最新技术融合 · 提升方案</div>
+    <div class="badges">
+      <span class="badge">综合成熟度 ≈ 62%</span>
+      <span class="badge">工程 78% · 科学 70%</span>
+      <span class="badge">用户/活跃 5% · 商业 15%</span>
+      <span class="badge">Brier 0.136 / 方向 83.3%</span>
+      <span class="badge">扫描 2026-10-12</span>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+<h1>OracleMind 查缺报告——细节拉满的全仓缺口清单</h1>
+<blockquote>
+<p><strong>口径</strong>：本报告不评估&quot;做得好不好&quot;，只枚举&quot;<strong>缺了什么</strong>&quot;。所有条目均为 2026-10-17 本地实测（枚举 + grep + 交叉比对），每条附证据位置，可直接当工单用。
+<strong>对照基准</strong>：<code>docs/00-core/CORE-GOALS.md</code>（v1.2）与 <code>ROADMAP.md</code>（唯一权威任务清单）。缺口按&quot;是否阻断北极星（WAF × 人均已结算预测数）&quot;分级。
+<strong>扫描面</strong>：86 个 API 路由 / 28 个页面 / 40 个引擎模块 / 25 个 Prisma 模型 / 48 个环境变量 / 12 个 cron / 4 个语言包 / 全部 docs 承诺。</p>
+</blockquote>
+<hr>
+<h2>〇、缺口总览（先看这 16 个数字）</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>指标</th>
+<th>实测</th>
+<th>应为</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>放错目录、永不部署的文件</td>
+<td><strong>5 个</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>无任何调用方的孤儿 API</td>
+<td><strong>15 个</strong>（真孤儿约 8）</td>
+<td>0 或明确标注为外部回调</td>
+</tr>
+<tr>
+<td>3</td>
+<td>零引用死代码引擎</td>
+<td><strong>4 个</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>缺失但被承诺的页面</td>
+<td><strong>4 个</strong>（/events /docs /contact /about）</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>前端死链</td>
+<td><strong>2 个</strong>（/contact /about）</td>
+<td>0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>loading / error / not-found 边界</td>
+<td><strong>0 / 0 / 0</strong>（28 个页面全裸）</td>
+<td>每页至少 error+loading</td>
+</tr>
+<tr>
+<td>7</td>
+<td>i18n 语言包使用数</td>
+<td><strong>4 个包，0 处 useTranslations</strong></td>
+<td>全站接入或删除</td>
+</tr>
+<tr>
+<td>8</td>
+<td>代码引用 env vs 本地配置</td>
+<td><strong>48 vs 2</strong>，且无 <code>.env.example</code></td>
+<td>48 个全文档化</td>
+</tr>
+<tr>
+<td>9</td>
+<td>无鉴权的写入型 API</td>
+<td>至少 <strong>1 个致命</strong>（<code>feedback/outcome</code> 可投毒校准数据）</td>
+<td>全部鉴权</td>
+</tr>
+<tr>
+<td>10</td>
+<td>写入路由带 zod 校验</td>
+<td><strong>0/5</strong>（predict/feedback/journal/save/referral/credits 抽样全无）</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>11</td>
+<td>语料规模</td>
+<td><strong>55 条</strong>（目标 300）</td>
+<td>≥300</td>
+</tr>
+<tr>
+<td>12</td>
+<td>古籍实体文本</td>
+<td><strong>2/5</strong>（子平真诠 27 行 / 滴天髓 121 / 穷通宝鉴 53）</td>
+<td>5/5</td>
+</tr>
+<tr>
+<td>13</td>
+<td>ECE</td>
+<td><strong>0.250</strong>（目标 &lt;0.10）</td>
+<td>&lt;0.10</td>
+</tr>
+<tr>
+<td>14</td>
+<td>24h 预测数 / WAF / 付费</td>
+<td><strong>0 / ~0 / 0</strong></td>
+<td>&gt;50 / 有基线 / 首笔</td>
+</tr>
+<tr>
+<td>15</td>
+<td>P2 加固完成度</td>
+<td><strong>0/8</strong></td>
+<td>8/8</td>
+</tr>
+<tr>
+<td>16</td>
+<td>工程文档</td>
+<td>无 SECURITY.md / 无运维手册 / 无备份脚本 / 无迁移历史</td>
+<td>全有</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>一、A 类：说了没做（文档承诺 vs 实现）</h2>
+<blockquote>
+<p>全部逐条对照 <code>ROADMAP.md</code> / <code>CORE-GOALS.md</code> 核验，非推测。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>承诺</th>
+<th>出处</th>
+<th>实测</th>
+<th>差距</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>P1-11 事件产品化 <code>/events</code>（进行中事件板）</td>
+<td>ROADMAP:89</td>
+<td><strong>页面不存在</strong>（API <code>/api/events</code> 只被 <code>lib/analytics.ts</code> 当埋点上报用）</td>
+<td>缺整个产品页</td>
+</tr>
+<tr>
+<td>P1-13 开发者门户 <code>/docs</code></td>
+<td>ROADMAP:91</td>
+<td><strong>页面不存在</strong></td>
+<td>缺快速开始/示例/嵌入码</td>
+</tr>
+<tr>
+<td>P1-12 API Key + 按次计费</td>
+<td>ROADMAP:90</td>
+<td><strong>无任何面向客户的 API Key 机制</strong>（只有 Tavily/Creem 等第三方 key）</td>
+<td>缺签发/校验/计量</td>
+</tr>
+<tr>
+<td>P1-8 语料 54 → 300+</td>
+<td>ROADMAP:85</td>
+<td><strong>55 条</strong>，且 55 条硬编码在 29KB 的 <code>event-corpus.ts</code> 里</td>
+<td>缺 245 条 + 缺数据文件化（扩到 300 会变 150KB TS）</td>
+</tr>
+<tr>
+<td>P1-9 校准修正 ECE &lt; 0.10</td>
+<td>ROADMAP:86</td>
+<td><strong>ECE 0.250</strong>（CORE-GOALS 基线）</td>
+<td>差 2.5 倍</td>
+</tr>
+<tr>
+<td>P1-14 <code>intel-adopt</code> 死循环修复</td>
+<td>ROADMAP:92</td>
+<td>状态未核验（⬜）</td>
+<td>情报产出未接主引擎</td>
+</tr>
+<tr>
+<td>P2-18 数据集版本化公开发布</td>
+<td>ROADMAP:115</td>
+<td><strong>无</strong>（无 DVC/版本号/发布页）</td>
+<td>护城河资产未产品化</td>
+</tr>
+<tr>
+<td>P2-19 抗污染活体记分板</td>
+<td>ROADMAP:116</td>
+<td><strong>无公开引用入口</strong></td>
+<td>缺学术/媒体引用页</td>
+</tr>
+<tr>
+<td>P2-20 AG-UI 协议栈</td>
+<td>ROADMAP:117</td>
+<td>未做</td>
+<td>缺 Agent 协议层</td>
+</tr>
+<tr>
+<td>P2-22 好友对比/分享卡</td>
+<td>ROADMAP:119</td>
+<td>未做（有 <code>/share/[id]</code> 单条分享）</td>
+<td>缺社交飞轮</td>
+</tr>
+<tr>
+<td>P2-23 PWA 安装 + 推送</td>
+<td>ROADMAP:120</td>
+<td><code>manifest.json</code> <strong>有</strong>（含 192/512 图标），<strong>无推送</strong></td>
+<td>半成品</td>
+</tr>
+<tr>
+<td>P2-24 中文流量收单</td>
+<td>ROADMAP:121</td>
+<td>未做（18 个页面仍硬编码中文）</td>
+<td>缺海外切换</td>
+</tr>
+<tr>
+<td>P2-25 B 端事件预测订阅</td>
+<td>ROADMAP:122</td>
+<td>未做</td>
+<td>缺 B 端产品</td>
+</tr>
+<tr>
+<td>MCP Server / Widget / Browser Extension</td>
+<td>综合方案:242-244</td>
+<td>均 ⬜</td>
+<td>三个分发入口全缺</td>
+</tr>
+<tr>
+<td>&quot;五本古籍提供结构假设&quot;</td>
+<td>CORE-GOALS:19</td>
+<td><strong>3 本空壳</strong>（27/121/53 行）</td>
+<td>缺 OCR</td>
+</tr>
+<tr>
+<td>11 项专利权利要求（DMTL+Arrhenius）</td>
+<td>patent-backup</td>
+<td><strong>代码 0 对应</strong>（全仓 grep 0 命中）</td>
+<td>专利与技术主体错配</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>二、B 类：做了没接线（代码孤岛）</h2>
+<h3>B-1【头号发现】5 个文件放错目录，永远不会被部署</h3>
+<p>根目录 <code>src/app/</code> 下有 5 个文件，而 Next 应用的根是 <code>vercel-deploy/</code>（<code>vercel.json</code> 的 buildCommand 在 vercel-deploy 执行）：</p>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>内容</th>
+<th>后果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>src/app/verify/[id]/page.tsx</code></td>
+<td><strong>公开验证页</strong>（M07 的核心资产）</td>
+<td>写了但用户永远看不到</td>
+</tr>
+<tr>
+<td><code>src/app/api/verify/public/route.ts</code></td>
+<td>公开验证 API</td>
+<td>未部署</td>
+</tr>
+<tr>
+<td><code>src/app/api/opentimestamps/anchor/route.ts</code></td>
+<td><strong>OpenTimestamps 锚定</strong>（全球唯一信任资产）</td>
+<td>未部署</td>
+</tr>
+<tr>
+<td><code>src/app/arena/individual/page.tsx</code></td>
+<td>个人竞技场页</td>
+<td>未部署（且 0 入口）</td>
+</tr>
+<tr>
+<td><code>src/app/api/arena/individual/route.ts</code></td>
+<td>个人竞技场 API</td>
+<td>未部署</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>这 5 个文件创建于 2026-10-16 12:10——<strong>正是昨天报告点名&quot;M07 公开验证页+OpenTimestamps&quot;之后的产物</strong>。做对了事，放错了地方。这是全报告性价比最高的修复：移动 5 个文件，一天内让&quot;可证明不马后炮&quot;资产上线。</p>
+</blockquote>
+<h3>B-2 孤儿 API（15 个，无任何代码调用）</h3>
+<p><code>arena/leaderboard</code>（排行榜 API 无前端）、<code>feedback/outcome</code>（外部可调但无内部消费）、<code>feedback/simulation</code>、<code>forecast</code>、<code>graph</code>、<code>referral</code>、<code>automation/content-generator</code>、<code>payment/paypal/*</code>（3 个）、<code>payment/webhook</code>、<code>auth</code>、<code>openapi.json</code>、<code>simulate/*/stream</code>（2 个）。</p>
+<blockquote>
+<p>需分三类处理：<strong>真孤儿</strong>（arena/leaderboard、feedback/simulation、forecast、graph、referral → 接线或删）/ <strong>外部回调</strong>（payment/webhook、paypal/ipn、auth → 保留并标注）/ <strong>动态构造</strong>（simulate stream → 前端可能用模板字符串，需人工确认）。</p>
+</blockquote>
+<h3>B-3 死代码引擎（4 个，0 引用）</h3>
+<p><code>agent-memory.ts</code>、<code>difficulty-router.ts</code>、<code>inference-loop.ts</code>、<code>query-expander.ts</code>。</p>
+<blockquote>
+<p>其中 <code>inference-loop.ts</code> 有 <strong>100% 测试覆盖</strong>——测了一个没人调用的模块。这是&quot;测试努力用错地方&quot;的典型。</p>
+</blockquote>
+<h3>B-4 假 i18n（4 个语言包，0 处使用）</h3>
+<p><code>messages/{en,ja,ko,zh}.json</code> 齐全，但 <code>useTranslations/getTranslations</code> <strong>全仓 0 处</strong>；<code>i18n/request.ts</code> 硬编码 <code>locale=&#39;en&#39;</code>；18 个页面硬编码中文。</p>
+<blockquote>
+<p>现状是&quot;英文配置 + 中文硬编码&quot;的混合态：既不真国际化，也没统一语言。要么全站接入 next-intl，要么删包减负——<strong>不能留半成品</strong>。</p>
+</blockquote>
+<h3>B-5 死链与孤儿页面</h3>
+<ul>
+<li><strong>死链</strong>：<code>/contact</code>、<code>/about</code> 出现在 href 里，页面不存在 → 用户点击 404。</li>
+<li><strong>孤儿页面</strong>：<code>/arena/individual</code>（0 入口，且只在根目录 src）、<code>/ai-future</code>（仅 1 处引用，疑似仅 sitemap）。</li>
+</ul>
+<h3>B-6 零状态边界</h3>
+<p><code>find app -name &quot;loading.tsx&quot; | wc -l</code> = <strong>0</strong>；<code>error.tsx</code> = <strong>0</strong>；<code>not-found.tsx</code> = <strong>0</strong>。</p>
+<blockquote>
+<p>28 个页面在网络慢、API 失败、路由不存在时，全部落到浏览器默认行为（白屏/原生 404）。对&quot;信任型产品&quot;，白屏 = 用户流失。</p>
+</blockquote>
+<h3>B-7 手写 OpenAPI（必然漂移）</h3>
+<p><code>/api/openapi.json</code> 是手写静态 spec（只覆盖少数路由），86 个路由无自动生成 → 文档与实现必然不同步。第三方接入（P1-12/P1-13）的前置缺口。</p>
+<hr>
+<h2>三、C 类：接了没数据（空态与冷启动）</h2>
+<table>
+<thead>
+<tr>
+<th>缺口</th>
+<th>证据</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>三个仪表盘全空态</td>
+<td><code>PredictionFeedback</code> 无真实 verified 样本</td>
+<td>M01 校准 / M04 竞技场 / M08 战绩 全部&quot;无数据&quot;</td>
+</tr>
+<tr>
+<td>24h 预测数 = 0</td>
+<td>CORE-GOALS 基线</td>
+<td>北极星第一因子为 0</td>
+</tr>
+<tr>
+<td>事件账本空</td>
+<td>CORE-GOALS 基线&quot;事件账本条目：空&quot;</td>
+<td>记分板无内容</td>
+</tr>
+<tr>
+<td>语料 55 条</td>
+<td><code>event-corpus.ts</code> grep <code>id:</code> = 55</td>
+<td>ECE 压不到 &lt;0.10（样本不足）</td>
+</tr>
+<tr>
+<td>古籍 3 本空壳</td>
+<td>27/121/53 行</td>
+<td>旺衰/格局/调候 Agent 无素材，古典层名存实亡</td>
+</tr>
+<tr>
+<td>月回报 0 / 真人试玩 0</td>
+<td>CORE-GOALS 基线</td>
+<td>无反馈闭环</td>
+</tr>
+<tr>
+<td>第三方 API 调用 0</td>
+<td>无 API Key 机制</td>
+<td>生态指标为 0</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>这一类的根因是同一个：<strong>没有真实用户 → 没有样本 → 校准飞轮空转</strong>。修复必须从&quot;冷启动数据注入&quot;（重放已结算市场）开始，这是 2.0/3.0 方案里 α 阶段的核心。</p>
+</blockquote>
+<hr>
+<h2>四、D 类：安全与数据完整性缺口</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>缺口</th>
+<th>证据</th>
+<th>严重度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>D-1</td>
+<td><strong><code>feedback/outcome</code> 无鉴权，直连 <code>reportActualOutcome</code></strong></td>
+<td><code>src/app/api/feedback/outcome/route.ts</code> 无 authorized/getServerSession；直接调用飞轮写入</td>
+<td><strong>P0：校准数据投毒入口</strong>——任何人 POST 可伪造&quot;真实结局&quot;，污染护城河</td>
+</tr>
+<tr>
+<td>D-2</td>
+<td>写入路由 0/5 有 zod 校验</td>
+<td>predict/feedback/journal/save/referral/credits 抽样全无</td>
+<td>P1：脏数据/超长输入直达数据库</td>
+</tr>
+<tr>
+<td>D-3</td>
+<td>rate limit 无统一中间件</td>
+<td>仅 5 个文件手工实现</td>
+<td>P1：算力滥用（LLM 调用贵）</td>
+</tr>
+<tr>
+<td>D-4</td>
+<td>无 API Key 签发/校验</td>
+<td>全仓无面向客户的 key 机制</td>
+<td>P1：P1-12 计费无从谈起</td>
+</tr>
+<tr>
+<td>D-5</td>
+<td><code>db.ts</code> no-op proxy 静默假成功</td>
+<td>无 DATABASE_URL 时 create 返回 <code>{id:&#39;mock-...&#39;}</code></td>
+<td>P0：生产配置错误时数据静默丢失</td>
+</tr>
+<tr>
+<td>D-6</td>
+<td>无备份脚本</td>
+<td><code>scripts/</code> 无 backup/dump/restore</td>
+<td>P0：数据库无灾备</td>
+</tr>
+<tr>
+<td>D-7</td>
+<td>无 SECURITY.md</td>
+<td>仓库根目录缺失</td>
+<td>P2：漏洞披露渠道缺失</td>
+</tr>
+<tr>
+<td>D-8</td>
+<td>无迁移历史</td>
+<td>无 <code>prisma/migrations/</code>，仅 2 个手工 SQL</td>
+<td>P0：schema 演进无回滚</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>五、E 类：配置与工程缺口</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>缺口</th>
+<th>证据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>E-1</td>
+<td><strong>48 个 env 引用 vs 本地 2 个配置，无 <code>.env.example</code></strong></td>
+<td>代码引用 48 个（含 NEXTAUTH_SECRET/GLM_API_KEY/TAVILY_API_KEY/EMAIL_SERVER/CREEM_*/PAYPAL_*/FIELD_HMAC_SECRET）；<code>.env</code> 只有 DATABASE_URL/DIRECT_URL → 本地开发 LLM/搜索/支付/登录全不可用</td>
+</tr>
+<tr>
+<td>E-2</td>
+<td>双 git 仓库 + 双 lockfile + 双 Next 版本</td>
+<td>root（无 remote，<code>next ^16.3.6</code>）vs vercel-deploy（有 remote，<code>next ^16.1.1</code>）；Next build 实测警告 &quot;multiple lockfiles&quot;</td>
+</tr>
+<tr>
+<td>E-3</td>
+<td>无运维手册</td>
+<td><code>docs/</code> 无 deploy/runbook/ops 目录——部署、回滚、故障处理全靠人脑</td>
+</tr>
+<tr>
+<td>E-4</td>
+<td>无迁移/回滚文档</td>
+<td>见 D-8</td>
+</tr>
+<tr>
+<td>E-5</td>
+<td><code>package.json</code> 无 test 脚本（vercel-deploy）</td>
+<td>289 用例无法一键跑</td>
+</tr>
+<tr>
+<td>E-6</td>
+<td>覆盖率从未真实产出</td>
+<td><code>coverage/coverage-summary.json</code> = <code>{}</code></td>
+</tr>
+<tr>
+<td>E-7</td>
+<td>语料双源</td>
+<td><code>data/event-corpus.json</code>（8KB 种子快照）vs <code>lib/engines/event-corpus.ts</code>（29KB 权威）；扩产前须明确只写 TS 或迁移到数据文件</td>
+</tr>
+<tr>
+<td>E-8</td>
+<td>根目录杂物</td>
+<td><code>_build_trash/</code>、<code>_tmp_build.log</code>、<code>.opencode/</code>、根 <code>src/</code>（放错的 5 文件）</td>
+</tr>
+<tr>
+<td>E-9</td>
+<td>依赖冗余</td>
+<td><code>nodemailer</code> 装了但只用 Resend（<code>email-engine.ts</code>）；<code>@creem_io/nextjs</code> + <code>creem</code> 双包</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>六、F 类：文档漂移（双向，比单向更危险）</h2>
+<table>
+<thead>
+<tr>
+<th>文档说</th>
+<th>实际</th>
+<th>方向</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>FutureSimulation</code> 是&quot;唯一无写入死模型&quot;</td>
+<td><code>ai-future-simulation.ts</code> 有完整 create/findMany/findFirst</td>
+<td>文档过时（实际已做）</td>
+</tr>
+<tr>
+<td>&quot;融合权重与宣称不符&quot;</td>
+<td><code>prediction-engine.ts</code> 注释已改为 0.5/0.5/0 并说明</td>
+<td>文档过时（已修）</td>
+</tr>
+<tr>
+<td>&quot;首页 title 仍 &#39;AI-Powered Life Forecasts&#39;&quot;</td>
+<td><code>layout.tsx</code> 已是 &quot;A forecasting lab that publishes its score&quot;</td>
+<td>文档过时（已改）</td>
+</tr>
+<tr>
+<td>&quot;arena → prisma.prediction.create 0 命中&quot;</td>
+<td>实际有 <code>recordPredictionRecord</code>（写 Prediction 表），但<strong>接在会静默失败的路径上</strong>（brierScore 字段缺失 + client 过期）</td>
+<td>文档低估了：不是没接，是接错了</td>
+</tr>
+<tr>
+<td>&quot;P0 通电 6/6 已完成&quot;</td>
+<td>飞轮写入路径有 4 个生产类型错误 + 静默 catch</td>
+<td>状态虚高：&quot;完成&quot;≠&quot;可用&quot;</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>文档漂移的代价：owner 按文档做决策，会同时<strong>低估已做</strong>（重复投入）和<strong>高估完成</strong>（漏修致命路径）。</p>
+</blockquote>
+<hr>
+<h2>七、完整缺口清单（Q-01 ~ Q-52，可直接转工单）</h2>
+<blockquote>
+<p>优先级：<strong>P0 = 本周</strong>（阻断北极星或造成数据/安全损失）/ <strong>P1 = 2–4 周</strong> / <strong>P2 = 1–3 月</strong> / <strong>P3 = 3.0 阶段</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>类</th>
+<th>位置</th>
+<th>缺什么</th>
+<th>补法</th>
+<th>优先级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Q-01</td>
+<td>B</td>
+<td>根 <code>src/app/</code>（5 文件）</td>
+<td>放错目录，永不部署</td>
+<td>移到 <code>vercel-deploy/src/app/</code> 对应路径，验证 <code>/verify/[id]</code> 可访问</td>
+<td><strong>P0</strong></td>
+</tr>
+<tr>
+<td>Q-02</td>
+<td>D</td>
+<td><code>api/feedback/outcome</code></td>
+<td>鉴权</td>
+<td>加 ADMIN_API_KEY 或 FIELD_HMAC 签名校验</td>
+<td><strong>P0</strong></td>
+</tr>
+<tr>
+<td>Q-03</td>
+<td>D</td>
+<td><code>lib/db.ts</code></td>
+<td>生产缺库时快速失败</td>
+<td><code>NODE_ENV=production</code> 缺 DATABASE_URL 直接 throw</td>
+<td><strong>P0</strong></td>
+</tr>
+<tr>
+<td>Q-04</td>
+<td>D</td>
+<td><code>scripts/</code></td>
+<td>备份脚本</td>
+<td>每日 <code>pg_dump</code> + 保留 30 天 + 恢复演练</td>
+<td><strong>P0</strong></td>
+</tr>
+<tr>
+<td>Q-05</td>
+<td>D</td>
+<td><code>prisma/</code></td>
+<td>迁移历史</td>
+<td>生成 baseline migration，生产改 <code>migrate deploy</code></td>
+<td><strong>P0</strong></td>
+</tr>
+<tr>
+<td>Q-06</td>
+<td>A</td>
+<td><code>prisma/schema.prisma</code></td>
+<td>Prediction 表缺 brierScore</td>
+<td>补字段 + <code>prisma generate</code>（详见地基报告 H1）</td>
+<td><strong>P0</strong></td>
+</tr>
+<tr>
+<td>Q-07</td>
+<td>B</td>
+<td><code>app/**</code></td>
+<td>死链 /contact /about</td>
+<td>建两个静态页，或删 href</td>
+<td><strong>P0</strong></td>
+</tr>
+<tr>
+<td>Q-08</td>
+<td>E</td>
+<td>仓库根</td>
+<td><code>.env.example</code></td>
+<td>48 个变量全部列出（必填/可选/示例值）</td>
+<td><strong>P0</strong></td>
+</tr>
+<tr>
+<td>Q-09</td>
+<td>B</td>
+<td><code>app/**</code></td>
+<td>0 loading/error/not-found</td>
+<td>加 <code>app/error.tsx</code> + <code>app/not-found.tsx</code> + 关键页 <code>loading.tsx</code></td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-10</td>
+<td>B</td>
+<td><code>messages/*.json</code> + 18 页</td>
+<td>假 i18n</td>
+<td>决策：全站接入 next-intl 或删包统一中文</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-11</td>
+<td>B</td>
+<td><code>lib/engines/</code> 4 文件</td>
+<td>死代码</td>
+<td>agent-memory/difficulty-router/inference-loop/query-expander：接线或删</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-12</td>
+<td>B</td>
+<td>15 个孤儿 API</td>
+<td>无调用方</td>
+<td>分类：真孤儿接线/删；外部回调标注；动态构造人工确认</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-13</td>
+<td>A</td>
+<td><code>app/events</code></td>
+<td>事件产品页</td>
+<td>建页：进行中事件板 + 追踪（复用 <code>/api/events</code>）</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-14</td>
+<td>A</td>
+<td><code>app/docs</code></td>
+<td>开发者门户</td>
+<td>快速开始 + 示例 + Widget 嵌入码</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-15</td>
+<td>A</td>
+<td>语料</td>
+<td>55 → 300</td>
+<td>先迁移到数据文件（JSON/DB），再自动扩产（Manifold/Metaculus/Kalshi）</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-16</td>
+<td>A</td>
+<td>古籍</td>
+<td>3 本 OCR</td>
+<td>PaddleOCR/微信 OCR 补全（目标各 ≥1000 行）</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-17</td>
+<td>D</td>
+<td>写入路由</td>
+<td>zod 校验 0/5</td>
+<td>抽 <code>withValidation</code> 高阶函数，先覆盖 predict/feedback/journal/credits</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-18</td>
+<td>D</td>
+<td>API 层</td>
+<td>统一 rate limit</td>
+<td>中间件（KV/LRU，按 IP/用户）</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-19</td>
+<td>E</td>
+<td><code>package.json</code></td>
+<td>test 脚本</td>
+<td>加 test/test:coverage，CI 接入</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-20</td>
+<td>E</td>
+<td>根仓库</td>
+<td>双 git / 双 lockfile / 双 Next 版本</td>
+<td>定主仓库，统一版本，删多余 lockfile</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-21</td>
+<td>E</td>
+<td><code>docs/</code></td>
+<td>运维手册</td>
+<td><code>docs/eng/runbook.md</code>（部署/回滚/故障/告警）</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-22</td>
+<td>B</td>
+<td><code>api/openapi.json</code></td>
+<td>手写 spec</td>
+<td>从路由自动生成（或 zod → OpenAPI）</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-23</td>
+<td>A</td>
+<td>API 计费</td>
+<td>无 API Key</td>
+<td>签发/校验/计量/配额</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-24</td>
+<td>A</td>
+<td><code>app/arena/individual</code></td>
+<td>孤儿页</td>
+<td>接入口或删（依赖 Q-01）</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-25</td>
+<td>A</td>
+<td>PWA</td>
+<td>无推送</td>
+<td>Service Worker + 推送订阅</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-26</td>
+<td>A</td>
+<td>活体记分板</td>
+<td>无公开引用入口</td>
+<td>数据集版本页 + 可引用报告</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-27</td>
+<td>A</td>
+<td>数据集版本化</td>
+<td>无</td>
+<td>语料/账本 hash + 版本号 + 发布页</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-28</td>
+<td>F</td>
+<td>5 份文档</td>
+<td>漂移</td>
+<td>用实测结果批量修正（FutureSimulation/融合权重/title/arena 接线）</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-29</td>
+<td>E</td>
+<td>依赖</td>
+<td>nodemailer 冗余、Creem 双包</td>
+<td>清理 + 锁版本</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-30</td>
+<td>E</td>
+<td>根目录</td>
+<td><code>_build_trash</code>/<code>_tmp_build.log</code>/<code>.opencode</code></td>
+<td>清理或移入 <code>.gitignore</code></td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-31</td>
+<td>A</td>
+<td>语料双源</td>
+<td>JSON vs TS</td>
+<td>明确单一权威（TS），JSON 标注为快照或删</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-32</td>
+<td>A</td>
+<td>古典 substrate</td>
+<td>3 本空壳影响所有古典 Agent</td>
+<td>与 Q-16 联动，补后跑 <code>classics-audit</code></td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-33</td>
+<td>A</td>
+<td>校准</td>
+<td>ECE 0.250</td>
+<td>Platt/isotonic + 扩样本（Q-15）</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-34</td>
+<td>A</td>
+<td>情报</td>
+<td><code>intel-adopt</code> 产出未接主引擎</td>
+<td>核验 <code>useCount</code>，修死循环</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-35</td>
+<td>A</td>
+<td>AG-UI</td>
+<td>未做</td>
+<td>3.0 阶段</td>
+<td>P3</td>
+</tr>
+<tr>
+<td>Q-36</td>
+<td>A</td>
+<td>好友对比</td>
+<td>未做</td>
+<td>3.0 阶段</td>
+<td>P3</td>
+</tr>
+<tr>
+<td>Q-37</td>
+<td>A</td>
+<td>B 端订阅</td>
+<td>未做</td>
+<td>3.0 阶段</td>
+<td>P3</td>
+</tr>
+<tr>
+<td>Q-38</td>
+<td>A</td>
+<td>MCP/Widget/Extension</td>
+<td>未做</td>
+<td>3.0 分发层</td>
+<td>P3</td>
+</tr>
+<tr>
+<td>Q-39</td>
+<td>D</td>
+<td>无 SECURITY.md</td>
+<td>漏洞披露</td>
+<td>建文件</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-40</td>
+<td>E</td>
+<td><code>coverage-summary.json</code> = {}</td>
+<td>覆盖率未产出</td>
+<td>CI 跑 <code>jest --coverage</code> 并上传</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-41</td>
+<td>A</td>
+<td>中文流量收单</td>
+<td>未做（18 页中文）</td>
+<td>海外切换或中性化（P2-24）</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-42</td>
+<td>A</td>
+<td>专利错配</td>
+<td>11 项权利要求与代码 0 对应</td>
+<td>IP 重定向：围绕校准/封存/协议申请</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-43</td>
+<td>B</td>
+<td><code>app/ai-future</code></td>
+<td>仅 1 入口</td>
+<td>接导航或并入主流程</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-44</td>
+<td>D</td>
+<td><code>tuivan/calculate</code> 无鉴权</td>
+<td>算力滥用</td>
+<td>加 rate limit</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-45</td>
+<td>A</td>
+<td>24h 预测 0</td>
+<td>冷启动</td>
+<td>种子账号 + 已结算市场重放（α-2）</td>
+<td><strong>P0</strong></td>
+</tr>
+<tr>
+<td>Q-46</td>
+<td>A</td>
+<td>事件账本空</td>
+<td>冷启动</td>
+<td>与 Q-45 同批注入</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-47</td>
+<td>E</td>
+<td>无 <code>docs/eng/</code></td>
+<td>工程文档目录</td>
+<td>建目录：runbook/db-migration/dependency-policy</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-48</td>
+<td>D</td>
+<td>无 CSP</td>
+<td>安全头</td>
+<td>补 Content-Security-Policy</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>Q-49</td>
+<td>A</td>
+<td><code>/api/events</code> 只被埋点用</td>
+<td>事件产品无数据源</td>
+<td>与 Q-13 联动</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-50</td>
+<td>B</td>
+<td>根 <code>src/</code> 目录</td>
+<td>与 vercel-deploy 重复结构</td>
+<td>见 Q-01，移完删除</td>
+<td><strong>P0</strong></td>
+</tr>
+<tr>
+<td>Q-51</td>
+<td>A</td>
+<td>公开验证页无入口</td>
+<td>即使 Q-01 修好也无导航</td>
+<td>首页/accuracy 页加&quot;验证&quot;入口</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>Q-52</td>
+<td>A</td>
+<td>OpenTimestamps 锚定未接线</td>
+<td>Q-01 修好后需真实锚定</td>
+<td>接 OTS 服务 + 公开可查</td>
+<td>P1</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>八、修复顺序（按&quot;投入产出比&quot;排序，不按类别）</h2>
+<h3>第一波：一周内可清零的 8 项（全是&quot;移动/加一行&quot;级别，但影响巨大）</h3>
+<p>Q-01（5 文件归位）→ Q-50（删根 src）→ Q-06（brierScore+generate）→ Q-02（outcome 鉴权）→ Q-03（db 快速失败）→ Q-07（死链）→ Q-08（.env.example）→ Q-51（验证页入口）</p>
+<blockquote>
+<p>做完这一波，<strong>M07 信任资产上线 + 校准投毒口关闭 + 飞轮写入可用</strong>——三个&quot;最贵的能力&quot;同时激活，成本不到 3 天。</p>
+</blockquote>
+<h3>第二波：2–4 周（把&quot;半成品&quot;变&quot;成品&quot;）</h3>
+<p>Q-05/Q-04（迁移+备份）→ Q-09（状态边界）→ Q-15/Q-31（语料迁移+扩产）→ Q-33（ECE）→ Q-16/Q-32（OCR）→ Q-17/Q-18（校验+限流）→ Q-10（i18n 决策）→ Q-11/Q-12（死代码与孤儿 API 决策）→ Q-19/Q-40（test+coverage 进 CI）</p>
+<h3>第三波：1–3 月（补产品与文档）</h3>
+<p>Q-13/Q-14（/events、/docs）→ Q-22（OpenAPI 自动生成）→ Q-23（API Key 计费）→ Q-25/Q-26/Q-27（PWA/记分板/数据集版本）→ Q-21/Q-47（运维手册）→ Q-28（文档漂移批量修正）</p>
+<h3>第四波：3.0 阶段</h3>
+<p>Q-35~Q-38（AG-UI/好友对比/B 端/MCP-Widget-Extension）</p>
+<hr>
+<h2>九、一句话总结</h2>
+<p><strong>这个项目最大的缺口不是&quot;没做&quot;，而是&quot;做了 80% 却没接上最后 20%&quot;</strong>：验证页写好了放在不会部署的目录、翻译包齐全但 0 处调用、289 个测试全绿但覆盖率 17.86%、飞轮接线了但接在会静默失败的路径上、ROADMAP 说 P0 全完成但写入路径有 4 个类型错误。</p>
+<p><strong>查缺的结论不是&quot;再建新东西&quot;，而是：把已有的 80% 接上电。</strong> 第一波 8 项（不到 3 天）能让三个最贵的能力（信任资产、飞轮、防投毒）同时激活——这是当前全项目投入产出比最高的动作，也是北极星（WAF × 人均已结算预测数）从 0 起步的唯一现实路径。</p>
+<hr>
+<p><em>本报告全部条目为 2026-10-17 本地实测：86 API / 28 页面 / 40 引擎 / 25 模型 / 48 env / 12 cron / 4 语言包全量枚举；孤儿检测用&quot;路由清单 vs 全仓调用路径&quot;交叉比对；死代码用&quot;import 引用计数&quot;；文档承诺逐条对照 ROADMAP/CORE-GOALS 核验。与 2026-10-16《地基加固工程报告》互补：地基报告管&quot;底层结构强度&quot;，本报告管&quot;功能接线完整性&quot;。</em></p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "n": 305,
+  "n_pos": 144,
+  "folds": 5,
+  "fold_Ts": [
+    1.9,
+    1.95,
+    1.75,
+    1.9,
+    1.95
+  ],
+  "avg_T": 1.89,
+  "raw": {
+    "brier": 0.1978,
+    "ece": 0.1374,
+    "logloss": 0.6044,
+    "acc": 0.715
+  },
+  "oos": {
+    "brier": 0.1839,
+    "ece": 0.0888,
+    "logloss": 0.5448,
+    "acc": 0.715
+  },
+  "base_rate": 0.472,
+  "ece_gain_pct": 4.86,
+  "logloss_gain_pct": 5.95
+}

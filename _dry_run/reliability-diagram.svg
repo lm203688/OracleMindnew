@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="460" viewBox="0 0 720 460" font-family="Segoe UI,Arial,sans-serif">
+<rect width="720" height="460" fill="#ffffff"/>
+<text x="360.0" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">OracleMind 概率校准可靠性图（n=305，T=1.90）</text>
+<text x="360.0" y="42" text-anchor="middle" font-size="11" fill="#666">校准方法：温度缩放（网格最小化 BCE，与生产 calibrator.ts 对齐）</text>
+<line x1="60.0" y1="400.0" x2="60.0" y2="60.0" stroke="#eee" stroke-width="1"/>
+<text x="60.0" y="414.0" text-anchor="middle" font-size="9" fill="#999">0.0</text>
+<line x1="60.0" y1="400.0" x2="660.0" y2="400.0" stroke="#eee" stroke-width="1"/>
+<text x="54.0" y="403.0" text-anchor="end" font-size="9" fill="#999">0.0</text>
+<line x1="120.0" y1="400.0" x2="120.0" y2="60.0" stroke="#eee" stroke-width="1"/>
+<text x="120.0" y="414.0" text-anchor="middle" font-size="9" fill="#999">0.1</text>
+<line x1="60.0" y1="366.0" x2="660.0" y2="366.0" stroke="#eee" stroke-width="1"/>
+<text x="54.0" y="369.0" text-anchor="end" font-size="9" fill="#999">0.1</text>
+<line x1="180.0" y1="400.0" x2="180.0" y2="60.0" stroke="#eee" stroke-width="1"/>
+<text x="180.0" y="414.0" text-anchor="middle" font-size="9" fill="#999">0.2</text>
+<line x1="60.0" y1="332.0" x2="660.0" y2="332.0" stroke="#eee" stroke-width="1"/>
+<text x="54.0" y="335.0" text-anchor="end" font-size="9" fill="#999">0.2</text>
+<line x1="240.0" y1="400.0" x2="240.0" y2="60.0" stroke="#eee" stroke-width="1"/>
+<text x="240.0" y="414.0" text-anchor="middle" font-size="9" fill="#999">0.3</text>
+<line x1="60.0" y1="298.0" x2="660.0" y2="298.0" stroke="#eee" stroke-width="1"/>
+<text x="54.0" y="301.0" text-anchor="end" font-size="9" fill="#999">0.3</text>
+<line x1="300.0" y1="400.0" x2="300.0" y2="60.0" stroke="#eee" stroke-width="1"/>
+<text x="300.0" y="414.0" text-anchor="middle" font-size="9" fill="#999">0.4</text>
+<line x1="60.0" y1="264.0" x2="660.0" y2="264.0" stroke="#eee" stroke-width="1"/>
+<text x="54.0" y="267.0" text-anchor="end" font-size="9" fill="#999">0.4</text>
+<line x1="360.0" y1="400.0" x2="360.0" y2="60.0" stroke="#eee" stroke-width="1"/>
+<text x="360.0" y="414.0" text-anchor="middle" font-size="9" fill="#999">0.5</text>
+<line x1="60.0" y1="230.0" x2="660.0" y2="230.0" stroke="#eee" stroke-width="1"/>
+<text x="54.0" y="233.0" text-anchor="end" font-size="9" fill="#999">0.5</text>
+<line x1="420.0" y1="400.0" x2="420.0" y2="60.0" stroke="#eee" stroke-width="1"/>
+<text x="420.0" y="414.0" text-anchor="middle" font-size="9" fill="#999">0.6</text>
+<line x1="60.0" y1="196.0" x2="660.0" y2="196.0" stroke="#eee" stroke-width="1"/>
+<text x="54.0" y="199.0" text-anchor="end" font-size="9" fill="#999">0.6</text>
+<line x1="480.0" y1="400.0" x2="480.0" y2="60.0" stroke="#eee" stroke-width="1"/>
+<text x="480.0" y="414.0" text-anchor="middle" font-size="9" fill="#999">0.7</text>
+<line x1="60.0" y1="162.0" x2="660.0" y2="162.0" stroke="#eee" stroke-width="1"/>
+<text x="54.0" y="165.0" text-anchor="end" font-size="9" fill="#999">0.7</text>
+<line x1="540.0" y1="400.0" x2="540.0" y2="60.0" stroke="#eee" stroke-width="1"/>
+<text x="540.0" y="414.0" text-anchor="middle" font-size="9" fill="#999">0.8</text>
+<line x1="60.0" y1="128.0" x2="660.0" y2="128.0" stroke="#eee" stroke-width="1"/>
+<text x="54.0" y="131.0" text-anchor="end" font-size="9" fill="#999">0.8</text>
+<line x1="600.0" y1="400.0" x2="600.0" y2="60.0" stroke="#eee" stroke-width="1"/>
+<text x="600.0" y="414.0" text-anchor="middle" font-size="9" fill="#999">0.9</text>
+<line x1="60.0" y1="94.0" x2="660.0" y2="94.0" stroke="#eee" stroke-width="1"/>
+<text x="54.0" y="97.0" text-anchor="end" font-size="9" fill="#999">0.9</text>
+<line x1="660.0" y1="400.0" x2="660.0" y2="60.0" stroke="#eee" stroke-width="1"/>
+<text x="660.0" y="414.0" text-anchor="middle" font-size="9" fill="#999">1.0</text>
+<line x1="60.0" y1="60.0" x2="660.0" y2="60.0" stroke="#eee" stroke-width="1"/>
+<text x="54.0" y="63.0" text-anchor="end" font-size="9" fill="#999">1.0</text>
+<line x1="60.0" y1="400.0" x2="660.0" y2="60.0" stroke="#bbb" stroke-width="1.5" stroke-dasharray="5,4"/>
+<text x="552.0" y="115.2" font-size="9" fill="#888">理想（校准完美）</text>
+<polyline points="90.0,356.4 150.0,311.6 210.0,307.3 270.0,200.0 330.0,169.3 390.0,152.7 450.0,150.7 510.0,211.1 570.0,173.3 630.0,95.8" fill="none" stroke="#e5484d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="90.0" cy="356.4" r="3.5" fill="#e5484d"/>
+<circle cx="150.0" cy="311.6" r="3.5" fill="#e5484d"/>
+<circle cx="210.0" cy="307.3" r="3.5" fill="#e5484d"/>
+<circle cx="270.0" cy="200.0" r="3.5" fill="#e5484d"/>
+<circle cx="330.0" cy="169.3" r="3.5" fill="#e5484d"/>
+<circle cx="390.0" cy="152.7" r="3.5" fill="#e5484d"/>
+<circle cx="450.0" cy="150.7" r="3.5" fill="#e5484d"/>
+<circle cx="510.0" cy="211.1" r="3.5" fill="#e5484d"/>
+<circle cx="570.0" cy="173.3" r="3.5" fill="#e5484d"/>
+<circle cx="630.0" cy="95.8" r="3.5" fill="#e5484d"/>
+<text x="648.0" y="379.6" text-anchor="end" font-size="11" fill="#e5484d" font-weight="bold">原始 LLM</text>
+<polyline points="90.0,380.0 150.0,362.2 210.0,307.8 270.0,332.0 330.0,170.7 390.0,151.5 450.0,150.7 510.0,198.1 570.0,106.4 630.0,90.9" fill="none" stroke="#30a46c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="90.0" cy="380.0" r="3.5" fill="#30a46c"/>
+<circle cx="150.0" cy="362.2" r="3.5" fill="#30a46c"/>
+<circle cx="210.0" cy="307.8" r="3.5" fill="#30a46c"/>
+<circle cx="270.0" cy="332.0" r="3.5" fill="#30a46c"/>
+<circle cx="330.0" cy="170.7" r="3.5" fill="#30a46c"/>
+<circle cx="390.0" cy="151.5" r="3.5" fill="#30a46c"/>
+<circle cx="450.0" cy="150.7" r="3.5" fill="#30a46c"/>
+<circle cx="510.0" cy="198.1" r="3.5" fill="#30a46c"/>
+<circle cx="570.0" cy="106.4" r="3.5" fill="#30a46c"/>
+<circle cx="630.0" cy="90.9" r="3.5" fill="#30a46c"/>
+<text x="648.0" y="349.0" text-anchor="end" font-size="11" fill="#30a46c" font-weight="bold">校准后 (T=1.90)</text>
+<text x="360.0" y="452.0" text-anchor="middle" font-size="11" fill="#444">预测概率（声称）</text>
+<text x="14" y="230.0" text-anchor="middle" font-size="11" fill="#444" transform="rotate(-90 14 230.0)">实际频率</text>
+</svg>
