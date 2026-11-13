@@ -1,0 +1,1316 @@
+game_id,date,home_team,away_team,close_line_prob,model_prob,home_win
+rNKHJfD5,2025-10-21,Oklahoma City Thunder,Houston Rockets,0.6869,0.6926778748613894,1
+lzjIHYsI,2025-10-21,Los Angeles Lakers,Golden State Warriors,0.4381,0.4093920359004739,0
+08GSNxkL,2025-10-22,Charlotte Hornets,Brooklyn Nets,0.6376,0.7189972936432864,1
+d0gQFCCU,2025-10-22,New York Knicks,Cleveland Cavaliers,0.4675,0.4315664934365324,1
+dv2bIGCr,2025-10-22,Orlando Magic,Miami Heat,0.743,0.7781109024054406,1
+h6e7Gfse,2025-10-22,Boston Celtics,Philadelphia 76ers,0.6459,0.7246256300501189,0
+ra87nAdt,2025-10-22,Atlanta Hawks,Toronto Raptors,0.6588,0.6796650463779038,0
+Q9j1xx4E,2025-10-22,Memphis Grizzlies,New Orleans Pelicans,0.603,0.6435686248048453,1
+W8IYJTmm,2025-10-22,Milwaukee Bucks,Washington Wizards,0.7829,0.7973402361936497,1
+pEDEEYB7,2025-10-22,Chicago Bulls,Detroit Pistons,0.4231,0.4113679762976106,1
+SzCsI7Ia,2025-10-22,Utah Jazz,Los Angeles Clippers,0.2251,0.22454821477135156,1
+0EJzzGcn,2025-10-22,Dallas Mavericks,San Antonio Spurs,0.5888,0.6088619418906197,0
+0lAkGomC,2025-10-22,Phoenix Suns,Sacramento Kings,0.5985,0.6426712844558409,1
+KjQjEPHO,2025-10-22,Portland Trail Blazers,Minnesota Timberwolves,0.3659,0.3950886765451538,0
+8vNrYgSb,2025-10-23,Indiana Pacers,Oklahoma City Thunder,0.2781,0.2938780058541122,0
+2wGiWXdB,2025-10-23,Golden State Warriors,Denver Nuggets,0.5197,0.5416646543120208,1
+jPBFplRh,2025-10-24,Toronto Raptors,Milwaukee Bucks,0.5352,0.5795923540823869,0
+AF50YS2t,2025-10-24,Orlando Magic,Atlanta Hawks,0.6636,0.7169548247396594,0
+WUg9W6Xh,2025-10-24,Brooklyn Nets,Cleveland Cavaliers,0.1736,0.20634128777811042,0
+bZppxDKt,2025-10-24,New York Knicks,Boston Celtics,0.6118,0.6595099896670249,1
+67lYQ21U,2025-10-24,New Orleans Pelicans,San Antonio Spurs,0.3885,0.3634698381942519,0
+YgjQSOWH,2025-10-24,Memphis Grizzlies,Miami Heat,0.5769,0.6006276777815899,0
+vecHUp25,2025-10-24,Houston Rockets,Detroit Pistons,0.6889,0.706938619149501,0
+pYJro6nn,2025-10-24,Dallas Mavericks,Washington Wizards,0.779,0.7647212134502254,0
+6alhzikg,2025-10-24,Los Angeles Lakers,Minnesota Timberwolves,0.4703,0.441091027676562,1
+EDBasOoB,2025-10-24,Sacramento Kings,Utah Jazz,0.6563,0.6877155410142518,1
+hbNjqpHb,2025-10-24,Portland Trail Blazers,Golden State Warriors,0.4268,0.42990594694094164,1
+nuP6u2GN,2025-10-24,Los Angeles Clippers,Phoenix Suns,0.7867,0.7668332415890202,1
+6P5wztvo,2025-10-25,Orlando Magic,Chicago Bulls,0.6804,0.7122622247767071,0
+bJhPcqWi,2025-10-25,Atlanta Hawks,Oklahoma City Thunder,0.257,0.25159102357399,0
+fonYeN04,2025-10-25,Philadelphia 76ers,Charlotte Hornets,0.6227,0.6481839443903417,1
+0rktf1VG,2025-10-25,Memphis Grizzlies,Indiana Pacers,0.5455,0.6299113235973238,1
+Mcwkhu0T,2025-10-25,Denver Nuggets,Phoenix Suns,0.8421,0.8298697863693503,1
+htUKnJNj,2025-10-26,San Antonio Spurs,Brooklyn Nets,0.7985,0.794321015688713,1
+8lC7AMFc,2025-10-26,Detroit Pistons,Boston Celtics,0.5557,0.5870420000035724,1
+63hllWbe,2025-10-26,Washington Wizards,Charlotte Hornets,0.5325,0.5700567521437723,0
+bwktjhUr,2025-10-26,Miami Heat,New York Knicks,0.4118,0.4085457354127139,1
+t2AF80pA,2025-10-26,Cleveland Cavaliers,Milwaukee Bucks,0.6946,0.7004945974309229,1
+SItcnAT7,2025-10-26,Minnesota Timberwolves,Indiana Pacers,0.8218,0.8187090766460937,1
+Cv0OrSe5,2025-10-26,Dallas Mavericks,Toronto Raptors,0.4875,0.442584686413451,1
+fPYrADLE,2025-10-26,Los Angeles Clippers,Portland Trail Blazers,0.7335,0.766744641264083,1
+zZti8ijR,2025-10-26,Sacramento Kings,Los Angeles Lakers,0.5901,0.6332722374702359,0
+W4SM2VDl,2025-10-27,Philadelphia 76ers,Orlando Magic,0.3279,0.31147688013679126,1
+ziEaUBRN,2025-10-27,Detroit Pistons,Cleveland Cavaliers,0.4569,0.43280942307325754,0
+Gh2QMj5K,2025-10-27,New Orleans Pelicans,Boston Celtics,0.3771,0.3093370074232893,0
+SWLV09r1,2025-10-27,Chicago Bulls,Atlanta Hawks,0.4368,0.4099336693638144,1
+bebWt6QH,2025-10-27,San Antonio Spurs,Toronto Raptors,0.6196,0.6440647080595019,1
+zcPwamDD,2025-10-27,Houston Rockets,Brooklyn Nets,0.8851,0.8776454280669596,1
+QRmdHUSs,2025-10-27,Dallas Mavericks,Oklahoma City Thunder,0.2419,0.24767653004332682,0
+Mgs5F8cf,2025-10-27,Utah Jazz,Phoenix Suns,0.5255,0.5577823016839587,1
+fyeWOkko,2025-10-27,Minnesota Timberwolves,Denver Nuggets,0.3256,0.26171280319870377,0
+f7uDDnS6,2025-10-27,Golden State Warriors,Memphis Grizzlies,0.7347,0.7685777873973505,1
+jZYLBQdJ,2025-10-27,Los Angeles Lakers,Portland Trail Blazers,0.4231,0.3738620924427324,0
+GCQ7ZTlQ,2025-10-28,Washington Wizards,Philadelphia 76ers,0.3787,0.3741644007928524,0
+0p2vU7Cm,2025-10-28,Miami Heat,Charlotte Hornets,0.6219,0.6594626665709571,1
+4xaeQPBC,2025-10-28,Oklahoma City Thunder,Sacramento Kings,0.7617,0.7460615714520986,1
+8A5nSos0,2025-10-28,Milwaukee Bucks,New York Knicks,0.4545,0.4142313855793453,1
+xjc3O3tP,2025-10-28,Golden State Warriors,Los Angeles Clippers,0.4714,0.42236681288789774,1
+fNiuupeU,2025-10-29,Toronto Raptors,Houston Rockets,0.3396,0.3352003491115274,0
+SUj3SFht,2025-10-29,Boston Celtics,Cleveland Cavaliers,0.4015,0.4166298347378118,1
+zefBQgNh,2025-10-29,Detroit Pistons,Orlando Magic,0.4675,0.44000760740863376,1
+dArKOXi5,2025-10-29,Brooklyn Nets,Atlanta Hawks,0.2653,0.2535435520405127,0
+4znSMBMH,2025-10-29,Chicago Bulls,Sacramento Kings,0.6261,0.6488110076586762,1
+d830436j,2025-10-29,Dallas Mavericks,Indiana Pacers,0.6717,0.6768613024460005,1
+l2jnS6bc,2025-10-29,Denver Nuggets,New Orleans Pelicans,0.8277,0.8181229960240173,1
+pUqeQpT9,2025-10-29,Utah Jazz,Portland Trail Blazers,0.4317,0.44560363876062664,0
+hfm3OOcM,2025-10-29,Minnesota Timberwolves,Los Angeles Lakers,0.7104,0.7402479948905059,0
+xSOZI2Lq,2025-10-29,Phoenix Suns,Memphis Grizzlies,0.4534,0.4754073382937413,0
+OrNsHtjd,2025-10-30,Charlotte Hornets,Orlando Magic,0.41,0.40451712415156416,0
+C43xwOCF,2025-10-30,Oklahoma City Thunder,Washington Wizards,0.8873,0.8844104000186731,1
+vi5Uvpr3,2025-10-30,Milwaukee Bucks,Golden State Warriors,0.2782,0.23960604235436,1
+8Wdoy2sS,2025-10-30,San Antonio Spurs,Miami Heat,0.669,0.6637025313789429,1
+2Rs1YUJ5,2025-10-31,Indiana Pacers,Atlanta Hawks,0.4545,0.4538553848760921,0
+zut9W8lI,2025-10-31,Philadelphia 76ers,Boston Celtics,0.481,0.42572191746958277,0
+hGKZD0Yj,2025-10-31,Cleveland Cavaliers,Toronto Raptors,0.625,0.6351251386387703,0
+KMCLy4Qc,2025-10-31,Chicago Bulls,New York Knicks,0.3632,0.3416434444494273,1
+tx1UZseA,2025-10-31,Memphis Grizzlies,Los Angeles Lakers,0.4629,0.4235693654934864,0
+6Jp9Samp,2025-10-31,Portland Trail Blazers,Denver Nuggets,0.34,0.34414424237194186,1
+l24xYLPM,2025-10-31,Phoenix Suns,Utah Jazz,0.5758,0.6359442383006162,1
+vXrHQwId,2025-10-31,Los Angeles Clippers,New Orleans Pelicans,0.8042,0.7884731457138021,1
+Od2GVu5k,2025-11-01,Milwaukee Bucks,Sacramento Kings,0.6818,0.7112214573028658,0
+pCjPTJZ1,2025-11-01,Charlotte Hornets,Minnesota Timberwolves,0.3796,0.4129784610458407,0
+8pxKk1dL,2025-11-01,Washington Wizards,Orlando Magic,0.2395,0.24604973145808967,0
+CIrBiNR8,2025-11-01,Indiana Pacers,Golden State Warriors,0.2055,0.20065447889756724,1
+4GNkpuKr,2025-11-01,Boston Celtics,Houston Rockets,0.3724,0.3659488156397997,0
+2RL3Dqmp,2025-11-01,Detroit Pistons,Dallas Mavericks,0.715,0.7400571324820544,1
+OIwirJle,2025-11-02,Oklahoma City Thunder,New Orleans Pelicans,0.8415,0.854907092746021,1
+AZRlamtn,2025-11-02,Toronto Raptors,Memphis Grizzlies,0.6173,0.6249703322328095,1
+CvKo40BE,2025-11-02,Charlotte Hornets,Utah Jazz,0.4781,0.3936009528133574,1
+K4Ng2vtR,2025-11-02,Cleveland Cavaliers,Atlanta Hawks,0.6818,0.708760934766421,1
+WrsatcJ7,2025-11-02,Brooklyn Nets,Philadelphia 76ers,0.3735,0.36752171540873513,0
+xM3QdI3l,2025-11-02,New York Knicks,Chicago Bulls,0.7112,0.7335909376290338,1
+AZ1YfdY0,2025-11-02,Phoenix Suns,San Antonio Spurs,0.3457,0.3381121253531656,1
+61esgz3D,2025-11-02,Los Angeles Lakers,Miami Heat,0.6355,0.6231487045269278,1
+WtCh0iAt,2025-11-03,Brooklyn Nets,Minnesota Timberwolves,0.2269,0.21312274606874893,0
+hd01bVvg,2025-11-03,Indiana Pacers,Milwaukee Bucks,0.3271,0.3063076227995165,0
+Mk7HfmvI,2025-11-03,New York Knicks,Washington Wizards,0.8357,0.8515274417238319,1
+QND8d995,2025-11-03,Boston Celtics,Utah Jazz,0.7895,0.8065199663639865,0
+YTzzDUgn,2025-11-03,Memphis Grizzlies,Detroit Pistons,0.3908,0.38611400913713706,0
+f35PhR8U,2025-11-03,Houston Rockets,Dallas Mavericks,0.8302,0.8218578918744183,1
+vRwrB8Ob,2025-11-03,Denver Nuggets,Sacramento Kings,0.8091,0.8118087771869988,1
+0tSj9ngB,2025-11-03,Portland Trail Blazers,Los Angeles Lakers,0.7593,0.7836505159079922,0
+86Vb7QNN,2025-11-03,Los Angeles Clippers,Miami Heat,0.7173,0.7296781571337101,0
+61LccRAb,2025-11-04,Toronto Raptors,Milwaukee Bucks,0.5462,0.5675383847363324,1
+KpaHP7wh,2025-11-04,Chicago Bulls,Philadelphia 76ers,0.5327,0.555588798464488,1
+SjCV14oo,2025-11-04,Atlanta Hawks,Orlando Magic,0.404,0.3933366081400574,1
+vmFINo84,2025-11-04,New Orleans Pelicans,Charlotte Hornets,0.5729,0.5667671821958745,1
+nDIQLPxH,2025-11-04,Golden State Warriors,Phoenix Suns,0.7899,0.809390843865851,1
+8S6ZJ37T,2025-11-04,Los Angeles Clippers,Oklahoma City Thunder,0.2653,0.2190218020645654,0
+CEhazPiA,2025-11-05,Indiana Pacers,Brooklyn Nets,0.6818,0.710810528264033,0
+v1fixoNc,2025-11-05,Detroit Pistons,Utah Jazz,0.779,0.785769360662025,1
+vBc5EsVj,2025-11-05,Cleveland Cavaliers,Philadelphia 76ers,0.8042,0.8313857290970701,1
+8tn8Y2MM,2025-11-05,Boston Celtics,Washington Wizards,0.8333,0.8491675183465307,1
+vPxvTtpp,2025-11-05,New York Knicks,Minnesota Timberwolves,0.5919,0.589592111529716,1
+0vRnRKEd,2025-11-05,Memphis Grizzlies,Houston Rockets,0.2812,0.27345438909794506,0
+6yEYlO63,2025-11-05,Dallas Mavericks,New Orleans Pelicans,0.7292,0.7722860904818053,0
+237sm2yG,2025-11-05,Denver Nuggets,Miami Heat,0.7649,0.7860510027858645,1
+UHNNSXk1,2025-11-05,Portland Trail Blazers,Oklahoma City Thunder,0.3936,0.42975539009955854,1
+YkUEUgLl,2025-11-05,Los Angeles Lakers,San Antonio Spurs,0.4868,0.42416045252453,1
+zFQVQBKD,2025-11-05,Sacramento Kings,Golden State Warriors,0.561,0.5765726512286072,1
+Ct1SQgzK,2025-11-06,Phoenix Suns,Los Angeles Clippers,0.5622,0.6603265028016375,1
+4YG9WT5F,2025-11-07,Orlando Magic,Boston Celtics,0.5955,0.6209944909369417,1
+d8D1Yky3,2025-11-07,Washington Wizards,Cleveland Cavaliers,0.1423,0.16668806354037552,0
+IaadNPS1,2025-11-07,San Antonio Spurs,Houston Rockets,0.3905,0.3431324958534501,1
+MX5mPobk,2025-11-07,Brooklyn Nets,Detroit Pistons,0.2042,0.19755951057081156,0
+Qm5IU7zS,2025-11-07,Atlanta Hawks,Toronto Raptors,0.544,0.6170062068868619,0
+6Luiq7kL,2025-11-07,Milwaukee Bucks,Chicago Bulls,0.6114,0.634898852818883,1
+AgnroTK8,2025-11-07,Miami Heat,Charlotte Hornets,0.6966,0.723008953035648,1
+djKVyPse,2025-11-07,Minnesota Timberwolves,Utah Jazz,0.8333,0.8321143156837328,1
+zyWMwoDr,2025-11-07,Memphis Grizzlies,Dallas Mavericks,0.6173,0.6736928664706945,1
+4GNwz3C7,2025-11-07,Denver Nuggets,Golden State Warriors,0.7776,0.7889379028650179,1
+KO5Qc64E,2025-11-07,Sacramento Kings,Oklahoma City Thunder,0.1822,0.20347473572007888,0
+rPibLXcs,2025-11-08,Washington Wizards,Dallas Mavericks,0.384,0.3787869754304843,0
+b9w5e5uB,2025-11-08,Philadelphia 76ers,Toronto Raptors,0.6386,0.6822336590239976,1
+C4qFHkc6,2025-11-08,Cleveland Cavaliers,Chicago Bulls,0.7495,0.7531302556736711,1
+IHEFFTRI,2025-11-08,Miami Heat,Portland Trail Blazers,0.4015,0.4017477138281969,1
+pO61wXJP,2025-11-08,San Antonio Spurs,New Orleans Pelicans,0.8091,0.8024401348110759,1
+vio7JBSg,2025-11-08,Atlanta Hawks,Los Angeles Lakers,0.3525,0.3086734819011529,1
+UerYXAsm,2025-11-08,Denver Nuggets,Indiana Pacers,0.7857,0.7831079519466305,1
+xMotWlCa,2025-11-08,Los Angeles Clippers,Phoenix Suns,0.625,0.6680723158131686,0
+WKvkUStC,2025-11-09,Milwaukee Bucks,Houston Rockets,0.3955,0.4051832318474054,0
+4YxcS6BO,2025-11-09,New York Knicks,Brooklyn Nets,0.8827,0.8638223591093348,1
+IcjwwcPq,2025-11-09,Orlando Magic,Boston Celtics,0.5919,0.6168057023932122,0
+QNgoyyfd,2025-11-09,Memphis Grizzlies,Oklahoma City Thunder,0.1973,0.20220561523008296,0
+tWyYbvn3,2025-11-09,Philadelphia 76ers,Detroit Pistons,0.3765,0.36544100927418055,0
+EqztcIGF,2025-11-09,Golden State Warriors,Indiana Pacers,0.8284,0.817905575171384,1
+YojsedoS,2025-11-09,Sacramento Kings,Minnesota Timberwolves,0.3689,0.3921480836028144,0
+4UtDkz9k,2025-11-10,Charlotte Hornets,Los Angeles Lakers,0.256,0.2414414353064355,0
+QqVLmEw2,2025-11-10,Detroit Pistons,Washington Wizards,0.8203,0.8118067188779373,1
+hjN7BHV8,2025-11-10,Orlando Magic,Portland Trail Blazers,0.5325,0.5409149020124565,1
+nkGG9e0L,2025-11-10,Miami Heat,Cleveland Cavaliers,0.2812,0.27828801591188007,1
+rL1n4ZNr,2025-11-10,Chicago Bulls,San Antonio Spurs,0.3632,0.3407100372249105,0
+vmee2Dhe,2025-11-10,Dallas Mavericks,Milwaukee Bucks,0.4095,0.4054441017921242,0
+S8yjOfFE,2025-11-10,Utah Jazz,Minnesota Timberwolves,0.2812,0.28330774292539895,0
+nDb30iN7,2025-11-10,Phoenix Suns,New Orleans Pelicans,0.7455,0.7627600223878228,1
+0zkcMYqR,2025-11-10,Los Angeles Clippers,Atlanta Hawks,0.6296,0.6319446487747626,0
+ImDAV6cL,2025-11-11,Brooklyn Nets,Toronto Raptors,0.2199,0.20205569983986818,0
+KKVTGC7l,2025-11-11,New York Knicks,Memphis Grizzlies,0.7776,0.7792952388122686,1
+hYTyFjx1,2025-11-11,Philadelphia 76ers,Boston Celtics,0.4675,0.41279826362297023,1
+l0NpDU6D,2025-11-11,Oklahoma City Thunder,Golden State Warriors,0.7322,0.7647843389063579,1
+EwFWzYbK,2025-11-11,Utah Jazz,Indiana Pacers,0.4444,0.4584472197386167,1
+bBj3VBMs,2025-11-11,Sacramento Kings,Denver Nuggets,0.2549,0.2640386100605625,0
+23mKRTL6,2025-11-12,Detroit Pistons,Chicago Bulls,0.4224,0.3294926724485859,1
+6yfBTkif,2025-11-12,Charlotte Hornets,Milwaukee Bucks,0.4373,0.42633440699594743,1
+zHoSP7jJ,2025-11-12,New York Knicks,Orlando Magic,0.6099,0.65386651127262,0
+CYEWWOcn,2025-11-12,Boston Celtics,Memphis Grizzlies,0.7322,0.7522312753866934,1
+KbIvV2Sb,2025-11-12,Miami Heat,Cleveland Cavaliers,0.6368,0.6175809028187508,0
+h65RLbko,2025-11-12,San Antonio Spurs,Golden State Warriors,0.5905,0.6219548923944002,0
+lvAeRKRN,2025-11-12,New Orleans Pelicans,Portland Trail Blazers,0.257,0.25291527490080845,0
+tE6mTtcB,2025-11-12,Houston Rockets,Washington Wizards,0.9016,0.8920406227212884,1
+p0hDq2sh,2025-11-12,Dallas Mavericks,Phoenix Suns,0.4545,0.40695662066790855,0
+tSoMstC4,2025-11-12,Oklahoma City Thunder,Los Angeles Lakers,0.7322,0.7745724792544895,1
+lhkUuKtH,2025-11-12,Sacramento Kings,Atlanta Hawks,0.3827,0.351991152621967,0
+A7wwvbBT,2025-11-12,Los Angeles Clippers,Denver Nuggets,0.3614,0.34481181131074795,0
+xYgsQpLr,2025-11-13,Cleveland Cavaliers,Toronto Raptors,0.7112,0.7224968416853226,0
+KtP8YyZj,2025-11-13,Phoenix Suns,Indiana Pacers,0.603,0.6450319124983799,1
+xIggtlhc,2025-11-13,Utah Jazz,Atlanta Hawks,0.4684,0.47207835710579615,0
+hx4YepZQ,2025-11-14,Orlando Magic,Brooklyn Nets,0.8664,0.8592479906349769,1
+zc7cjOdl,2025-11-14,New York Knicks,Miami Heat,0.6818,0.7427244231539142,1
+rNA5l2R0,2025-11-14,Detroit Pistons,Philadelphia 76ers,0.517,0.48983298552836785,1
+4xaEntdD,2025-11-14,Milwaukee Bucks,Charlotte Hornets,0.7605,0.7695421560832904,1
+ARNXiyYh,2025-11-14,New Orleans Pelicans,Los Angeles Lakers,0.2171,0.2342722321635074,0
+UHFPgc3t,2025-11-14,Minnesota Timberwolves,Sacramento Kings,0.815,0.8073611916649587,1
+ruMujF25,2025-11-14,Houston Rockets,Portland Trail Blazers,0.7188,0.7299177760860319,1
+v7FllgXH,2025-11-14,Dallas Mavericks,Los Angeles Clippers,0.4112,0.4301417963243038,0
+nXIdnX1U,2025-11-14,San Antonio Spurs,Golden State Warriors,0.5641,0.5694079443008622,0
+AVi1vSM9,2025-11-15,Cleveland Cavaliers,Memphis Grizzlies,0.8,0.816855296255878,1
+6coAx6iM,2025-11-15,Charlotte Hornets,Oklahoma City Thunder,0.0958,0.09735554480112557,0
+AohkOOke,2025-11-15,Indiana Pacers,Toronto Raptors,0.308,0.31323742899910595,0
+dSPlVNqd,2025-11-15,Minnesota Timberwolves,Denver Nuggets,0.4841,0.4598023006204282,0
+zDytXqFq,2025-11-15,Milwaukee Bucks,Los Angeles Lakers,0.5263,0.5769352594520475,0
+OYHzgRy3,2025-11-16,Boston Celtics,Los Angeles Clippers,0.6486,0.6805132697548769,1
+K0Bqi56F,2025-11-16,San Antonio Spurs,Sacramento Kings,0.6729,0.7298494921467793,1
+hE9ikqyS,2025-11-16,Washington Wizards,Brooklyn Nets,0.5628,0.581580388030893,0
+MqSFqNbk,2025-11-16,Houston Rockets,Orlando Magic,0.7275,0.7174350012257564,1
+U9VNs1T1,2025-11-16,New Orleans Pelicans,Golden State Warriors,0.1909,0.1850053532995644,0
+A58A54L8,2025-11-16,Dallas Mavericks,Portland Trail Blazers,0.4081,0.441912579047804,1
+A3Tjozzf,2025-11-16,Utah Jazz,Chicago Bulls,0.3735,0.39538388876719954,1
+G4zrmd5s,2025-11-16,Phoenix Suns,Atlanta Hawks,0.5263,0.5541303755922402,0
+6kDg5eRP,2025-11-17,Philadelphia 76ers,Los Angeles Clippers,0.6388,0.696319554570718,1
+rHRbqE46,2025-11-17,Cleveland Cavaliers,Milwaukee Bucks,0.6787,0.6994459783594635,1
+vqL7shZI,2025-11-17,Detroit Pistons,Indiana Pacers,0.752,0.7705775585190913,1
+6DobM2K7,2025-11-17,Toronto Raptors,Charlotte Hornets,0.7455,0.7721846013581147,1
+jNlQaZlm,2025-11-17,Miami Heat,New York Knicks,0.5158,0.5915915772242483,1
+Y5tsdilC,2025-11-17,New Orleans Pelicans,Oklahoma City Thunder,0.0798,0.09553634331446713,0
+xvmYcDJa,2025-11-17,Minnesota Timberwolves,Dallas Mavericks,0.8621,0.8847891265517248,1
+6JvkfVIO,2025-11-17,Denver Nuggets,Chicago Bulls,0.848,0.861082142145461,0
+ppAaEY3t,2025-11-18,Orlando Magic,Golden State Warriors,0.4397,0.43962203101303343,1
+b7GFAj35,2025-11-18,Atlanta Hawks,Detroit Pistons,0.4675,0.4292937285975164,0
+xhS6CCYh,2025-11-18,Brooklyn Nets,Boston Celtics,0.187,0.18284802831196467,0
+6XJN8UXH,2025-11-18,San Antonio Spurs,Memphis Grizzlies,0.6744,0.6957955399382834,1
+2aDW682U,2025-11-18,Los Angeles Lakers,Utah Jazz,0.8427,0.8625358819288376,1
+IBmtRBmn,2025-11-18,Portland Trail Blazers,Phoenix Suns,0.5352,0.524376046673232,0
+I1hqp6CE,2025-11-19,Philadelphia 76ers,Toronto Raptors,0.4479,0.3745492336752315,0
+pv7kNTnB,2025-11-19,Indiana Pacers,Charlotte Hornets,0.4648,0.47292423168498116,1
+xE3sPkIb,2025-11-19,Cleveland Cavaliers,Houston Rockets,0.4778,0.4534271558083043,0
+6gebL7HN,2025-11-19,Miami Heat,Golden State Warriors,0.7801,0.8421644948030639,1
+OUROyT14,2025-11-19,Oklahoma City Thunder,Sacramento Kings,0.9129,0.9048587425447837,1
+jHTGwkXi,2025-11-19,New Orleans Pelicans,Denver Nuggets,0.181,0.21552806928099524,0
+xxnUFouo,2025-11-19,Minnesota Timberwolves,Washington Wizards,0.8927,0.8959332230173652,1
+KdLXZ6WG,2025-11-19,Dallas Mavericks,New York Knicks,0.252,0.26602321442120674,0
+Qem5HbGk,2025-11-19,Portland Trail Blazers,Chicago Bulls,0.4095,0.39753711253781043,0
+nByEFxo2,2025-11-20,Orlando Magic,Los Angeles Clippers,0.6713,0.7205274430482554,1
+WGIwWcVr,2025-11-20,San Antonio Spurs,Atlanta Hawks,0.5013,0.561491576867422,1
+vJwawtw9,2025-11-20,Memphis Grizzlies,Sacramento Kings,0.5838,0.6261182721020182,1
+zoX7yK7L,2025-11-20,Milwaukee Bucks,Philadelphia 76ers,0.4675,0.4423540326865743,0
+joq76zmn,2025-11-21,Cleveland Cavaliers,Indiana Pacers,0.8621,0.8649956296542342,1
+YTzO2hnB,2025-11-21,Toronto Raptors,Washington Wizards,0.8659,0.8640232073428814,1
+x2sF4EHb,2025-11-21,Boston Celtics,Brooklyn Nets,0.8631,0.8406902894102992,0
+6sZV0WGN,2025-11-21,Chicago Bulls,Miami Heat,0.5521,0.6031499088761615,0
+QRF2eAvo,2025-11-21,Dallas Mavericks,New Orleans Pelicans,0.5897,0.636920208730273,1
+j57lJDWi,2025-11-21,Phoenix Suns,Minnesota Timberwolves,0.3778,0.3497694859756212,1
+CKecHi14,2025-11-21,Houston Rockets,Denver Nuggets,0.567,0.585802479462571,0
+GChED90T,2025-11-21,Utah Jazz,Oklahoma City Thunder,0.1043,0.12045265049722524,0
+Kpa5FVVG,2025-11-21,Golden State Warriors,Portland Trail Blazers,0.7815,0.8139770526362184,0
+SrCnUy0e,2025-11-22,Charlotte Hornets,Los Angeles Clippers,0.5053,0.4850160332482221,0
+YuFfSFU7,2025-11-22,Orlando Magic,New York Knicks,0.5349,0.5887978827106266,1
+EyhsjJME,2025-11-22,New Orleans Pelicans,Atlanta Hawks,0.2171,0.20858307589569414,0
+M1eklciR,2025-11-22,Chicago Bulls,Washington Wizards,0.8345,0.8313835345044018,1
+tnxMryFl,2025-11-22,Milwaukee Bucks,Detroit Pistons,0.257,0.26127022816368334,0
+EazUtFq1,2025-11-22,Dallas Mavericks,Memphis Grizzlies,0.5,0.5563584468641163,0
+Y1jVvgED,2025-11-22,Denver Nuggets,Sacramento Kings,0.8091,0.799491919414594,0
+08rH2d6K,2025-11-23,Philadelphia 76ers,Miami Heat,0.4882,0.45106770257275636,0
+YFV3ghT6,2025-11-23,Cleveland Cavaliers,Los Angeles Clippers,0.7203,0.7277300948458508,1
+h6NeeEbf,2025-11-23,Boston Celtics,Orlando Magic,0.622,0.670502635177594,1
+ptKmczUs,2025-11-23,Atlanta Hawks,Charlotte Hornets,0.7248,0.7104506192828357,1
+xj5HRcdm,2025-11-23,Toronto Raptors,Brooklyn Nets,0.8246,0.8074629921843718,1
+6TTBiWcJ,2025-11-23,Oklahoma City Thunder,Portland Trail Blazers,0.8873,0.8861828446374342,1
+O4bdarHP,2025-11-23,Phoenix Suns,San Antonio Spurs,0.5325,0.5428355532809006,1
+fmkSgMvm,2025-11-23,Utah Jazz,Los Angeles Lakers,0.2336,0.22608410119569886,0
+G2wyh09a,2025-11-24,Indiana Pacers,Detroit Pistons,0.2262,0.23938100142762278,0
+pG8PPyRa,2025-11-24,Toronto Raptors,Cleveland Cavaliers,0.5222,0.569081669020546,1
+2JyqjvvC,2025-11-24,Brooklyn Nets,New York Knicks,0.1643,0.1859110431715485,0
+dKgHXVNp,2025-11-24,Miami Heat,Dallas Mavericks,0.705,0.7446564338870902,1
+jwwKiiFG,2025-11-24,New Orleans Pelicans,Chicago Bulls,0.3695,0.3724480126307241,1
+lEt3eZFi,2025-11-24,Memphis Grizzlies,Denver Nuggets,0.2936,0.3278347832437896,0
+ptzCgDp4,2025-11-24,Milwaukee Bucks,Portland Trail Blazers,0.5067,0.5149955417823183,0
+ChRSkVqT,2025-11-24,Phoenix Suns,Houston Rockets,0.3249,0.28802476444848013,0
+bq0o8Cac,2025-11-24,Sacramento Kings,Minnesota Timberwolves,0.2133,0.20886183458075191,1
+ryIbp97j,2025-11-24,Golden State Warriors,Utah Jazz,0.8515,0.845541479161424,1
+Crvp8mOj,2025-11-25,Washington Wizards,Atlanta Hawks,0.1972,0.21836999608210456,1
+xxbOVjGc,2025-11-25,Philadelphia 76ers,Orlando Magic,0.3802,0.32373456385915733,0
+p21WTUpA,2025-11-25,Los Angeles Lakers,Los Angeles Clippers,0.6842,0.7198252721976541,1
+6HkuS8FM,2025-11-26,Boston Celtics,Detroit Pistons,0.4582,0.5074099416693978,1
+x0tBMnwp,2025-11-26,Charlotte Hornets,New York Knicks,0.3057,0.3439089185713011,0
+KKFEt8UF,2025-11-26,Oklahoma City Thunder,Minnesota Timberwolves,0.7963,0.793544097092164,1
+OhM5rUa3,2025-11-26,Miami Heat,Milwaukee Bucks,0.7881,0.8297170429059704,1
+WbZJKQ7d,2025-11-26,Toronto Raptors,Indiana Pacers,0.783,0.8012652928869273,1
+QJsnOaEl,2025-11-26,New Orleans Pelicans,Memphis Grizzlies,0.4051,0.42107464315335585,0
+YkU2KHDD,2025-11-26,Portland Trail Blazers,San Antonio Spurs,0.5054,0.5426682786634016,0
+lbCkrL5K,2025-11-26,Sacramento Kings,Phoenix Suns,0.382,0.36283231838056684,0
+nZVfMwq1,2025-11-26,Golden State Warriors,Houston Rockets,0.5792,0.628559920859982,0
+MPkWfbkQ,2025-11-28,Atlanta Hawks,Cleveland Cavaliers,0.3172,0.3005328433889608,1
+Y39yZGS6,2025-11-28,Brooklyn Nets,Philadelphia 76ers,0.3049,0.2651812195468436,0
+fJcpXfcJ,2025-11-28,Detroit Pistons,Orlando Magic,0.5919,0.5991896337163124,0
+pUcLxaTs,2025-11-28,Charlotte Hornets,Chicago Bulls,0.426,0.45325385374886357,1
+tAW2kxDm,2025-11-28,New York Knicks,Milwaukee Bucks,0.7073,0.7346713853544133,1
+tdiUzwbf,2025-11-28,Indiana Pacers,Washington Wizards,0.692,0.7171248017586339,1
+ENUAmGs0,2025-11-28,Utah Jazz,Sacramento Kings,0.5529,0.6330425868645487,1
+YPpCofCC,2025-11-28,Oklahoma City Thunder,Phoenix Suns,0.8696,0.8581044671756259,1
+tjlKqYtP,2025-11-28,Denver Nuggets,San Antonio Spurs,0.7127,0.7308909021020534,0
+6VSm2YJh,2025-11-28,Los Angeles Lakers,Dallas Mavericks,0.7794,0.7745861311238252,1
+b5Pu4fkt,2025-11-28,Los Angeles Clippers,Memphis Grizzlies,0.691,0.6837244835189964,0
+Wdbg6jU9,2025-11-29,Minnesota Timberwolves,Boston Celtics,0.6713,0.6942613976568824,1
+tr2YNFeC,2025-11-29,Charlotte Hornets,Toronto Raptors,0.2888,0.33957808308446663,1
+xATg4UbM,2025-11-29,Indiana Pacers,Chicago Bulls,0.4377,0.4292000329828613,1
+8hKPb8Mq,2025-11-29,Miami Heat,Detroit Pistons,0.6015,0.6734040827769537,0
+U78Ydnid,2025-11-29,Milwaukee Bucks,Brooklyn Nets,0.8184,0.8271696815959948,1
+dE0KKkq3,2025-11-29,Golden State Warriors,New Orleans Pelicans,0.7656,0.8056229353890252,1
+jDgTITDF,2025-11-29,Phoenix Suns,Denver Nuggets,0.3936,0.431054796685345,0
+OQiyH7rS,2025-11-29,Los Angeles Clippers,Dallas Mavericks,0.7605,0.7817022412981671,0
+rBY7Bo6k,2025-11-30,Utah Jazz,Houston Rockets,0.1797,0.19390885787900772,0
+Ee0tMgQO,2025-11-30,New York Knicks,Toronto Raptors,0.732,0.7487497333585091,1
+GdhqtcBt,2025-11-30,Portland Trail Blazers,Oklahoma City Thunder,0.1742,0.21645161131265675,0
+WWE2XSS8,2025-11-30,Philadelphia 76ers,Atlanta Hawks,0.5619,0.5853018534728853,0
+jyxG9Pz2,2025-11-30,Cleveland Cavaliers,Boston Celtics,0.7097,0.7608900396218116,0
+OMeivytg,2025-11-30,Minnesota Timberwolves,San Antonio Spurs,0.625,0.6757119645400197,1
+pxp0xFA5,2025-11-30,Sacramento Kings,Memphis Grizzlies,0.4315,0.4297504809377904,0
+h2m8zguI,2025-11-30,Los Angeles Lakers,New Orleans Pelicans,0.8893,0.8710770368298233,1
+2DGQhzen,2025-12-01,Indiana Pacers,Cleveland Cavaliers,0.3762,0.3807838561937048,0
+buAZjEPb,2025-12-01,Washington Wizards,Milwaukee Bucks,0.2147,0.19794734138260436,1
+n1tHYW9U,2025-12-01,Detroit Pistons,Atlanta Hawks,0.7664,0.7986420623565977,1
+65DskhfB,2025-12-01,Brooklyn Nets,Charlotte Hornets,0.3778,0.3980611764523483,1
+O42LsAno,2025-12-01,Orlando Magic,Chicago Bulls,0.7619,0.7934975284491531,1
+SK1jmWON,2025-12-01,Miami Heat,Los Angeles Clippers,0.6803,0.7178385663184912,1
+CQrG3i94,2025-12-01,Utah Jazz,Houston Rockets,0.1879,0.2140476104397443,1
+vDp85Dvh,2025-12-01,Denver Nuggets,Dallas Mavericks,0.8091,0.8308146431623925,0
+8hxP1VwH,2025-12-01,Los Angeles Lakers,Phoenix Suns,0.6604,0.6665700105085266,0
+EkuXa98T,2025-12-02,Philadelphia 76ers,Washington Wizards,0.8519,0.8481742722756505,1
+48N3Exb3,2025-12-02,Toronto Raptors,Portland Trail Blazers,0.6423,0.6737322672331997,1
+Me2bGUhA,2025-12-02,San Antonio Spurs,Memphis Grizzlies,0.6429,0.6872675520723722,1
+QT8kIjOc,2025-12-02,New Orleans Pelicans,Minnesota Timberwolves,0.1655,0.16054537349170087,0
+bNG3fmWj,2025-12-02,Boston Celtics,New York Knicks,0.4895,0.48891377907153427,1
+hrPVcMxq,2025-12-02,Golden State Warriors,Oklahoma City Thunder,0.1909,0.21051980225855854,0
+2Z7P1jeE,2025-12-03,Orlando Magic,San Antonio Spurs,0.743,0.7785812372615468,0
+CpuXe07e,2025-12-03,Cleveland Cavaliers,Portland Trail Blazers,0.7904,0.8221353902720555,0
+KArufvx8,2025-12-03,Indiana Pacers,Denver Nuggets,0.2678,0.2670637732762868,0
+AaBXaUPQ,2025-12-03,Atlanta Hawks,Los Angeles Clippers,0.5325,0.5203158915258648,0
+ER63f8ml,2025-12-03,New York Knicks,Charlotte Hornets,0.7619,0.779612962630345,1
+ADj6ETvK,2025-12-03,Milwaukee Bucks,Detroit Pistons,0.378,0.35869964941666455,1
+nu5BhnI0,2025-12-03,Chicago Bulls,Brooklyn Nets,0.7335,0.7301711987228574,0
+r7bKjQnD,2025-12-03,Houston Rockets,Sacramento Kings,0.8891,0.8797862278405832,1
+foSx972s,2025-12-03,Dallas Mavericks,Miami Heat,0.3765,0.3654169799328113,1
+t2Qp7oXg,2025-12-04,Philadelphia 76ers,Golden State Warriors,0.61,0.6714291797252739,1
+xUJg5P16,2025-12-04,Washington Wizards,Boston Celtics,0.2063,0.21394806878309283,0
+0zHCCGSF,2025-12-04,Toronto Raptors,Los Angeles Lakers,0.553,0.6230506051096499,0
+AsI133WI,2025-12-04,Brooklyn Nets,Utah Jazz,0.3625,0.3381149207003259,0
+Qk0lR6OP,2025-12-04,New Orleans Pelicans,Minnesota Timberwolves,0.1837,0.1965042154784906,0
+GKvTJOGa,2025-12-05,Orlando Magic,Miami Heat,0.6729,0.7148882939114317,1
+f5jKLpnm,2025-12-05,Boston Celtics,Los Angeles Lakers,0.7415,0.7900391445554269,1
+KCypGtGO,2025-12-05,Cleveland Cavaliers,San Antonio Spurs,0.6341,0.6861839175717959,1
+OpryI2oC,2025-12-05,Atlanta Hawks,Denver Nuggets,0.4061,0.4615872215458498,0
+YmFKAfcS,2025-12-05,Toronto Raptors,Charlotte Hornets,0.6992,0.6882354795918754,0
+txsfYNVh,2025-12-05,New York Knicks,Utah Jazz,0.8836,0.89847653121407,1
+zPBgzp1t,2025-12-05,Detroit Pistons,Portland Trail Blazers,0.7374,0.7657810254762714,1
+AHYAUuVH,2025-12-05,Houston Rockets,Phoenix Suns,0.7634,0.7512134371181192,1
+GG0rCXEj,2025-12-05,Memphis Grizzlies,Los Angeles Clippers,0.4608,0.4782962226035613,1
+UerVZz7c,2025-12-05,Milwaukee Bucks,Philadelphia 76ers,0.4819,0.4657452407474262,0
+l2p2W105,2025-12-05,Chicago Bulls,Indiana Pacers,0.625,0.6350324248396885,0
+29twYEyA,2025-12-05,Oklahoma City Thunder,Dallas Mavericks,0.8824,0.8889959252070537,1
+byznWh6M,2025-12-06,Brooklyn Nets,New Orleans Pelicans,0.5975,0.6449804266302066,1
+UJQHQWTq,2025-12-06,Washington Wizards,Atlanta Hawks,0.2251,0.24135579528485732,0
+dW1CnEj3,2025-12-06,Detroit Pistons,Milwaukee Bucks,0.8333,0.8409969914760169,1
+jZEQOAbd,2025-12-06,Cleveland Cavaliers,Golden State Warriors,0.7582,0.7855008517845233,0
+QBgTrWkS,2025-12-06,Minnesota Timberwolves,Los Angeles Clippers,0.748,0.7637624329223727,1
+hbeLphLF,2025-12-06,Miami Heat,Sacramento Kings,0.7567,0.7821356354028838,0
+pdz0wADk,2025-12-06,Dallas Mavericks,Houston Rockets,0.3,0.3504458972600226,1
+x4h7ylr2,2025-12-07,New York Knicks,Orlando Magic,0.5263,0.5327805370050919,1
+G8Iq5YKk,2025-12-07,Toronto Raptors,Boston Celtics,0.4205,0.3981597773214303,0
+IaVgaiz9,2025-12-07,Charlotte Hornets,Denver Nuggets,0.2036,0.2242438864641045,0
+QPY1cV4L,2025-12-07,Memphis Grizzlies,Portland Trail Blazers,0.5352,0.5508297968453755,1
+pAFYi9Sr,2025-12-07,Chicago Bulls,Golden State Warriors,0.483,0.496010225785799,0
+INDtjmce,2025-12-07,Philadelphia 76ers,Los Angeles Lakers,0.4348,0.45060129778272007,0
+xQTslRR7,2025-12-07,Utah Jazz,Oklahoma City Thunder,0.1866,0.17635996117772154,0
+4WLTBUJE,2025-12-08,Indiana Pacers,Sacramento Kings,0.6,0.6183870172689814,1
+QoAxA8lR,2025-12-08,Minnesota Timberwolves,Phoenix Suns,0.7558,0.7552042101566422,0
+dU084nCl,2025-12-08,New Orleans Pelicans,San Antonio Spurs,0.2336,0.27014741065055536,0
+AspyhztK,2025-12-11,Milwaukee Bucks,Boston Celtics,0.2279,0.22462437513410738,1
+lxatWhJ0,2025-12-11,Houston Rockets,Los Angeles Clippers,0.7619,0.7984936895305678,1
+p4hkUWmD,2025-12-11,New Orleans Pelicans,Portland Trail Blazers,0.3936,0.4409650491392629,1
+fFL7nE3s,2025-12-11,Sacramento Kings,Denver Nuggets,0.2119,0.21912468511704736,0
+2uPFphYg,2025-12-12,Charlotte Hornets,Chicago Bulls,0.4372,0.37730336647721274,0
+WKGWtAXI,2025-12-12,Philadelphia 76ers,Indiana Pacers,0.6643,0.6584740597200182,1
+b7IOrW26,2025-12-12,Detroit Pistons,Atlanta Hawks,0.7065,0.7179170356819595,1
+dEzB4DPP,2025-12-12,Washington Wizards,Cleveland Cavaliers,0.1073,0.13808350115888318,0
+SdRtaimm,2025-12-12,Memphis Grizzlies,Utah Jazz,0.7,0.7777378227120025,0
+lCFkcVHa,2025-12-12,Dallas Mavericks,Brooklyn Nets,0.7173,0.7194811918691301,1
+dxJce9nC,2025-12-12,Golden State Warriors,Minnesota Timberwolves,0.6203,0.7369093282059497,0
+jyC6gmHO,2025-12-14,Indiana Pacers,Washington Wizards,0.7815,0.8022366204345979,0
+2FuPBUWh,2025-12-14,Cleveland Cavaliers,Charlotte Hornets,0.8245,0.8121110214824229,0
+6mnGDj2t,2025-12-14,Atlanta Hawks,Philadelphia 76ers,0.6173,0.6219929887391208,1
+AuqX9815,2025-12-14,Brooklyn Nets,Milwaukee Bucks,0.4785,0.47266967471066157,1
+Uka6O7Gb,2025-12-14,Chicago Bulls,New Orleans Pelicans,0.618,0.6640815996297066,0
+WfXu8nWH,2025-12-14,Minnesota Timberwolves,Sacramento Kings,0.7745,0.7870162491710992,1
+MZShdfF8,2025-12-14,Phoenix Suns,Los Angeles Lakers,0.5209,0.6153797566115616,0
+IBVm6Q0U,2025-12-14,Portland Trail Blazers,Golden State Warriors,0.3619,0.3839155971422621,1
+dx1bQTon,2025-12-15,Boston Celtics,Detroit Pistons,0.5259,0.5715502891958936,0
+zBpt1E3e,2025-12-15,Miami Heat,Toronto Raptors,0.625,0.6609517491159494,0
+QHhFMooB,2025-12-15,Utah Jazz,Dallas Mavericks,0.4816,0.5149998448032703,1
+GbZo4wVq,2025-12-15,Denver Nuggets,Houston Rockets,0.4857,0.47108844880206563,1
+xENf2Had,2025-12-15,Los Angeles Clippers,Memphis Grizzlies,0.6517,0.6937136266696403,0
+OthP04BD,2025-12-17,Minnesota Timberwolves,Memphis Grizzlies,0.7018,0.662954061050919,0
+jTgH2Qt1,2025-12-17,Chicago Bulls,Cleveland Cavaliers,0.3525,0.36016775375572163,1
+63jh4wI5,2025-12-18,Charlotte Hornets,Atlanta Hawks,0.3725,0.4230166638152756,1
+vV3a2HnI,2025-12-18,Indiana Pacers,New York Knicks,0.403,0.44653313291393015,0
+zcc80eHU,2025-12-18,Brooklyn Nets,Miami Heat,0.2918,0.29111414313084705,0
+OYLi3Ck2,2025-12-18,Milwaukee Bucks,Toronto Raptors,0.375,0.3794144778124928,0
+j9XHKb2n,2025-12-18,New Orleans Pelicans,Houston Rockets,0.2337,0.24810062713854092,1
+pl2q6amg,2025-12-18,San Antonio Spurs,Washington Wizards,0.8811,0.875524901190088,1
+xOby8LIt,2025-12-18,Oklahoma City Thunder,Los Angeles Clippers,0.9006,0.8914020735546988,1
+nyRQIxXb,2025-12-18,Dallas Mavericks,Detroit Pistons,0.338,0.3412752610566931,1
+EmIsFfWN,2025-12-18,Phoenix Suns,Golden State Warriors,0.456,0.47688138277145226,1
+hYTYGG1B,2025-12-18,Denver Nuggets,Orlando Magic,0.6935,0.7293333003075707,1
+pW8D9Ygo,2025-12-18,Utah Jazz,Los Angeles Lakers,0.2381,0.22747152256126552,0
+27wbHpDi,2025-12-18,Portland Trail Blazers,Sacramento Kings,0.7445,0.7799525298498174,1
+fNi7D2CG,2025-12-19,New York Knicks,Philadelphia 76ers,0.6818,0.7343080926674597,0
+zLy6FOs4,2025-12-19,Boston Celtics,Miami Heat,0.7188,0.743266752743843,1
+2meFBtsT,2025-12-19,Atlanta Hawks,San Antonio Spurs,0.4106,0.37561544916881257,0
+nLWo6K4j,2025-12-19,Cleveland Cavaliers,Chicago Bulls,0.6095,0.5991455160994141,0
+EROXTNdc,2025-12-19,Minnesota Timberwolves,Oklahoma City Thunder,0.3166,0.3559721720398645,1
+fyXuS1R9,2025-12-20,Denver Nuggets,Houston Rockets,0.4897,0.4415153105809756,0
+4UbvRFs9,2025-12-20,Toronto Raptors,Boston Celtics,0.5325,0.5809933467133239,0
+SlVmQudM,2025-12-20,Philadelphia 76ers,Dallas Mavericks,0.522,0.5533269352387904,1
+nZBKKJJq,2025-12-20,New Orleans Pelicans,Indiana Pacers,0.5556,0.5944219627080748,1
+faFSIcld,2025-12-20,Detroit Pistons,Charlotte Hornets,0.7966,0.8083283205086188,1
+zehFt1t3,2025-12-20,Memphis Grizzlies,Washington Wizards,0.8284,0.8459489969732277,0
+MBjNvuBF,2025-12-20,Golden State Warriors,Phoenix Suns,0.6728,0.689412560531309,1
+GC8eMWfl,2025-12-20,Utah Jazz,Orlando Magic,0.2812,0.2798843774951952,0
+lQ63KAP0,2025-12-20,Sacramento Kings,Portland Trail Blazers,0.3924,0.3620083934604115,0
+ph0CIlfD,2025-12-20,Los Angeles Clippers,Los Angeles Lakers,0.4675,0.4970284435418418,1
+AVibthnK,2025-12-21,Atlanta Hawks,Chicago Bulls,0.6087,0.6605087347417495,0
+Cf2nPgCL,2025-12-21,Brooklyn Nets,Toronto Raptors,0.4133,0.41266727492781796,1
+f3TUzW9s,2025-12-21,New York Knicks,Miami Heat,0.7143,0.7424271239092697,1
+2TWxZ9vf,2025-12-21,Washington Wizards,San Antonio Spurs,0.1127,0.13333266440077207,0
+beQoXm96,2025-12-21,Minnesota Timberwolves,Milwaukee Bucks,0.8283,0.8329017874561201,1
+W8OgVRwJ,2025-12-21,Sacramento Kings,Houston Rockets,0.1704,0.15803812261382694,1
+SpZ3m9gm,2025-12-22,Cleveland Cavaliers,Charlotte Hornets,0.7573,0.8186318070872098,1
+l0NComOa,2025-12-22,Boston Celtics,Indiana Pacers,0.8219,0.8306839712997139,1
+dQQKqRhC,2025-12-22,New Orleans Pelicans,Dallas Mavericks,0.4895,0.49549310839640653,1
+jPJTs5NO,2025-12-22,Denver Nuggets,Utah Jazz,0.8403,0.8360381838833536,1
+6yfw288t,2025-12-22,Oklahoma City Thunder,Memphis Grizzlies,0.882,0.8884727454173216,1
+23mn0nwg,2025-12-22,Golden State Warriors,Orlando Magic,0.6697,0.6888639874666663,1
+ATjfbQ75,2025-12-22,Portland Trail Blazers,Detroit Pistons,0.3248,0.31449918567580903,0
+IawBfr7U,2025-12-23,Philadelphia 76ers,Brooklyn Nets,0.7663,0.7714341345851385,0
+Wru3d4xI,2025-12-23,Charlotte Hornets,Washington Wizards,0.6854,0.7432156864434774,1
+Q50xB3iB,2025-12-23,Indiana Pacers,Milwaukee Bucks,0.4778,0.4323804052934557,0
+UBrJJXZr,2025-12-23,Miami Heat,Toronto Raptors,0.6588,0.694440383436492,0
+Uw7TCPMb,2025-12-23,Cleveland Cavaliers,New Orleans Pelicans,0.7664,0.82905866517618,1
+dQ8LEohn,2025-12-23,Atlanta Hawks,Chicago Bulls,0.5823,0.6097599991660019,0
+Gns9heyp,2025-12-23,Dallas Mavericks,Denver Nuggets,0.3287,0.3270385992581613,1
+x2VHjZ5d,2025-12-23,Minnesota Timberwolves,New York Knicks,0.7018,0.7647259357154745,1
+2PtRHB4e,2025-12-23,San Antonio Spurs,Oklahoma City Thunder,0.3265,0.32555652588714346,1
+QcSLwgRE,2025-12-23,Utah Jazz,Memphis Grizzlies,0.3905,0.3609013780146279,0
+bizzGkZ7,2025-12-23,Phoenix Suns,Los Angeles Lakers,0.581,0.6291666632792289,1
+nDGUyXeR,2025-12-23,Portland Trail Blazers,Orlando Magic,0.4778,0.47721744030857716,0
+rcHaWAJl,2025-12-23,Sacramento Kings,Detroit Pistons,0.2259,0.22717926896546858,0
+vPA8Ull1,2025-12-23,Los Angeles Clippers,Houston Rockets,0.2918,0.2801468105446438,1
+MsmIngsh,2025-12-25,New York Knicks,Cleveland Cavaliers,0.6198,0.6972554257240487,1
+rcyRpXB4,2025-12-25,Oklahoma City Thunder,San Antonio Spurs,0.7605,0.784108386762048,0
+UDZYrBtH,2025-12-25,Golden State Warriors,Dallas Mavericks,0.7333,0.8029095738455113,1
+fyBfLS57,2025-12-25,Los Angeles Lakers,Houston Rockets,0.4642,0.4114269936027027,0
+nVctqWcE,2025-12-25,Denver Nuggets,Minnesota Timberwolves,0.5047,0.5427472297774335,1
+4tPvjiiI,2025-12-26,Washington Wizards,Toronto Raptors,0.2653,0.2564950084788831,1
+Cx9GSSID,2025-12-26,Atlanta Hawks,Miami Heat,0.5754,0.614742463363273,0
+UDw1zuxK,2025-12-26,Orlando Magic,Charlotte Hornets,0.6667,0.6677113567501333,0
+bTTWUIas,2025-12-26,Indiana Pacers,Boston Celtics,0.2623,0.2774169934968479,0
+KrIuTdUg,2025-12-26,Chicago Bulls,Philadelphia 76ers,0.4675,0.4540887381741366,1
+OzFdPETI,2025-12-26,New Orleans Pelicans,Phoenix Suns,0.3659,0.35412339327235315,0
+S8LmRza6,2025-12-26,Memphis Grizzlies,Milwaukee Bucks,0.6392,0.6993439511703838,1
+E3Q7WVzn,2025-12-26,Utah Jazz,Detroit Pistons,0.2337,0.24495752970863216,1
+Y5t9U95b,2025-12-26,Portland Trail Blazers,Los Angeles Clippers,0.4479,0.4502480956383218,0
+tWqHSmzB,2025-12-27,Sacramento Kings,Dallas Mavericks,0.4286,0.461730888437114,1
+2oYPQR4N,2025-12-27,Orlando Magic,Denver Nuggets,0.3985,0.41232157657141094,1
+YTOeL5Sp,2025-12-27,New Orleans Pelicans,Phoenix Suns,0.3775,0.3702502462700714,0
+0fuPen4c,2025-12-27,San Antonio Spurs,Utah Jazz,0.8519,0.8422027977631759,0
+2aDbuRJG,2025-12-27,Chicago Bulls,Milwaukee Bucks,0.5431,0.557876399270064,0
+6XJksmk4,2025-12-27,Miami Heat,Indiana Pacers,0.6951,0.7131628668320144,1
+APG6w5lT,2025-12-27,Houston Rockets,Cleveland Cavaliers,0.557,0.5555369629001927,1
+YJLsq9Ki,2025-12-27,Atlanta Hawks,New York Knicks,0.3387,0.3444209641058212,0
+fchwYrCj,2025-12-27,Minnesota Timberwolves,Brooklyn Nets,0.8258,0.8501598002800056,0
+C6SnlVLU,2025-12-28,Toronto Raptors,Golden State Warriors,0.3875,0.3962863796127231,1
+dMYXgQY9,2025-12-28,Oklahoma City Thunder,Philadelphia 76ers,0.8553,0.8838311567540195,1
+UZWuh43M,2025-12-28,Washington Wizards,Memphis Grizzlies,0.2873,0.2923367327646219,1
+lKDCnrRq,2025-12-28,Portland Trail Blazers,Boston Celtics,0.3049,0.3223078970608777,1
+fHGKpMed,2025-12-28,Los Angeles Clippers,Detroit Pistons,0.4103,0.4114447438235589,1
+zDg78Pm3,2025-12-28,Los Angeles Lakers,Sacramento Kings,0.8027,0.8457828224464932,1
+rwcF63IF,2025-12-29,Charlotte Hornets,Milwaukee Bucks,0.4231,0.41005558300027367,0
+v5jO4smS,2025-12-29,Washington Wizards,Phoenix Suns,0.2133,0.21451851318814244,0
+jXqehsYo,2025-12-29,Toronto Raptors,Orlando Magic,0.4778,0.4698454999170992,1
+tl7fcau2,2025-12-29,Miami Heat,Denver Nuggets,0.4712,0.4918533931848559,1
+zyxfaLAk,2025-12-29,Brooklyn Nets,Golden State Warriors,0.3357,0.3313413195005436,0
+2L6wcjoJ,2025-12-29,San Antonio Spurs,Cleveland Cavaliers,0.5867,0.6097360796913966,0
+8fatL2X8,2025-12-29,Chicago Bulls,Minnesota Timberwolves,0.3387,0.3249836913252803,0
+SrCE2fHs,2025-12-29,Houston Rockets,Indiana Pacers,0.8333,0.8350903838843782,1
+U78VbCG6,2025-12-29,Oklahoma City Thunder,Atlanta Hawks,0.8842,0.8988946458655543,1
+z9FM0Yof,2025-12-29,New Orleans Pelicans,New York Knicks,0.2626,0.2872113954766831,0
+ITlQKgwQ,2025-12-29,Portland Trail Blazers,Dallas Mavericks,0.5584,0.5821634195624307,1
+lCudFX0m,2025-12-30,Memphis Grizzlies,Philadelphia 76ers,0.4767,0.4528337609160696,0
+ART4DBVa,2025-12-30,Utah Jazz,Boston Celtics,0.286,0.28175124287149633,0
+drSCBk0C,2025-12-30,Los Angeles Lakers,Detroit Pistons,0.4416,0.45425004152581616,0
+hALL9TUO,2025-12-30,Los Angeles Clippers,Sacramento Kings,0.7619,0.7719570416955064,1
+8MeVTWFt,2025-12-31,Charlotte Hornets,Golden State Warriors,0.2812,0.28968658767544814,0
+4lkvSApg,2025-12-31,Atlanta Hawks,Minnesota Timberwolves,0.3396,0.31593097361725975,1
+dd7oQlF5,2025-12-31,Indiana Pacers,Orlando Magic,0.375,0.39152769696274714,0
+IBefOSqI,2025-12-31,Cleveland Cavaliers,Phoenix Suns,0.6935,0.7011354959457811,1
+42UCtAan,2025-12-31,San Antonio Spurs,New York Knicks,0.5894,0.6389328255022865,1
+Qya2M6EU,2025-12-31,Chicago Bulls,New Orleans Pelicans,0.5325,0.6107172936054635,1
+Opr3jL2b,2025-12-31,Toronto Raptors,Denver Nuggets,0.692,0.7394439718686455,0
+dIrMxSbB,2025-12-31,Oklahoma City Thunder,Portland Trail Blazers,0.8741,0.8734068948932676,1
+xGSKvlUb,2025-12-31,Milwaukee Bucks,Washington Wizards,0.7976,0.8134375140466723,0
+4rnUz6TN,2026-01-01,Brooklyn Nets,Houston Rockets,0.1729,0.14461404527962202,0
+lGN0Vqio,2026-01-01,Detroit Pistons,Miami Heat,0.625,0.6343618176129474,0
+GMFngmqh,2026-01-01,Dallas Mavericks,Philadelphia 76ers,0.4473,0.45873816435082043,0
+AL8eiRD4,2026-01-01,Sacramento Kings,Boston Celtics,0.2198,0.2189204164539207,0
+rZ63k5rH,2026-01-01,Los Angeles Clippers,Utah Jazz,0.853,0.8593321445676212,1
+p0SqVzc2,2026-01-02,Washington Wizards,Brooklyn Nets,0.574,0.6625002130343411,1
+xzPyXdSk,2026-01-02,Indiana Pacers,San Antonio Spurs,0.363,0.3726946080187896,0
+0j5yyRpL,2026-01-02,New York Knicks,Atlanta Hawks,0.6295,0.6115770391635398,0
+SOiUxmG8,2026-01-02,Cleveland Cavaliers,Denver Nuggets,0.8499,0.8640016551927119,1
+Kzn8V48r,2026-01-02,Chicago Bulls,Orlando Magic,0.3614,0.32779834319464696,1
+hlpGTrwe,2026-01-02,Milwaukee Bucks,Charlotte Hornets,0.6729,0.7024654647041026,1
+lGwPRM77,2026-01-02,New Orleans Pelicans,Portland Trail Blazers,0.4103,0.3901162059484484,0
+EgVAkQaE,2026-01-02,Phoenix Suns,Sacramento Kings,0.8491,0.8526812142600135,1
+z9JJm4UQ,2026-01-02,Golden State Warriors,Oklahoma City Thunder,0.1608,0.13150157109176464,0
+6iAkrrhl,2026-01-02,Los Angeles Lakers,Memphis Grizzlies,0.6429,0.6941208470369823,1
+2J3btMM0,2026-01-03,Miami Heat,Minnesota Timberwolves,0.4416,0.4328655091625781,0
+KCyClaXA,2026-01-03,Toronto Raptors,Atlanta Hawks,0.629,0.6650424083848453,1
+zX16v0iD,2026-01-03,New York Knicks,Philadelphia 76ers,0.5949,0.6045805354827445,0
+EF6o23qK,2026-01-03,Chicago Bulls,Charlotte Hornets,0.5325,0.5715206453636127,0
+pbcHds7s,2026-01-03,San Antonio Spurs,Portland Trail Blazers,0.7332,0.7378314863261062,0
+6DoQfLyf,2026-01-03,Dallas Mavericks,Houston Rockets,0.2708,0.29499089956785873,1
+EwkYha66,2026-01-03,Golden State Warriors,Utah Jazz,0.8163,0.8540962543445598,1
+fmctiwyJ,2026-01-03,Los Angeles Clippers,Boston Celtics,0.5267,0.5877017869466752,0
+nspSEtTP,2026-01-04,Cleveland Cavaliers,Detroit Pistons,0.574,0.6026463137421284,0
+6RQb9Kjm,2026-01-04,Orlando Magic,Indiana Pacers,0.6793,0.7213599716486195,1
+EiU67bLa,2026-01-04,Brooklyn Nets,Denver Nuggets,0.4388,0.48257072058807643,1
+KdummUZp,2026-01-04,Washington Wizards,Minnesota Timberwolves,0.2105,0.2139000488619682,0
+z7IF5xjC,2026-01-04,Miami Heat,New Orleans Pelicans,0.7188,0.760928612334567,1
+z5NZAXRi,2026-01-04,Phoenix Suns,Oklahoma City Thunder,0.2279,0.2232596698055421,1
+8ILs9Bd4,2026-01-04,Sacramento Kings,Milwaukee Bucks,0.3249,0.30900173250645696,0
+4pFj7kRG,2026-01-04,Los Angeles Lakers,Memphis Grizzlies,0.6588,0.6796041472174583,1
+AsIb5TeT,2026-01-05,Detroit Pistons,New York Knicks,0.4784,0.47255305474381415,1
+SxuKnw2N,2026-01-05,Toronto Raptors,Atlanta Hawks,0.5619,0.5790810261756826,1
+fFgVa7Jj,2026-01-05,Boston Celtics,Chicago Bulls,0.7867,0.8076379854449139,1
+ImuQLltA,2026-01-05,Oklahoma City Thunder,Charlotte Hornets,0.8767,0.879413661549639,0
+MLoHNABc,2026-01-05,Houston Rockets,Phoenix Suns,0.7261,0.7538143702518012,1
+j1wYJSAM,2026-01-05,Philadelphia 76ers,Denver Nuggets,0.8631,0.8815705910677206,0
+KWedE6Yq,2026-01-05,Los Angeles Clippers,Golden State Warriors,0.4133,0.3661946658434469,1
+Sda4Cp3d,2026-01-05,Portland Trail Blazers,Utah Jazz,0.6643,0.701310786090088,1
+8hxizle3,2026-01-06,Indiana Pacers,Cleveland Cavaliers,0.3249,0.30875409888654204,0
+GIuaYRPF,2026-01-06,Washington Wizards,Orlando Magic,0.2842,0.2944045343777405,1
+2FDnPNn2,2026-01-06,New Orleans Pelicans,Los Angeles Lakers,0.3341,0.38668299303284587,0
+6mKwRqIk,2026-01-06,Minnesota Timberwolves,Miami Heat,0.6458,0.6788760980473967,1
+AHY7W5fS,2026-01-06,Memphis Grizzlies,San Antonio Spurs,0.3249,0.34421458507896957,1
+UL5YnRv9,2026-01-06,Sacramento Kings,Dallas Mavericks,0.3614,0.3727571848024203,0
+0AuDuqXr,2026-01-07,Philadelphia 76ers,Washington Wizards,0.8625,0.90601710999634,1
+CAGjsHPp,2026-01-07,Charlotte Hornets,Toronto Raptors,0.4388,0.44329990659381363,0
+UkXTy1W7,2026-01-07,Boston Celtics,Denver Nuggets,0.7605,0.7880115940613518,0
+jyfso59L,2026-01-07,Detroit Pistons,Chicago Bulls,0.7332,0.7276882945639513,1
+dxZLwN1e,2026-01-07,Atlanta Hawks,New Orleans Pelicans,0.7867,0.8211920235158481,1
+pbFGa4OE,2026-01-07,Brooklyn Nets,Orlando Magic,0.4648,0.47883374234272974,0
+zudmsd8m,2026-01-07,New York Knicks,Los Angeles Clippers,0.6379,0.6800163516975798,1
+0nsDyhxP,2026-01-07,Oklahoma City Thunder,Utah Jazz,0.8811,0.924556382495876,1
+4Km4wE7C,2026-01-07,Memphis Grizzlies,Phoenix Suns,0.3412,0.35828518328098286,0
+dfpduzw0,2026-01-07,San Antonio Spurs,Los Angeles Lakers,0.7347,0.7815521975702809,1
+GbHMeeNt,2026-01-07,Golden State Warriors,Milwaukee Bucks,0.6803,0.7267903467306867,1
+z1XNgZig,2026-01-07,Portland Trail Blazers,Houston Rockets,0.2982,0.2791634497793721,1
+rRzWiDM5,2026-01-08,Charlotte Hornets,Indiana Pacers,0.6235,0.652902625067108,0
+0pCp3bn4,2026-01-08,Minnesota Timberwolves,Cleveland Cavaliers,0.5714,0.5892101085286168,1
+YcAh1xHG,2026-01-08,Utah Jazz,Dallas Mavericks,0.3704,0.38961032224132697,1
+Od83FdC7,2026-01-09,Boston Celtics,Toronto Raptors,0.7544,0.7837830256405494,1
+UP31aGoT,2026-01-09,Orlando Magic,Philadelphia 76ers,0.4231,0.40289294667013564,0
+bufXgf9j,2026-01-09,Washington Wizards,New Orleans Pelicans,0.4286,0.42737750696038695,0
+vyXJHc1c,2026-01-09,Brooklyn Nets,Los Angeles Clippers,0.3396,0.344158802244943,0
+n1zSFyW9,2026-01-09,Memphis Grizzlies,Oklahoma City Thunder,0.3443,0.3357959856333741,0
+EFj8e7pe,2026-01-09,Phoenix Suns,New York Knicks,0.474,0.4808050591521295,1
+t2h0cTFr,2026-01-09,Denver Nuggets,Atlanta Hawks,0.426,0.33658705829038926,0
+0ObeHl7E,2026-01-09,Portland Trail Blazers,Houston Rockets,0.3151,0.3345906626872144,1
+YH69goF7,2026-01-09,Golden State Warriors,Sacramento Kings,0.8511,0.8739418416002322,1
+Mwm4FSyR,2026-01-09,Los Angeles Lakers,Milwaukee Bucks,0.5797,0.6249519607999448,0
+hMwzA6al,2026-01-10,Cleveland Cavaliers,Minnesota Timberwolves,0.5527,0.5863003022491158,1
+YVor8pU0,2026-01-10,Indiana Pacers,Miami Heat,0.3182,0.32252413233856836,1
+6qpj6ObD,2026-01-10,Detroit Pistons,Los Angeles Clippers,0.5222,0.49566159003912313,0
+MiSxURjK,2026-01-10,Boston Celtics,San Antonio Spurs,0.4895,0.45969398006878914,0
+hzJ8O5Es,2026-01-10,Chicago Bulls,Dallas Mavericks,0.5949,0.6525505187923356,1
+Ek7HMqqf,2026-01-10,Utah Jazz,Charlotte Hornets,0.3499,0.33554211701253744,0
+065PKND6,2026-01-11,Orlando Magic,New Orleans Pelicans,0.6935,0.745280386312503,1
+dYbYI1rJ,2026-01-11,Memphis Grizzlies,Brooklyn Nets,0.7096,0.7425682294007957,1
+lSoKt5zQ,2026-01-11,Portland Trail Blazers,New York Knicks,0.3412,0.3376833578856319,0
+v5jjw04E,2026-01-11,Toronto Raptors,Philadelphia 76ers,0.4555,0.45112168228158306,1
+8CSjyqbm,2026-01-11,Minnesota Timberwolves,San Antonio Spurs,0.5527,0.5788093085544441,1
+E9VbZMSa,2026-01-11,Oklahoma City Thunder,Miami Heat,0.8519,0.8854807705802156,1
+rkNFVvSO,2026-01-11,Phoenix Suns,Washington Wizards,0.8625,0.8725927923287882,1
+zPJ7X0cC,2026-01-11,Denver Nuggets,Milwaukee Bucks,0.3412,0.3048302361040733,1
+MFhQkrDt,2026-01-11,Golden State Warriors,Atlanta Hawks,0.6987,0.7475707799826564,0
+fTjYmMsg,2026-01-11,Sacramento Kings,Houston Rockets,0.1561,0.15112674448779895,1
+0tMYo0C5,2026-01-12,Cleveland Cavaliers,Utah Jazz,0.8178,0.8428063365077764,0
+86PtpvsI,2026-01-12,Indiana Pacers,Boston Celtics,0.361,0.37385235534464833,1
+nVgbyvZQ,2026-01-12,Toronto Raptors,Philadelphia 76ers,0.4177,0.40010858124396786,0
+SfxFRVQj,2026-01-12,Dallas Mavericks,Brooklyn Nets,0.589,0.6076433322113879,1
+f1U0kZIc,2026-01-12,Sacramento Kings,Los Angeles Lakers,0.2427,0.23856876720290973,1
+l0N9mDmA,2026-01-12,Los Angeles Clippers,Charlotte Hornets,0.6341,0.678952371161292,1
+MDLHoiIM,2026-01-13,Miami Heat,Phoenix Suns,0.5302,0.5676770137282183,1
+Gzsi0jXF,2026-01-13,Oklahoma City Thunder,San Antonio Spurs,0.7248,0.7693957936377298,1
+UJrq2C23,2026-01-13,New Orleans Pelicans,Denver Nuggets,0.4373,0.44707981898564336,0
+lO5dv9Ad,2026-01-13,Milwaukee Bucks,Minnesota Timberwolves,0.5337,0.5508916510984002,0
+tb2ltVup,2026-01-13,Houston Rockets,Chicago Bulls,0.8108,0.8381031001497584,1
+C2z0bU1S,2026-01-13,Los Angeles Lakers,Atlanta Hawks,0.5159,0.5535778471520404,1
+8YLVh8Pk,2026-01-13,Golden State Warriors,Portland Trail Blazers,0.7895,0.8142791278347449,1
+40Fvinf2,2026-01-14,Philadelphia 76ers,Cleveland Cavaliers,0.5118,0.5439157684827206,0
+W2VUVHdl,2026-01-14,Indiana Pacers,Toronto Raptors,0.5211,0.5823487124415726,0
+GlMPEkn9,2026-01-14,Chicago Bulls,Utah Jazz,0.6588,0.6757569923120479,1
+x4AYCTGL,2026-01-14,New Orleans Pelicans,Brooklyn Nets,0.5132,0.6011466627592945,1
+8n1477vq,2026-01-14,Dallas Mavericks,Denver Nuggets,0.5222,0.5922021190833507,0
+4EfD5o9e,2026-01-14,Sacramento Kings,New York Knicks,0.217,0.2146446337859292,1
+xShL3Pw8,2026-01-14,Los Angeles Clippers,Washington Wizards,0.8027,0.8321600740005448,1
+IwpbBycE,2026-01-15,Orlando Magic,Memphis Grizzlies,0.6563,0.6835831744401751,1
+Q3m69FRQ,2026-01-15,Detroit Pistons,Phoenix Suns,0.7018,0.743358921548158,1
+AyPx4gkl,2026-01-15,Miami Heat,Boston Celtics,0.4249,0.44732658911111084,0
+I1Sp2XJ0,2026-01-15,Houston Rockets,Oklahoma City Thunder,0.3905,0.38492481533247125,0
+C0Lg0BlD,2026-01-15,San Antonio Spurs,Milwaukee Bucks,0.6865,0.7426201592090282,1
+2TW47Set,2026-01-15,Dallas Mavericks,Utah Jazz,0.5556,0.6397043980518413,1
+6LTL3pe5,2026-01-15,Portland Trail Blazers,Atlanta Hawks,0.397,0.4194089201932965,1
+beQD56Qh,2026-01-15,Golden State Warriors,New York Knicks,0.7002,0.7435302226134965,1
+SzIU1OPH,2026-01-15,Los Angeles Lakers,Charlotte Hornets,0.5867,0.6286755901751478,0
+CtafIqAb,2026-01-16,Philadelphia 76ers,Cleveland Cavaliers,0.5553,0.5891895231540676,0
+vT0nK5un,2026-01-16,Indiana Pacers,New Orleans Pelicans,0.6235,0.6968776518777275,1
+02Vy02fU,2026-01-16,Brooklyn Nets,Chicago Bulls,0.5105,0.5894725761276681,1
+4UrxUeR0,2026-01-16,Toronto Raptors,Los Angeles Clippers,0.5526,0.625259335828106,0
+88h3GNvB,2026-01-16,Houston Rockets,Minnesota Timberwolves,0.5968,0.6586899619750408,1
+E5eBE19N,2026-01-16,Sacramento Kings,Washington Wizards,0.7018,0.7575948704100195,1
+bwXs9uXp,2026-01-17,Dallas Mavericks,Utah Jazz,0.5769,0.6131879862019894,1
+MBIxVMg4,2026-01-17,Detroit Pistons,Indiana Pacers,0.8697,0.8898276072969655,1
+QqPTWrPi,2026-01-17,Atlanta Hawks,Boston Celtics,0.4104,0.4133207194568095,0
+fPGpT0OG,2026-01-17,New York Knicks,Phoenix Suns,0.5117,0.5353679041704031,0
+ERWoRvgT,2026-01-17,Miami Heat,Oklahoma City Thunder,0.2096,0.20585561208409167,1
+pANHLIGj,2026-01-17,San Antonio Spurs,Minnesota Timberwolves,0.6296,0.6652633727927736,1
+Q504qM8c,2026-01-17,Golden State Warriors,Charlotte Hornets,0.7143,0.7463252945018296,1
+YV3Cs0wA,2026-01-17,Denver Nuggets,Washington Wizards,0.7973,0.7779962348130229,1
+EuCKuv8M,2026-01-17,Portland Trail Blazers,Los Angeles Lakers,0.574,0.61677377477724,1
+ABcjzIVq,2026-01-18,Memphis Grizzlies,Orlando Magic,0.4239,0.44356237988560765,1
+6wiaYe0d,2026-01-18,Chicago Bulls,Brooklyn Nets,0.6935,0.744492980312053,1
+Yqqodah3,2026-01-18,Houston Rockets,New Orleans Pelicans,0.8549,0.8654924514216711,1
+faXgfwNF,2026-01-18,Denver Nuggets,Charlotte Hornets,0.4473,0.36929044960312407,0
+vkfRyV6l,2026-01-18,Sacramento Kings,Portland Trail Blazers,0.4873,0.45552847258105106,0
+0dxoSZeD,2026-01-18,Los Angeles Lakers,Toronto Raptors,0.5578,0.5987546063045224,1
+hptuHG9c,2026-01-19,Atlanta Hawks,Milwaukee Bucks,0.5229,0.5606624083346052,0
+EaUmFfvA,2026-01-19,Cleveland Cavaliers,Oklahoma City Thunder,0.3396,0.3101607017731851,0
+zHmzz9y1,2026-01-19,Washington Wizards,Los Angeles Clippers,0.3,0.33606072093857337,0
+MPXeDY8M,2026-01-19,New York Knicks,Dallas Mavericks,0.8084,0.8494979020782054,0
+hhK0jULs,2026-01-19,San Antonio Spurs,Utah Jazz,0.8757,0.883858351923074,1
+8UorYn6D,2026-01-19,Philadelphia 76ers,Indiana Pacers,0.6839,0.7069035130251685,1
+OxUUejbK,2026-01-19,Brooklyn Nets,Phoenix Suns,0.2366,0.22308771985179074,0
+QiTR7CWq,2026-01-19,Detroit Pistons,Boston Celtics,0.5556,0.5953565644170803,1
+E789l8jf,2026-01-19,Golden State Warriors,Miami Heat,0.639,0.6827830021580965,1
+MXBHnnL6,2026-01-20,Philadelphia 76ers,Phoenix Suns,0.4389,0.39687015658367614,0
+AghC8TsQ,2026-01-20,Houston Rockets,San Antonio Spurs,0.6083,0.6415272372094908,1
+Ia5QpQkJ,2026-01-20,Chicago Bulls,Los Angeles Clippers,0.5619,0.5969177008395853,1
+vPAz375m,2026-01-20,Utah Jazz,Minnesota Timberwolves,0.1698,0.15156102710369476,1
+842iaP4C,2026-01-20,Sacramento Kings,Miami Heat,0.3843,0.3725353958317988,0
+hjPWkwlK,2026-01-20,Golden State Warriors,Toronto Raptors,0.6071,0.6195380586752016,0
+nkEr1oz0,2026-01-20,Denver Nuggets,Los Angeles Lakers,0.4197,0.39700327024727444,0
+GU5ac3ZO,2026-01-21,Charlotte Hornets,Cleveland Cavaliers,0.4133,0.41312616008202285,0
+QuZHFpkg,2026-01-21,New York Knicks,Brooklyn Nets,0.8258,0.8307434111426971,1
+hSzAH6Kt,2026-01-21,Boston Celtics,Indiana Pacers,0.7867,0.8010964584611193,1
+M7SQDOJ5,2026-01-21,Memphis Grizzlies,Atlanta Hawks,0.5184,0.5709105736320935,0
+UXVYB2lI,2026-01-21,New Orleans Pelicans,Detroit Pistons,0.2935,0.3220552791920043,0
+jmKsAtJU,2026-01-21,Milwaukee Bucks,Oklahoma City Thunder,0.1922,0.1680717884528418,0
+Cz63pHBs,2026-01-21,Sacramento Kings,Toronto Raptors,0.3584,0.3589556530085211,0
+GUm0SNYb,2026-01-22,Philadelphia 76ers,Houston Rockets,0.456,0.48598285554322573,1
+K2fiUq4n,2026-01-22,Orlando Magic,Charlotte Hornets,0.5985,0.5821516230854191,0
+lrn8Q13B,2026-01-22,Washington Wizards,Denver Nuggets,0.3182,0.30582741226568233,0
+rq4t8gmp,2026-01-22,Dallas Mavericks,Golden State Warriors,0.3182,0.32087382018920096,1
+ziMm6XHd,2026-01-22,Minnesota Timberwolves,Chicago Bulls,0.7573,0.7890002132855067,0
+IFoYDqy3,2026-01-22,Utah Jazz,San Antonio Spurs,0.1822,0.19680471005275024,0
+M7rkA1zS,2026-01-22,Portland Trail Blazers,Miami Heat,0.5769,0.6030626606184923,1
+QuktCN5F,2026-01-22,Los Angeles Clippers,Los Angeles Lakers,0.5542,0.6067372530894493,1
+IwUK4ubk,2026-01-23,Detroit Pistons,Houston Rockets,0.6158,0.6597637211070371,0
+4nx8QMK8,2026-01-23,Brooklyn Nets,Boston Celtics,0.2557,0.26337168155763296,0
+Q1QGO0kL,2026-01-23,Cleveland Cavaliers,Sacramento Kings,0.8225,0.8275106205829702,1
+xtpM2JS1,2026-01-23,Atlanta Hawks,Phoenix Suns,0.426,0.4574039036606283,1
+IX8Bretf,2026-01-23,Oklahoma City Thunder,Indiana Pacers,0.8677,0.871152017253434,0
+dpHnJvDr,2026-01-23,Memphis Grizzlies,New Orleans Pelicans,0.6374,0.7007664121523745,0
+jqAeHIse,2026-01-23,Milwaukee Bucks,Denver Nuggets,0.7335,0.759345887279382,0
+Ei2y96PG,2026-01-23,Portland Trail Blazers,Toronto Raptors,0.4056,0.3975849057512474,0
+0f7vnUnn,2026-01-24,Charlotte Hornets,Washington Wizards,0.7983,0.8270332239891335,1
+vmcKtZA6,2026-01-24,Philadelphia 76ers,New York Knicks,0.4895,0.4460375852911805,0
+Y75np8Hb,2026-01-24,Orlando Magic,Cleveland Cavaliers,0.5159,0.5648997600791535,0
+hALmrnnB,2026-01-24,Chicago Bulls,Boston Celtics,0.4177,0.40388094358623927,1
+0zPetQGN,2026-01-24,Dallas Mavericks,Los Angeles Lakers,0.3955,0.4058663426197289,0
+p80Sz4vo,2026-01-24,Utah Jazz,Miami Heat,0.3119,0.3176075534786624,0
+CEhEb7Wi,2026-01-25,Detroit Pistons,Sacramento Kings,0.8284,0.8376629019151014,1
+nD0SvDuJ,2026-01-25,Minnesota Timberwolves,Golden State Warriors,0.6501,0.6766078085818044,0
+M3hwg30T,2026-01-25,San Antonio Spurs,New Orleans Pelicans,0.8091,0.8215157268065061,0
+n50q7pfT,2026-01-25,Oklahoma City Thunder,Toronto Raptors,0.8059,0.8156748341358834,0
+hnq9msOj,2026-01-25,Phoenix Suns,Miami Heat,0.6173,0.6559155281127725,0
+YsMeBpGc,2026-01-25,Los Angeles Clippers,Brooklyn Nets,0.7829,0.8141969743891783,1
+Cdar2twp,2026-01-26,Atlanta Hawks,Indiana Pacers,0.6523,0.7021606129092098,1
+KbK39OpA,2026-01-26,Charlotte Hornets,Philadelphia 76ers,0.5375,0.5884947320725101,1
+GQDC72FM,2026-01-26,Cleveland Cavaliers,Orlando Magic,0.6501,0.6672516007415534,1
+8Ohi0K7d,2026-01-26,Boston Celtics,Portland Trail Blazers,0.7404,0.7659077237453386,1
+Y1pwONa3,2026-01-26,Chicago Bulls,Los Angeles Lakers,0.4778,0.4766415896969704,0
+fHYoM1UF,2026-01-26,Houston Rockets,Memphis Grizzlies,0.7983,0.837279940583889,1
+2sxfKuaS,2026-01-26,Minnesota Timberwolves,Golden State Warriors,0.7143,0.6995546221857207,1
+MRIQEJMk,2026-01-27,Washington Wizards,Portland Trail Blazers,0.3182,0.32288947985884753,1
+fuHYCci2,2026-01-27,New York Knicks,Sacramento Kings,0.8553,0.8588322944354465,1
+KYzDz1q9,2026-01-27,Philadelphia 76ers,Milwaukee Bucks,0.7664,0.7853546074525054,1
+QX2pIhTs,2026-01-27,Oklahoma City Thunder,New Orleans Pelicans,0.853,0.8601460730108003,1
+fDf1EAS6,2026-01-27,Phoenix Suns,Brooklyn Nets,0.7307,0.7613077413253191,1
+nmigGWcf,2026-01-27,Denver Nuggets,Detroit Pistons,0.3,0.27431375624733306,0
+lCmAClcJ,2026-01-27,Utah Jazz,Los Angeles Clippers,0.2596,0.2923957941414032,0
+0jHSUVCm,2026-01-28,Indiana Pacers,Chicago Bulls,0.4675,0.45291854286993016,1
+t6zdzhkQ,2026-01-28,Cleveland Cavaliers,Los Angeles Lakers,0.5919,0.6321030860767892,1
+6ksG1OHj,2026-01-28,Toronto Raptors,New York Knicks,0.5325,0.5559791374748195,0
+8GKzT9s0,2026-01-28,Boston Celtics,Atlanta Hawks,0.6459,0.6783160908919526,0
+UV8qRmCC,2026-01-28,Miami Heat,Orlando Magic,0.5802,0.6532056806155095,0
+Gn7iPRtP,2026-01-28,Memphis Grizzlies,Charlotte Hornets,0.4574,0.4368798653966337,0
+jqzCL9kt,2026-01-28,Dallas Mavericks,Minnesota Timberwolves,0.2653,0.2383382216883016,0
+OdYJJmKh,2026-01-28,Utah Jazz,Golden State Warriors,0.2812,0.2625663729050537,0
+KORSHRl5,2026-01-28,Houston Rockets,San Antonio Spurs,0.5641,0.5921723001759679,0
+CWqzG5JH,2026-01-29,Philadelphia 76ers,Sacramento Kings,0.7721,0.803910591534572,1
+YoYrEqlU,2026-01-29,Washington Wizards,Milwaukee Bucks,0.4591,0.45738048029514344,1
+4IIy5KHi,2026-01-29,Chicago Bulls,Miami Heat,0.4545,0.4499866272886153,0
+OADhYnZo,2026-01-29,Atlanta Hawks,Houston Rockets,0.3049,0.2951815140235746,0
+Kx71WQ3b,2026-01-29,Dallas Mavericks,Charlotte Hornets,0.4231,0.4096272023165904,0
+ChLASr3N,2026-01-29,Phoenix Suns,Detroit Pistons,0.419,0.42868073745443963,1
+hj59U4YA,2026-01-29,Denver Nuggets,Brooklyn Nets,0.6766,0.6952955742531987,1
+ryCtNMQp,2026-01-29,Minnesota Timberwolves,Oklahoma City Thunder,0.3542,0.36238707026731964,1
+OWlTpQIi,2026-01-30,Washington Wizards,Los Angeles Lakers,0.2119,0.21166997809551824,0
+QeopsrIG,2026-01-30,New York Knicks,Portland Trail Blazers,0.6865,0.6990931533716823,1
+WSY1PR9c,2026-01-30,Orlando Magic,Toronto Raptors,0.5527,0.6136418100157589,1
+Wdhyq4m4,2026-01-30,Boston Celtics,Sacramento Kings,0.804,0.8146110147805014,1
+dr8HOZ1k,2026-01-30,New Orleans Pelicans,Memphis Grizzlies,0.5797,0.6035806036910225,1
+KGgCpHO8,2026-01-30,Phoenix Suns,Cleveland Cavaliers,0.4667,0.4844491315452607,1
+xGrjwZGr,2026-01-30,Denver Nuggets,Los Angeles Clippers,0.4444,0.5209245749850855,1
+tWsLregL,2026-01-30,Utah Jazz,Brooklyn Nets,0.5949,0.657745932605996,0
+YsxayDoe,2026-01-30,Golden State Warriors,Detroit Pistons,0.5455,0.6308223228113503,0
+6ez7ZjG7,2026-01-31,Charlotte Hornets,San Antonio Spurs,0.4051,0.4237398153507947,1
+M3Igcf8E,2026-01-31,Indiana Pacers,Atlanta Hawks,0.4675,0.48210956734994187,1
+S0L1eYxR,2026-01-31,Philadelphia 76ers,New Orleans Pelicans,0.6643,0.6929236440482586,1
+CYdYkC0l,2026-01-31,Memphis Grizzlies,Minnesota Timberwolves,0.2038,0.1814900275616175,0
+hA1QMDW1,2026-01-31,Miami Heat,Chicago Bulls,0.6462,0.663411018824415,0
+Kb0tljV0,2026-01-31,Houston Rockets,Dallas Mavericks,0.779,0.8202730441947481,1
+GQgknUaD,2026-02-01,Boston Celtics,Milwaukee Bucks,0.8258,0.8554748605680694,1
+KKyH0TE6,2026-02-01,Washington Wizards,Sacramento Kings,0.4801,0.45612674672768305,1
+b5m82kpf,2026-02-01,Miami Heat,Chicago Bulls,0.6557,0.7000835750123582,1
+hrNAN5vA,2026-02-01,Toronto Raptors,Utah Jazz,0.7619,0.7773143902062472,1
+jup04BFs,2026-02-01,Detroit Pistons,Brooklyn Nets,0.8392,0.8591058406467773,1
+SpuPb7qJ,2026-02-01,New York Knicks,Los Angeles Lakers,0.6619,0.6869700795093316,1
+SzxBMAyQ,2026-02-01,Phoenix Suns,Los Angeles Clippers,0.574,0.5861970699768503,0
+8KtyAXiK,2026-02-01,San Antonio Spurs,Orlando Magic,0.6312,0.639340663690309,1
+O6NtHlam,2026-02-01,Portland Trail Blazers,Cleveland Cavaliers,0.3905,0.351113708505538,0
+KYGkFSTa,2026-02-01,Denver Nuggets,Oklahoma City Thunder,0.3271,0.2689910757447756,0
+SbKcD6bC,2026-02-02,Charlotte Hornets,New Orleans Pelicans,0.6885,0.6953871718469848,1
+nmXVfbro,2026-02-02,Indiana Pacers,Houston Rockets,0.3182,0.3128182453816702,0
+hpKHI1zh,2026-02-02,Memphis Grizzlies,Minnesota Timberwolves,0.2827,0.3075512071466201,1
+lCDQGu54,2026-02-02,Los Angeles Clippers,Philadelphia 76ers,0.4795,0.4431789240247707,0
+Ii5sDc4T,2026-02-03,Indiana Pacers,Utah Jazz,0.4344,0.36684968680491703,0
+MPBYEJZG,2026-02-03,Detroit Pistons,Denver Nuggets,0.6386,0.6982327869374575,1
+n7eD7ySj,2026-02-03,Washington Wizards,New York Knicks,0.1742,0.19590540084409386,0
+S2YaVvKc,2026-02-03,Brooklyn Nets,Los Angeles Lakers,0.2668,0.2745174639648928,0
+zTy8TIlA,2026-02-03,Miami Heat,Atlanta Hawks,0.5132,0.5130750058343349,0
+SQGnMzsp,2026-02-03,Milwaukee Bucks,Chicago Bulls,0.4764,0.4678720899339104,1
+WfVGRdJM,2026-02-03,Dallas Mavericks,Boston Celtics,0.3065,0.32311528500935127,0
+YwnmKEBd,2026-02-03,Oklahoma City Thunder,Orlando Magic,0.7983,0.8498029688638743,1
+0pvZsI33,2026-02-03,Golden State Warriors,Philadelphia 76ers,0.625,0.6971420496871661,0
+MaSstdYF,2026-02-03,Portland Trail Blazers,Phoenix Suns,0.422,0.39300107631308323,0
+UPVkvz3S,2026-02-04,New York Knicks,Denver Nuggets,0.625,0.6651204258690353,1
+bskr5cOr,2026-02-04,Toronto Raptors,Minnesota Timberwolves,0.4373,0.46236061554937113,0
+KfAUWie2,2026-02-04,Milwaukee Bucks,New Orleans Pelicans,0.381,0.3903502515647845,1
+nsCMYDQk,2026-02-04,Houston Rockets,Boston Celtics,0.7112,0.7370269062793621,0
+xWvFv4E8,2026-02-04,San Antonio Spurs,Oklahoma City Thunder,0.7741,0.8338535881791571,1
+pdrNxrqL,2026-02-04,Sacramento Kings,Memphis Grizzlies,0.5656,0.6181556649264168,0
+UTJgXL6r,2026-02-04,Los Angeles Clippers,Cleveland Cavaliers,0.4286,0.4347803070188859,0
+CCBATw67,2026-02-05,Orlando Magic,Brooklyn Nets,0.7564,0.7829949629211173,1
+GpI1Vaye,2026-02-05,Detroit Pistons,Washington Wizards,0.8811,0.8982623336808359,0
+46bdisbE,2026-02-05,Atlanta Hawks,Utah Jazz,0.7305,0.812390607693066,1
+f9ri3yge,2026-02-05,Toronto Raptors,Chicago Bulls,0.7188,0.7296947358424772,1
+b7GUYYsm,2026-02-05,Houston Rockets,Charlotte Hornets,0.6125,0.6694664453366402,0
+jFYyXCCa,2026-02-05,Dallas Mavericks,San Antonio Spurs,0.268,0.3089362963158795,0
+CUMpVjsC,2026-02-05,Phoenix Suns,Golden State Warriors,0.6507,0.6506746734799174,0
+KfQhTUBO,2026-02-05,Los Angeles Lakers,Philadelphia 76ers,0.5455,0.602986640637355,1
+WYgBoCRh,2026-02-06,Detroit Pistons,New York Knicks,0.652,0.6975558566177164,1
+bLe3mYdt,2026-02-06,Boston Celtics,Miami Heat,0.6643,0.6656504750903312,1
+b1DKsUQH,2026-02-06,Minnesota Timberwolves,New Orleans Pelicans,0.74,0.7497468215103041,0
+jyACqjd5,2026-02-06,Milwaukee Bucks,Indiana Pacers,0.4737,0.4448092380965422,1
+Ausw0Btn,2026-02-06,Sacramento Kings,Los Angeles Clippers,0.4061,0.41830253690662833,0
+KG1Tu8eU,2026-02-06,Portland Trail Blazers,Memphis Grizzlies,0.7203,0.7769533449001698,1
+4vznbkBb,2026-02-07,Brooklyn Nets,Washington Wizards,0.7127,0.7451722078814306,1
+xhYgdTuB,2026-02-07,Oklahoma City Thunder,Houston Rockets,0.5919,0.6142432460737351,0
+YJR2f7AN,2026-02-07,San Antonio Spurs,Dallas Mavericks,0.7867,0.8273478659201788,1
+42IYloYp,2026-02-07,Orlando Magic,Utah Jazz,0.7096,0.7232874971148232,1
+pbeLClQi,2026-02-07,Atlanta Hawks,Charlotte Hornets,0.4675,0.5072997761326243,0
+IP8SASf4,2026-02-07,Chicago Bulls,Denver Nuggets,0.2545,0.23206637581380712,0
+SMta1FN7,2026-02-07,Los Angeles Lakers,Golden State Warriors,0.5352,0.5347017633474818,1
+65ovPIFE,2026-02-07,Phoenix Suns,Philadelphia 76ers,0.5556,0.62624620915742,0
+EVlnNdpR,2026-02-07,Portland Trail Blazers,Memphis Grizzlies,0.74,0.7793527331202028,1
+b3QIHz8l,2026-02-07,Sacramento Kings,Cleveland Cavaliers,0.1769,0.1550441472622187,0
+6TTQFEx1,2026-02-08,Boston Celtics,New York Knicks,0.5769,0.6240171282159339,0
+nwxZDh7D,2026-02-08,Washington Wizards,Miami Heat,0.1754,0.1795972754959885,0
+E1cVixQb,2026-02-08,Toronto Raptors,Indiana Pacers,0.744,0.7747424608015403,1
+vXOKydaK,2026-02-08,Minnesota Timberwolves,Los Angeles Clippers,0.748,0.7598529827510102,0
+bH5iWZMs,2026-02-09,Charlotte Hornets,Detroit Pistons,0.4444,0.43942472336634625,0
+EDeGQVjJ,2026-02-09,Miami Heat,Utah Jazz,0.6803,0.6192516416110351,0
+Sdc8SiM6,2026-02-09,Brooklyn Nets,Chicago Bulls,0.4231,0.3863555231678549,1
+ULw3lZrQ,2026-02-09,Orlando Magic,Milwaukee Bucks,0.7664,0.8088858547919886,1
+MJIssiy0,2026-02-09,New Orleans Pelicans,Sacramento Kings,0.7663,0.7946475429433192,1
+QiPYrD6m,2026-02-09,Minnesota Timberwolves,Atlanta Hawks,0.7347,0.782460413259379,1
+SGLkuV5C,2026-02-09,Denver Nuggets,Cleveland Cavaliers,0.5567,0.6644840378458923,0
+lW9bw9zP,2026-02-09,Golden State Warriors,Memphis Grizzlies,0.759,0.7785659685196589,1
+vek8cCLt,2026-02-09,Los Angeles Lakers,Oklahoma City Thunder,0.3182,0.3170453776818951,0
+zNrHejjg,2026-02-09,Portland Trail Blazers,Philadelphia 76ers,0.5769,0.6718168859485546,1
+8zsPgUK5,2026-02-10,New York Knicks,Indiana Pacers,0.8091,0.8368776615634079,0
+EmCPi8kI,2026-02-10,Houston Rockets,Los Angeles Clippers,0.7347,0.8133415981381713,1
+KnvcZaZj,2026-02-10,Phoenix Suns,Dallas Mavericks,0.7307,0.7797949707559533,1
+2B3ssChc,2026-02-10,Los Angeles Lakers,San Antonio Spurs,0.1667,0.13654197436055085,0
+06oUX7Fq,2026-02-11,Orlando Magic,Milwaukee Bucks,0.7904,0.824947479311823,0
+4z0bwUiM,2026-02-11,Cleveland Cavaliers,Washington Wizards,0.8873,0.8963564563620413,1
+Ay7kujN9,2026-02-11,Charlotte Hornets,Atlanta Hawks,0.5455,0.6061966662232184,1
+OvXOgkx3,2026-02-11,Brooklyn Nets,Indiana Pacers,0.669,0.7375462682460736,0
+dYvwWopd,2026-02-11,Boston Celtics,Chicago Bulls,0.8369,0.8553131842819207,1
+nFewjGfB,2026-02-11,Toronto Raptors,Detroit Pistons,0.5105,0.5991321038133188,0
+pfLXiT6F,2026-02-11,Philadelphia 76ers,New York Knicks,0.4545,0.4093419165099122,0
+O8bKrPT1,2026-02-11,New Orleans Pelicans,Miami Heat,0.5325,0.567263677854795,0
+WAJuj7yS,2026-02-11,Houston Rockets,Los Angeles Clippers,0.7347,0.7896019000705263,0
+je0Cpoak,2026-02-11,Minnesota Timberwolves,Portland Trail Blazers,0.7188,0.7526908942615066,1
+GdzoapEr,2026-02-11,Denver Nuggets,Memphis Grizzlies,0.8403,0.8757574942697354,1
+WObE46jL,2026-02-11,Utah Jazz,Sacramento Kings,0.65,0.692801592598045,1
+vHt76SL8,2026-02-11,Phoenix Suns,Oklahoma City Thunder,0.2934,0.24933847903080839,0
+OMwgcOre,2026-02-11,Golden State Warriors,San Antonio Spurs,0.3256,0.33732012605116085,0
+KlX1e2D7,2026-02-12,Oklahoma City Thunder,Milwaukee Bucks,0.8271,0.8583486329959781,0
+CrKmJ55E,2026-02-12,Utah Jazz,Portland Trail Blazers,0.3287,0.32272526587231715,0
+WpzkHqzR,2026-02-12,Los Angeles Lakers,Dallas Mavericks,0.685,0.7378369424809677,1
+2TQKBNcl,2026-02-19,Charlotte Hornets,Houston Rockets,0.3759,0.3947127249241548,0
+OrFT91S0,2026-02-19,Cleveland Cavaliers,Brooklyn Nets,0.8731,0.8926197804247624,1
+W8Iy8ucD,2026-02-19,Philadelphia 76ers,Atlanta Hawks,0.5118,0.5664299243180284,0
+rNOmFd4t,2026-02-19,Washington Wizards,Indiana Pacers,0.4574,0.4415111747052587,1
+GzNeDzZh,2026-02-19,New York Knicks,Detroit Pistons,0.597,0.6180726359825993,0
+6HBvlfPN,2026-02-19,Chicago Bulls,Toronto Raptors,0.3357,0.3541937929012275,0
+C2G4BE35,2026-02-19,San Antonio Spurs,Phoenix Suns,0.7127,0.7643678396666596,1
+KSJC9hYH,2026-02-19,Golden State Warriors,Boston Celtics,0.3287,0.28274430335867584,0
+tr8L7W2U,2026-02-19,Sacramento Kings,Orlando Magic,0.2545,0.30112187107988336,0
+d8cURZmn,2026-02-19,Los Angeles Clippers,Denver Nuggets,0.3797,0.3864419780325082,1
+MFrfMVHN,2026-02-20,Memphis Grizzlies,Utah Jazz,0.5556,0.5461447344536344,1
+QmkoOimB,2026-02-20,Washington Wizards,Indiana Pacers,0.5222,0.5921837848986333,1
+hziwQDIb,2026-02-20,Charlotte Hornets,Cleveland Cavaliers,0.3468,0.3104308088930254,0
+WQBCvDXi,2026-02-20,Minnesota Timberwolves,Dallas Mavericks,0.8403,0.8872484581005051,1
+jVYPG9uo,2026-02-20,Atlanta Hawks,Miami Heat,0.4315,0.4087847488331904,0
+viFKxi24,2026-02-20,New Orleans Pelicans,Milwaukee Bucks,0.6158,0.6627370167799009,0
+zJ8TzVWG,2026-02-20,Oklahoma City Thunder,Brooklyn Nets,0.8846,0.8877310228459523,1
+8W6yZ81T,2026-02-20,Los Angeles Lakers,Los Angeles Clippers,0.69,0.7557308071933396,1
+jiA0TnPj,2026-02-20,Portland Trail Blazers,Denver Nuggets,0.4852,0.4968334162520555,0
+Ic2nijHc,2026-02-21,Phoenix Suns,Orlando Magic,0.5799,0.6203736345052437,1
+vDjekUoA,2026-02-21,New Orleans Pelicans,Philadelphia 76ers,0.3985,0.4397212380103897,1
+OImstQ8d,2026-02-21,San Antonio Spurs,Sacramento Kings,0.9129,0.9159152275068557,1
+j5kZsnvp,2026-02-21,Chicago Bulls,Detroit Pistons,0.185,0.226442546928036,0
+nwf3m8GM,2026-02-21,Miami Heat,Memphis Grizzlies,0.8091,0.8373121183332786,1
+vRVT3T03,2026-02-21,New York Knicks,Houston Rockets,0.5919,0.6679435404062414,1
+niZy27VF,2026-02-22,Oklahoma City Thunder,Cleveland Cavaliers,0.389,0.38564083180550945,1
+6unAqaFl,2026-02-22,Atlanta Hawks,Brooklyn Nets,0.7664,0.7934344767220988,1
+hdpIswp1,2026-02-22,Golden State Warriors,Denver Nuggets,0.3211,0.28681008765033106,1
+x02ArYno,2026-02-22,Milwaukee Bucks,Toronto Raptors,0.397,0.37326050170686564,0
+lOwRuHED,2026-02-22,Indiana Pacers,Dallas Mavericks,0.4934,0.5187480331042262,0
+tIQC3K6K,2026-02-22,Washington Wizards,Charlotte Hornets,0.2017,0.2036046407630088,0
+027qbbUs,2026-02-22,Los Angeles Lakers,Boston Celtics,0.4881,0.4952612018923752,0
+6aAidxaf,2026-02-22,Minnesota Timberwolves,Philadelphia 76ers,0.7558,0.7969887471973597,0
+SEb0fGT6,2026-02-22,Chicago Bulls,New York Knicks,0.2336,0.25267351034280405,0
+zu28hfbJ,2026-02-22,Phoenix Suns,Portland Trail Blazers,0.4051,0.4278719530928776,0
+hGWh06HP,2026-02-22,Los Angeles Clippers,Orlando Magic,0.6158,0.6607467185497018,0
+lnIOfpum,2026-02-23,Detroit Pistons,San Antonio Spurs,0.5222,0.5772652063723671,0
+famPhO9a,2026-02-23,Memphis Grizzlies,Sacramento Kings,0.5619,0.5779240559968407,0
+2PjXj2vC,2026-02-23,Houston Rockets,Utah Jazz,0.8491,0.8541845055821579,1
+Ovutkt9O,2026-02-24,Indiana Pacers,Philadelphia 76ers,0.1954,0.18498310877247723,0
+82Db7NOh,2026-02-24,Brooklyn Nets,Dallas Mavericks,0.4712,0.48931862679022875,0
+E3Kk9qft,2026-02-24,Atlanta Hawks,Washington Wizards,0.8296,0.8367781967889515,1
+Ieuc6yuh,2026-02-24,Toronto Raptors,Oklahoma City Thunder,0.5026,0.5853341424807355,0
+tGB651g5,2026-02-24,Cleveland Cavaliers,New York Knicks,0.6045,0.687171403534419,1
+lMYXLMwn,2026-02-24,New Orleans Pelicans,Golden State Warriors,0.4778,0.5053997744072644,1
+p88N1JhU,2026-02-24,Milwaukee Bucks,Miami Heat,0.3357,0.3224473886593559,1
+xr5F3uOH,2026-02-24,Chicago Bulls,Charlotte Hornets,0.2653,0.2718186774627586,0
+zwXuK08b,2026-02-24,Phoenix Suns,Boston Celtics,0.3525,0.3537359952326545,0
+2imMaWMq,2026-02-24,Portland Trail Blazers,Minnesota Timberwolves,0.3182,0.3064215582005389,0
+W4QlIvwB,2026-02-24,Los Angeles Lakers,Orlando Magic,0.6751,0.7221158905226768,0
+A7mGLDq3,2026-02-25,Memphis Grizzlies,Golden State Warriors,0.3875,0.39974105379339303,0
+QLr54F94,2026-02-25,Toronto Raptors,San Antonio Spurs,0.3381,0.3656997830360886,0
+bJtVcAid,2026-02-25,Detroit Pistons,Oklahoma City Thunder,0.7802,0.836958998449002,1
+WMyPJiEF,2026-02-25,Houston Rockets,Sacramento Kings,0.8631,0.8495878464244709,1
+vmuXHVrS,2026-02-25,Milwaukee Bucks,Cleveland Cavaliers,0.4246,0.447089383757309,1
+bXL3C96k,2026-02-25,Denver Nuggets,Boston Celtics,0.5784,0.6067958348857504,1
+ATOjYjT8,2026-02-26,Philadelphia 76ers,Miami Heat,0.5541,0.5926094126650997,1
+WpKBAmy2,2026-02-26,Indiana Pacers,Charlotte Hornets,0.1597,0.17909223885324066,0
+2R3VQ8Lr,2026-02-26,Brooklyn Nets,San Antonio Spurs,0.1896,0.23230940979097925,0
+Ai7wPnje,2026-02-26,Orlando Magic,Houston Rockets,0.4372,0.43415568671274835,0
+IgSbWUcL,2026-02-26,Atlanta Hawks,Washington Wizards,0.7966,0.8069130476491193,1
+4j0nNQK7,2026-02-26,Chicago Bulls,Portland Trail Blazers,0.3955,0.370849857695346,0
+dpmYpUCE,2026-02-26,Dallas Mavericks,Sacramento Kings,0.7292,0.7544549795539783,0
+OfXCwn5l,2026-02-26,Utah Jazz,New Orleans Pelicans,0.3213,0.32830652709818775,0
+hCtsq8sR,2026-02-26,Phoenix Suns,Los Angeles Lakers,0.3412,0.36840918368043124,1
+pALLyQZ0,2026-02-26,Los Angeles Clippers,Minnesota Timberwolves,0.2653,0.22636832618045427,0
+IyZSZ34D,2026-02-27,Detroit Pistons,Cleveland Cavaliers,0.7347,0.7536914958767335,1
+YqHFc7dK,2026-02-27,Boston Celtics,Brooklyn Nets,0.8916,0.9179728071290219,1
+UF2ohoKs,2026-02-27,Milwaukee Bucks,New York Knicks,0.2744,0.25823523547154376,0
+QsdfjPlf,2026-02-27,Dallas Mavericks,Memphis Grizzlies,0.628,0.6722289213882082,0
+Wva2l3J6,2026-02-27,Oklahoma City Thunder,Denver Nuggets,0.6856,0.7181544700263082,1
+hfmBnslJ,2026-02-28,Charlotte Hornets,Portland Trail Blazers,0.7065,0.7021464575337266,1
+IZ3Mgben,2026-02-28,Miami Heat,Houston Rockets,0.4499,0.4725434000182155,1
+I75cVCl1,2026-02-28,Washington Wizards,Toronto Raptors,0.144,0.1806301843196634,0
+6VjD2gvH,2026-02-28,Golden State Warriors,Los Angeles Lakers,0.403,0.41347022263858896,0
+vqkL0X8T,2026-02-28,Utah Jazz,New Orleans Pelicans,0.3396,0.3445937561952699,0
+bTVieBWj,2026-03-01,New York Knicks,San Antonio Spurs,0.5,0.475458198804762,1
+QZNwJEOc,2026-03-01,Brooklyn Nets,Cleveland Cavaliers,0.1808,0.20860278183052408,0
+Y5AfFWNM,2026-03-01,Denver Nuggets,Minnesota Timberwolves,0.5627,0.596463992634844,0
+nkCnHhgA,2026-03-01,Chicago Bulls,Milwaukee Bucks,0.4427,0.4817376210122972,1
+hjiR9Aop,2026-03-01,Indiana Pacers,Memphis Grizzlies,0.4974,0.4802359536721486,0
+Q3kZ7lGd,2026-03-01,Atlanta Hawks,Portland Trail Blazers,0.6721,0.7069068818831018,1
+lxNRDv4F,2026-03-01,Orlando Magic,Detroit Pistons,0.3495,0.3705707067288213,0
+AiBzCIYR,2026-03-01,Dallas Mavericks,Oklahoma City Thunder,0.117,0.1327736159533507,0
+ruKJF0Z2,2026-03-01,Boston Celtics,Philadelphia 76ers,0.743,0.7763063955674901,1
+tz266ddk,2026-03-01,Los Angeles Clippers,New Orleans Pelicans,0.7374,0.7629594615033567,1
+x2eF4zR1,2026-03-01,Los Angeles Lakers,Sacramento Kings,0.8381,0.8449497068699944,1
+Uer1SwJ8,2026-03-02,Washington Wizards,Houston Rockets,0.1304,0.1623240341961089,0
+YsxR9V2s,2026-03-02,Milwaukee Bucks,Boston Celtics,0.4474,0.48989732585918705,0
+2NTs6m26,2026-03-02,Utah Jazz,Denver Nuggets,0.1822,0.1878083425046766,0
+AmXk4RWI,2026-03-02,Golden State Warriors,Los Angeles Clippers,0.4868,0.481353594576339,0
+GQgHKnHa,2026-03-03,Orlando Magic,Washington Wizards,0.8884,0.8930567480482708,1
+Kb08M8nm,2026-03-03,Cleveland Cavaliers,Detroit Pistons,0.4344,0.4384680302299137,1
+OSExSUOP,2026-03-03,Charlotte Hornets,Dallas Mavericks,0.8393,0.854871208163006,1
+OjcPIQoC,2026-03-03,Miami Heat,Brooklyn Nets,0.8403,0.8444299063972766,1
+QX85TjJD,2026-03-03,Toronto Raptors,New York Knicks,0.4381,0.42934548793311944,0
+AmFjZoWh,2026-03-03,Minnesota Timberwolves,Memphis Grizzlies,0.8519,0.8591826377090781,1
+ELLsy81t,2026-03-03,Chicago Bulls,Oklahoma City Thunder,0.2442,0.2669553689940625,0
+p6oYG4GO,2026-03-03,Philadelphia 76ers,San Antonio Spurs,0.2708,0.29546303484742914,0
+r1DbXP05,2026-03-03,Los Angeles Lakers,New Orleans Pelicans,0.7362,0.7772414310000968,1
+vT67V3VH,2026-03-03,Sacramento Kings,Phoenix Suns,0.2442,0.24187688166783095,0
+WzPETs0U,2026-03-04,New York Knicks,Oklahoma City Thunder,0.3905,0.3752563087773566,0
+rFhXoPFb,2026-03-04,Philadelphia 76ers,Utah Jazz,0.7332,0.714921981162755,1
+zkkPmoon,2026-03-04,Boston Celtics,Charlotte Hornets,0.6834,0.7192255015352682,0
+vsntp3pB,2026-03-04,Memphis Grizzlies,Portland Trail Blazers,0.2381,0.20483277618048856,0
+CfplrsFN,2026-03-04,Milwaukee Bucks,Atlanta Hawks,0.5066,0.5936347992670014,0
+fFmDxLxo,2026-03-04,Los Angeles Clippers,Indiana Pacers,0.8258,0.8329075659950878,1
+MLua0OUi,2026-03-05,Orlando Magic,Dallas Mavericks,0.7366,0.772420496099829,1
+ryU7b2a4,2026-03-05,Washington Wizards,Utah Jazz,0.6045,0.6563761839779213,0
+j1XFdtUG,2026-03-05,Miami Heat,Brooklyn Nets,0.8519,0.8397185299842022,1
+rZllvYDk,2026-03-05,Houston Rockets,Golden State Warriors,0.7721,0.7958543948767396,0
+GnmdxCr2,2026-03-05,San Antonio Spurs,Detroit Pistons,0.574,0.5867058037015906,1
+Sjhky3xK,2026-03-05,Minnesota Timberwolves,Toronto Raptors,0.6517,0.6443443241756903,1
+WfVr0Fz9,2026-03-05,Phoenix Suns,Chicago Bulls,0.8232,0.8164549135487033,0
+OhANhXSr,2026-03-05,Sacramento Kings,New Orleans Pelicans,0.3065,0.32216355483350667,0
+vLYjbg5L,2026-03-05,Denver Nuggets,Los Angeles Lakers,0.6015,0.6290253224868071,1
+dKNUjBce,2026-03-06,Boston Celtics,Dallas Mavericks,0.882,0.8813970649034893,1
+hnHwkkS7,2026-03-06,Charlotte Hornets,Miami Heat,0.7096,0.741320070511647,0
+pt4PChKE,2026-03-06,Houston Rockets,Portland Trail Blazers,0.6954,0.7163452296089137,1
+ANm45ACl,2026-03-06,Phoenix Suns,New Orleans Pelicans,0.6158,0.6674066307266243,1
+t8cYAWlR,2026-03-06,Denver Nuggets,New York Knicks,0.5148,0.546066624694468,0
+WxxD3ls1,2026-03-06,San Antonio Spurs,Los Angeles Clippers,0.7033,0.7025179014450722,1
+v3uL1SBD,2026-03-06,Los Angeles Lakers,Indiana Pacers,0.7706,0.7776473484763391,1
+fBN7PV3K,2026-03-07,Minnesota Timberwolves,Orlando Magic,0.7033,0.7159047728538059,0
+AqPvImdf,2026-03-07,Atlanta Hawks,Philadelphia 76ers,0.692,0.7328749212922601,1
+js9wK9Rs,2026-03-07,Detroit Pistons,Brooklyn Nets,0.8499,0.8415595457648741,0
+I9SnGRQ6,2026-03-07,Memphis Grizzlies,Los Angeles Clippers,0.2708,0.2989538597072374,0
+vPGeE5eJ,2026-03-07,Milwaukee Bucks,Utah Jazz,0.7762,0.7672148142117097,1
+6V8sx9mQ,2026-03-07,Oklahoma City Thunder,Golden State Warriors,0.8271,0.804914687546645,1
+Ac4DWnBm,2026-03-08,Cleveland Cavaliers,Boston Celtics,0.5222,0.5562374857481098,0
+rB2LUQu0,2026-03-08,Los Angeles Lakers,New York Knicks,0.3614,0.33891144717376376,1
+OMwLVt0s,2026-03-08,Toronto Raptors,Dallas Mavericks,0.7664,0.828074188780757,1
+vwdUS4AC,2026-03-08,Miami Heat,Detroit Pistons,0.4778,0.48997907389408263,1
+pxO1Adfo,2026-03-08,New Orleans Pelicans,Washington Wizards,0.8078,0.8485093734435406,1
+EHofGnr4,2026-03-08,San Antonio Spurs,Houston Rockets,0.6643,0.6894264949669836,1
+S0mnI8Di,2026-03-08,Milwaukee Bucks,Orlando Magic,0.3412,0.2800344828925794,0
+2sKs7r5j,2026-03-08,Sacramento Kings,Chicago Bulls,0.3775,0.3829863143678627,1
+rcwBC4sT,2026-03-08,Portland Trail Blazers,Indiana Pacers,0.7721,0.7877459208781682,1
+Aqu3EQCG,2026-03-08,Phoenix Suns,Charlotte Hornets,0.3632,0.36975598216581523,1
+SKBTUocc,2026-03-09,Cleveland Cavaliers,Philadelphia 76ers,0.853,0.8858235873009631,1
+d03pR3dM,2026-03-09,Oklahoma City Thunder,Denver Nuggets,0.6,0.6258566437647245,1
+lz0xTPR9,2026-03-09,Brooklyn Nets,Memphis Grizzlies,0.5148,0.5735865565613603,1
+GppHLsKq,2026-03-09,Utah Jazz,Golden State Warriors,0.3049,0.3141102127707583,1
+lbrPJLld,2026-03-09,Los Angeles Clippers,New York Knicks,0.4605,0.47245010452426106,1
+Ei23sPt3,2026-03-10,Philadelphia 76ers,Memphis Grizzlies,0.6235,0.6517616424227964,1
+EFpjYK3k,2026-03-10,Atlanta Hawks,Dallas Mavericks,0.7755,0.8216093203232704,1
+MH5Bu3BF,2026-03-10,Brooklyn Nets,Detroit Pistons,0.118,0.15502178201255015,0
+rXgKwstS,2026-03-10,Miami Heat,Washington Wizards,0.8842,0.8637450120269965,1
+08Qpf2Q8,2026-03-10,San Antonio Spurs,Boston Celtics,0.589,0.6242932919692197,1
+8EwaWbY1,2026-03-10,Milwaukee Bucks,Phoenix Suns,0.4577,0.4850100339907099,0
+KlXTTKUg,2026-03-10,Houston Rockets,Toronto Raptors,0.625,0.665717935975365,1
+SIAPnKIr,2026-03-10,Portland Trail Blazers,Charlotte Hornets,0.4249,0.4093592923735326,0
+dzKghteL,2026-03-10,Golden State Warriors,Chicago Bulls,0.6635,0.6721557311494406,0
+lYbYpbme,2026-03-10,Sacramento Kings,Indiana Pacers,0.5897,0.6304460046598638,1
+zkctqxI7,2026-03-10,Los Angeles Lakers,Minnesota Timberwolves,0.4381,0.42057403050032394,1
+jcuT6uAE,2026-03-11,Orlando Magic,Cleveland Cavaliers,0.411,0.4124689751003483,1
+SEzxSba6,2026-03-11,New Orleans Pelicans,Toronto Raptors,0.4373,0.45251190155813065,1
+Mq20lXgm,2026-03-11,Utah Jazz,New York Knicks,0.1317,0.1480768663698618,0
+AJDGpkgC,2026-03-11,Sacramento Kings,Charlotte Hornets,0.1284,0.12141323679667765,0
+IBe9nBOa,2026-03-11,Denver Nuggets,Houston Rockets,0.6904,0.7366822845285379,1
+WY1PrTNO,2026-03-11,Los Angeles Clippers,Minnesota Timberwolves,0.527,0.5545000821663716,1
+IPzr1Awg,2026-03-12,Indiana Pacers,Phoenix Suns,0.2251,0.25128050223212506,0
+McsZ2W8t,2026-03-12,Detroit Pistons,Philadelphia 76ers,0.8741,0.8759473785915882,1
+jwZkal85,2026-03-12,Orlando Magic,Washington Wizards,0.8683,0.8625261689464073,1
+AukicSxI,2026-03-12,Atlanta Hawks,Brooklyn Nets,0.8852,0.8936041193493529,1
+I5hae67U,2026-03-12,Miami Heat,Milwaukee Bucks,0.6697,0.7061339531166034,1
+2JXBa1dB,2026-03-12,Memphis Grizzlies,Dallas Mavericks,0.3412,0.3505883359685614,0
+MJI9F9hn,2026-03-12,San Antonio Spurs,Denver Nuggets,0.5744,0.5930252264470897,0
+UqMHDmNb,2026-03-12,Oklahoma City Thunder,Boston Celtics,0.7427,0.7746663246986981,1
+OrFQBRiB,2026-03-12,Los Angeles Lakers,Chicago Bulls,0.8147,0.856248424035584,1
+42z0QQ64,2026-03-13,Dallas Mavericks,Cleveland Cavaliers,0.1597,0.17069256106352035,0
+Gtf54qpo,2026-03-13,Indiana Pacers,New York Knicks,0.1573,0.17537160583125844,0
+ddDY95MN,2026-03-13,Detroit Pistons,Memphis Grizzlies,0.9016,0.8977620111246857,1
+lUOpQxUI,2026-03-13,Toronto Raptors,Phoenix Suns,0.6459,0.7176488872832237,1
+rmniSnxh,2026-03-13,Houston Rockets,New Orleans Pelicans,0.6667,0.7049738931491036,1
+YesGMr6T,2026-03-13,Portland Trail Blazers,Utah Jazz,0.8873,0.8918008642548421,1
+xUm7O4yH,2026-03-13,Golden State Warriors,Minnesota Timberwolves,0.3499,0.3341040638447191,0
+URSoHMTj,2026-03-13,Los Angeles Clippers,Chicago Bulls,0.8519,0.8685063143096989,1
+pzBYvQLc,2026-03-14,Philadelphia 76ers,Brooklyn Nets,0.7605,0.7751764642853618,1
+jXDtw4jA,2026-03-14,Atlanta Hawks,Milwaukee Bucks,0.7917,0.8014444560623589,1
+EDNVGDZ7,2026-03-14,San Antonio Spurs,Charlotte Hornets,0.6818,0.7229238946179926,1
+ALQEKezq,2026-03-14,Boston Celtics,Washington Wizards,0.9272,0.9325325932610475,1
+IoUMIZ4e,2026-03-14,Miami Heat,Orlando Magic,0.6135,0.6678889357519405,0
+67AHvHRE,2026-03-14,Los Angeles Lakers,Denver Nuggets,0.4675,0.5066819420612605,1
+Q9QIxedR,2026-03-14,Los Angeles Clippers,Sacramento Kings,0.8631,0.8609248659554621,0
+dhHlXYJl,2026-03-15,Oklahoma City Thunder,Minnesota Timberwolves,0.7605,0.7735325109380801,1
+EBh3rKqm,2026-03-15,Milwaukee Bucks,Indiana Pacers,0.7188,0.748217985577146,1
+OY3LfI9j,2026-03-15,Toronto Raptors,Detroit Pistons,0.4238,0.4382009902707935,1
+fRBWmtMP,2026-03-15,Cleveland Cavaliers,Dallas Mavericks,0.8842,0.8636068512781695,0
+nPjBtbEa,2026-03-15,Philadelphia 76ers,Portland Trail Blazers,0.257,0.2517979165535555,1
+ripKvxqC,2026-03-15,New York Knicks,Golden State Warriors,0.8642,0.8824324969112828,1
+llmSxGDO,2026-03-15,Sacramento Kings,Utah Jazz,0.5769,0.6220774980557203,1
+0SGpecTh,2026-03-16,Washington Wizards,Golden State Warriors,0.2766,0.2946822471701894,0
+h2DxcJbt,2026-03-16,Atlanta Hawks,Orlando Magic,0.589,0.6398963733596884,1
+U781iFSH,2026-03-16,Boston Celtics,Phoenix Suns,0.7656,0.7977596395385589,1
+dfAggyb5,2026-03-16,Brooklyn Nets,Portland Trail Blazers,0.2017,0.1897427462354202,0
+00fDdA4c,2026-03-16,New Orleans Pelicans,Dallas Mavericks,0.7377,0.7850116306225025,1
+Yg2RY6Cj,2026-03-16,Chicago Bulls,Memphis Grizzlies,0.6984,0.736025625000038,1
+MFrMflZ9,2026-03-16,Houston Rockets,Los Angeles Lakers,0.48,0.44127561330723275,0
+UunUhS3M,2026-03-16,Los Angeles Clippers,San Antonio Spurs,0.268,0.29978007987774513,0
+KAQ8opdd,2026-03-17,Orlando Magic,Oklahoma City Thunder,0.2157,0.24823309995518178,0
+ncS0m6Rq,2026-03-17,Charlotte Hornets,Miami Heat,0.6458,0.7079847145588293,1
+zJ8e9ml3,2026-03-17,Washington Wizards,Detroit Pistons,0.0837,0.09263865665349648,0
+rqC37RIF,2026-03-17,New York Knicks,Indiana Pacers,0.8519,0.8325035069462124,1
+4b0C55mS,2026-03-17,Milwaukee Bucks,Cleveland Cavaliers,0.1742,0.16468082741554002,0
+EXor0qBk,2026-03-17,Minnesota Timberwolves,Phoenix Suns,0.6,0.6217806289928409,1
+2gSxMQX8,2026-03-17,Sacramento Kings,San Antonio Spurs,0.1459,0.1676443031316052,0
+AauibNu2,2026-03-17,Denver Nuggets,Philadelphia 76ers,0.8873,0.9013690160264496,1
+bLLoK42L,2026-03-18,Boston Celtics,Golden State Warriors,0.8272,0.8299194158885355,1
+EoRGErQr,2026-03-18,Brooklyn Nets,Oklahoma City Thunder,0.0768,0.10010482391333389,0
+z1FPCMfe,2026-03-18,Indiana Pacers,Portland Trail Blazers,0.1597,0.1634274389375416,0
+WnaSWsnR,2026-03-18,New Orleans Pelicans,Los Angeles Clippers,0.4565,0.4573876928068576,1
+bZ0KY3HE,2026-03-18,Minnesota Timberwolves,Utah Jazz,0.8519,0.8346665697359437,1
+vsn8IL1c,2026-03-18,Chicago Bulls,Toronto Raptors,0.2812,0.29068936010027324,0
+E72iRL9l,2026-03-18,Dallas Mavericks,Atlanta Hawks,0.2653,0.26474076476466896,0
+hO0Mdo14,2026-03-18,Memphis Grizzlies,Denver Nuggets,0.1509,0.16858509321819237,1
+MX5aPav1,2026-03-18,Houston Rockets,Los Angeles Lakers,0.5405,0.5704564787796839,0
+8SAJUfGt,2026-03-19,Washington Wizards,Detroit Pistons,0.1199,0.1616140305138031,0
+rmf8Nw9D,2026-03-19,Charlotte Hornets,Orlando Magic,0.6595,0.7053594015922335,1
+2R3SSYpg,2026-03-19,Miami Heat,Los Angeles Lakers,0.5788,0.6491199097464136,0
+W6eqPjpI,2026-03-19,New Orleans Pelicans,Los Angeles Clippers,0.595,0.65225194117112,1
+vXbiNUEU,2026-03-19,San Antonio Spurs,Phoenix Suns,0.7843,0.7981300207549347,1
+zu2zRCF5,2026-03-19,Chicago Bulls,Cleveland Cavaliers,0.2157,0.26342258386346024,0
+roP1sYan,2026-03-19,Utah Jazz,Milwaukee Bucks,0.3249,0.32796368816619625,1
+GCx9uCUb,2026-03-19,Sacramento Kings,Philadelphia 76ers,0.4336,0.4281400899051902,0
+CvWHwjaB,2026-03-20,Brooklyn Nets,New York Knicks,0.0856,0.10885866397909391,0
+phUPyUTN,2026-03-20,Detroit Pistons,Golden State Warriors,0.6697,0.6894768249400179,1
+4xBdW7io,2026-03-20,Houston Rockets,Atlanta Hawks,0.574,0.59723012388582,1
+UF2rfBqh,2026-03-20,Memphis Grizzlies,Boston Celtics,0.1127,0.1423177116593987,0
+jVjihkE4,2026-03-20,Minnesota Timberwolves,Portland Trail Blazers,0.5105,0.5661753065747424,0
+n7kGGaW9,2026-03-20,Denver Nuggets,Toronto Raptors,0.6984,0.7370495135384585,1
+befajTrH,2026-03-21,Washington Wizards,Oklahoma City Thunder,0.0657,0.0855891001112393,0
+W4QGjcfc,2026-03-21,New Orleans Pelicans,Cleveland Cavaliers,0.351,0.36197382734689704,0
+fNm8l7DT,2026-03-21,Charlotte Hornets,Memphis Grizzlies,0.9091,0.9154781594854772,1
+jgZwqoyi,2026-03-21,Orlando Magic,Los Angeles Lakers,0.4201,0.42014734379763846,0
+0pIXnFgM,2026-03-21,Houston Rockets,Miami Heat,0.5658,0.6063885579016234,1
+WS83sgHq,2026-03-21,San Antonio Spurs,Indiana Pacers,0.9006,0.8932383284870065,1
+vVTOlyP9,2026-03-21,Atlanta Hawks,Golden State Warriors,0.7292,0.7272329351688664,1
+CxHBuXod,2026-03-21,Dallas Mavericks,Los Angeles Clippers,0.2965,0.29738465066747194,0
+4W3c3zv3,2026-03-21,Utah Jazz,Philadelphia 76ers,0.3287,0.33115123321137535,0
+0bc61E8F,2026-03-21,Phoenix Suns,Milwaukee Bucks,0.813,0.8286669299791156,0
+6cPwq6hl,2026-03-22,Denver Nuggets,Portland Trail Blazers,0.7445,0.7572243304975828,1
+SCDnspN0,2026-03-22,Sacramento Kings,Brooklyn Nets,0.6807,0.7403527347687667,1
+ETBfuOiD,2026-03-22,New York Knicks,Washington Wizards,0.9383,0.9469162909636618,1
+Uyfs3RqK,2026-03-22,Boston Celtics,Minnesota Timberwolves,0.779,0.8177815604471136,0
+8MwPEw1M,2026-03-22,Phoenix Suns,Toronto Raptors,0.3797,0.363220345044777,1
+GhIOF4TP,2026-03-23,Miami Heat,San Antonio Spurs,0.4095,0.4439859639413408,0
+MZYLeqxf,2026-03-23,Detroit Pistons,Los Angeles Lakers,0.4819,0.4795276559520114,1
+SWyUgN66,2026-03-23,Orlando Magic,Indiana Pacers,0.8189,0.8013502414318555,0
+lnQxh1yJ,2026-03-23,Philadelphia 76ers,Oklahoma City Thunder,0.1127,0.13328367886080722,0
+Q7uDc57s,2026-03-23,Atlanta Hawks,Memphis Grizzlies,0.8597,0.850862635755439,1
+zwaeArim,2026-03-23,Chicago Bulls,Houston Rockets,0.2395,0.28459994770757663,1
+IePf9HOq,2026-03-23,Utah Jazz,Toronto Raptors,0.2017,0.23049597932726754,0
+8jc38MLa,2026-03-23,Dallas Mavericks,Golden State Warriors,0.4381,0.44388310305007034,0
+E3S360jC,2026-03-23,Portland Trail Blazers,Brooklyn Nets,0.8767,0.8881341279274136,1
+MTVB4vLO,2026-03-23,Los Angeles Clippers,Milwaukee Bucks,0.8588,0.8545830463980993,1
+QsdMOs6t,2026-03-24,Charlotte Hornets,Sacramento Kings,0.9058,0.9080742733162903,1
+Y7aUMLzg,2026-03-24,New York Knicks,New Orleans Pelicans,0.748,0.7517132516999029,1
+S6hwLa55,2026-03-24,Cleveland Cavaliers,Orlando Magic,0.7895,0.8106559545434936,1
+0KjoJwzI,2026-03-24,Phoenix Suns,Denver Nuggets,0.3228,0.33769664776721475,0
+8QDCZbKb,2026-03-25,Philadelphia 76ers,Chicago Bulls,0.6984,0.756670832804839,1
+dnpfHH4U,2026-03-25,Detroit Pistons,Atlanta Hawks,0.5633,0.6167208317380275,0
+nBP3yLkn,2026-03-25,Indiana Pacers,Los Angeles Lakers,0.2279,0.2866671072355742,0
+fsCKXxkB,2026-03-25,Boston Celtics,Oklahoma City Thunder,0.4494,0.4647062897872192,1
+lrUhFUYq,2026-03-25,Cleveland Cavaliers,Miami Heat,0.5656,0.5971448428697943,0
+MeS0D83d,2026-03-25,Memphis Grizzlies,San Antonio Spurs,0.095,0.12188244109121905,0
+x4AmyCe3,2026-03-25,Utah Jazz,Washington Wizards,0.5808,0.6229573433979289,0
+UBSfZkQF,2026-03-25,Minnesota Timberwolves,Houston Rockets,0.4605,0.47638094004571574,1
+Iy1rQom2,2026-03-25,Portland Trail Blazers,Milwaukee Bucks,0.8716,0.8837916399436104,1
+M97ZR7Ik,2026-03-25,Golden State Warriors,Brooklyn Nets,0.8283,0.8489924759313963,1
+jRG3XTfS,2026-03-25,Denver Nuggets,Dallas Mavericks,0.8217,0.7816567348086695,1
+ENI37egd,2026-03-25,Los Angeles Clippers,Toronto Raptors,0.6104,0.6298343873203455,1
+0Gf1t7Xr,2026-03-26,Orlando Magic,Sacramento Kings,0.8884,0.871348343469841,1
+AVmUmku9,2026-03-26,Charlotte Hornets,New York Knicks,0.5464,0.6332373879774763,1
+UX3VoT9L,2026-03-26,Detroit Pistons,New Orleans Pelicans,0.6506,0.6901929920439049,1
+MVrAvo2e,2026-03-27,Indiana Pacers,Los Angeles Clippers,0.2351,0.24500449195997692,0
+UenIxPW7,2026-03-27,Boston Celtics,Atlanta Hawks,0.652,0.6323952649693119,1
+ryU40SOE,2026-03-27,Cleveland Cavaliers,Miami Heat,0.6604,0.6923602068799464,1
+GlSCb6gR,2026-03-27,Memphis Grizzlies,Houston Rockets,0.1317,0.16225674421294517,0
+zZ8qgpHl,2026-03-27,Oklahoma City Thunder,Chicago Bulls,0.9232,0.9194740368052265,1
+6H5kVbo3,2026-03-27,Toronto Raptors,New Orleans Pelicans,0.7404,0.7764215266597553,1
+raCiiOo1,2026-03-27,Denver Nuggets,Utah Jazz,0.9202,0.9138550294492311,1
+4E00k2GD,2026-03-27,Golden State Warriors,Washington Wizards,0.8469,0.8260161824869359,1
+dM2oD58K,2026-03-27,Portland Trail Blazers,Dallas Mavericks,0.7983,0.8237783283394332,0
+G6qI7qWs,2026-03-27,Los Angeles Lakers,Brooklyn Nets,0.9195,0.9216318747018419,1
+lKsQ5N0f,2026-03-28,Milwaukee Bucks,San Antonio Spurs,0.0871,0.12087948711649442,0
+v7Vbiq3b,2026-03-28,Minnesota Timberwolves,Detroit Pistons,0.4577,0.404645487536965,0
+pnyZ31V6,2026-03-28,Charlotte Hornets,Philadelphia 76ers,0.6818,0.7341748423007591,0
+jqvs2u0J,2026-03-28,Atlanta Hawks,Sacramento Kings,0.847,0.8324794573857428,1
+WtSjg5Yo,2026-03-28,Memphis Grizzlies,Chicago Bulls,0.3627,0.37833422311580284,1
+zZO7kNXA,2026-03-28,Phoenix Suns,Utah Jazz,0.9042,0.9074796498682876,1
+8nNFm12N,2026-03-29,Milwaukee Bucks,Los Angeles Clippers,0.1013,0.09642629330683475,0
+j7QvruQp,2026-03-29,Indiana Pacers,Miami Heat,0.256,0.27984061455182085,1
+2qabTxGF,2026-03-29,Toronto Raptors,Orlando Magic,0.5222,0.5647842921674031,1
+IDIQ5rIi,2026-03-29,Brooklyn Nets,Sacramento Kings,0.527,0.5403775172653245,1
+ngAs20HG,2026-03-29,Portland Trail Blazers,Washington Wizards,0.9042,0.8952450287938031,1
+vT6Z3Mn4,2026-03-29,Charlotte Hornets,Boston Celtics,0.5527,0.6447119966055797,0
+S2Ik0vnT,2026-03-29,New Orleans Pelicans,Houston Rockets,0.3227,0.3630150551467784,0
+8t26RGpS,2026-03-29,Oklahoma City Thunder,New York Knicks,0.75,0.7700854798101776,1
+hEwwMf8k,2026-03-29,Denver Nuggets,Golden State Warriors,0.8284,0.8222033383489822,1
+0vsoKYx2,2026-03-30,Miami Heat,Philadelphia 76ers,0.4474,0.4232360642230096,1
+GnPXsxV8,2026-03-30,Atlanta Hawks,Boston Celtics,0.5622,0.6504949746717722,1
+hnH5N7qf,2026-03-30,San Antonio Spurs,Chicago Bulls,0.9144,0.9000314207733834,1
+nZo5PTEs,2026-03-30,Memphis Grizzlies,Phoenix Suns,0.1597,0.17219588782562095,0
+0CKDLoE6,2026-03-30,Dallas Mavericks,Minnesota Timberwolves,0.2545,0.2634156158216263,0
+MR8MJPrJ,2026-03-30,Utah Jazz,Cleveland Cavaliers,0.0958,0.12509281683958529,0
+lY08sTzQ,2026-03-30,Oklahoma City Thunder,Detroit Pistons,0.8272,0.8121534540658405,1
+6ksux7bm,2026-03-30,Los Angeles Lakers,Washington Wizards,0.8955,0.8826589849453378,1
+v3umzoTa,2026-03-31,Orlando Magic,Phoenix Suns,0.5352,0.5671923319242513,1
+zVYeYOcC,2026-03-31,Brooklyn Nets,Charlotte Hornets,0.0871,0.11366849929915049,0
+QyaUfPVG,2026-03-31,Milwaukee Bucks,Dallas Mavericks,0.4404,0.46858856310913555,1
+Wjkojlhm,2026-03-31,Detroit Pistons,Toronto Raptors,0.5821,0.6418895685904519,1
+rex4W2SO,2026-03-31,Houston Rockets,New York Knicks,0.4842,0.48052377091792403,1
+n92Ej6Dt,2026-03-31,Los Angeles Lakers,Cleveland Cavaliers,0.5612,0.5965975628126743,1
+YP0Mlprg,2026-03-31,Los Angeles Clippers,Portland Trail Blazers,0.6341,0.6612384578854691,0
+UifVnOC5,2026-04-01,Washington Wizards,Philadelphia 76ers,0.1161,0.16421608979684899,0
+bXonqtCU,2026-04-01,Orlando Magic,Atlanta Hawks,0.4397,0.473331444878981,0
+25hwo2sI,2026-04-01,Miami Heat,Boston Celtics,0.3659,0.39446478944479296,0
+SIrflSMa,2026-04-01,Toronto Raptors,Sacramento Kings,0.8457,0.8444068547219915,0
+Ywte3qcn,2026-04-01,Chicago Bulls,Indiana Pacers,0.5919,0.6340037405801642,0
+fgU31NRb,2026-04-01,Houston Rockets,Milwaukee Bucks,0.9232,0.9211428213120676,1
+rRIXA0P7,2026-04-01,Memphis Grizzlies,New York Knicks,0.1416,0.16758857585825018,0
+boRKcuRN,2026-04-01,Utah Jazz,Denver Nuggets,0.0871,0.12953971494038172,0
+fHCjhJlo,2026-04-01,Golden State Warriors,San Antonio Spurs,0.1233,0.1461110082571834,0
+YaHVFMth,2026-04-02,Charlotte Hornets,Phoenix Suns,0.6667,0.7224523260955772,1
+tQKwE0B4,2026-04-02,Detroit Pistons,Minnesota Timberwolves,0.6501,0.6896105545286302,1
+2u9nCvtH,2026-04-02,Oklahoma City Thunder,Los Angeles Lakers,0.7567,0.805450587244864,1
+2wUSiAf2,2026-04-02,Portland Trail Blazers,New Orleans Pelicans,0.6744,0.7256540363195888,1
+8vyKgWPk,2026-04-02,Golden State Warriors,Cleveland Cavaliers,0.2083,0.2330120937580064,0
+fXGEFDn9,2026-04-02,Los Angeles Clippers,San Antonio Spurs,0.5564,0.6492738156805187,0
+Ms1g8Vvq,2026-04-03,Philadelphia 76ers,Minnesota Timberwolves,0.5939,0.6437148150839214,1
+jaANDiHL,2026-04-03,Charlotte Hornets,Indiana Pacers,0.8946,0.8807414181168048,1
+GO294mv8,2026-04-03,New York Knicks,Chicago Bulls,0.8736,0.8603060902013964,1
+rck2699e,2026-04-03,Brooklyn Nets,Atlanta Hawks,0.0894,0.12215069647295178,0
+0Wt2n6iC,2026-04-03,Memphis Grizzlies,Toronto Raptors,0.1269,0.1506708045648237,0
+6DV1AwSQ,2026-04-03,Milwaukee Bucks,Boston Celtics,0.0843,0.11680094170556596,0
+YaXgCacE,2026-04-03,Houston Rockets,Utah Jazz,0.9136,0.9138797108461983,1
+QcCY4Hkl,2026-04-03,Dallas Mavericks,Orlando Magic,0.3049,0.3436129949687103,0
+WfFt3eK0,2026-04-03,Sacramento Kings,New Orleans Pelicans,0.3228,0.3051650145003359,1
+KGeyPxsK,2026-04-04,Denver Nuggets,San Antonio Spurs,0.4638,0.48614395385593295,1
+hA3k1ZlD,2026-04-04,Miami Heat,Washington Wizards,0.9171,0.8935386928489678,1
+v1x8JG4s,2026-04-04,Philadelphia 76ers,Detroit Pistons,0.3924,0.32564674083023365,0
+CEzGHfZg,2026-04-05,Brooklyn Nets,Washington Wizards,0.5919,0.6218120352542194,1
+WGjHFY36,2026-04-05,Chicago Bulls,Phoenix Suns,0.1754,0.21392233041102152,0
+dbzBppMO,2026-04-05,Boston Celtics,Toronto Raptors,0.7815,0.7814377706947074,1
+vsfPDCYI,2026-04-05,Milwaukee Bucks,Memphis Grizzlies,0.705,0.7678381196500959,1
+KxXByGQP,2026-04-05,Cleveland Cavaliers,Indiana Pacers,0.9058,0.8889787185037602,1
+4rUcSBmC,2026-04-05,Oklahoma City Thunder,Utah Jazz,0.9474,0.9509685895870679,1
+WUVkUXIa,2026-04-05,New Orleans Pelicans,Orlando Magic,0.3197,0.3119232119057171,0
+jLNsWglm,2026-04-05,Minnesota Timberwolves,Charlotte Hornets,0.3875,0.32918319461877216,0
+bqnW93Xp,2026-04-05,Dallas Mavericks,Los Angeles Lakers,0.4737,0.5058319568876166,1
+QkvIX6Pi,2026-04-05,Sacramento Kings,Los Angeles Clippers,0.1403,0.15015105660985362,0
+n5SQVpf4,2026-04-05,Golden State Warriors,Houston Rockets,0.4,0.43038917421672024,0
+UmKsS2gT,2026-04-06,Orlando Magic,Detroit Pistons,0.4778,0.48125065582000814,1
+YLQYTOOG,2026-04-06,Atlanta Hawks,New York Knicks,0.5222,0.5427893226261348,0
+QJ5DMtHj,2026-04-06,Memphis Grizzlies,Cleveland Cavaliers,0.1259,0.14257985178395313,0
+tSm0pp9c,2026-04-06,San Antonio Spurs,Philadelphia 76ers,0.7529,0.77285753870143,1
+nPj8rOwA,2026-04-06,Denver Nuggets,Portland Trail Blazers,0.7292,0.7244066811069012,1
+8vuHt28M,2026-04-07,Washington Wizards,Chicago Bulls,0.3302,0.3485573239600405,0
+SrCscNh3,2026-04-07,Indiana Pacers,Minnesota Timberwolves,0.1501,0.19373807748172514,0
+pfFK4m7t,2026-04-07,Toronto Raptors,Miami Heat,0.5538,0.6034042255635242,1
+zkPeZJ0d,2026-04-07,Brooklyn Nets,Milwaukee Bucks,0.4675,0.48330442671642265,1
+Yesre1NF,2026-04-07,New Orleans Pelicans,Utah Jazz,0.7018,0.6796343346257016,1
+vNVnytWq,2026-04-07,Boston Celtics,Charlotte Hornets,0.625,0.6534917680809493,1
+tMpjguhS,2026-04-07,Golden State Warriors,Sacramento Kings,0.8764,0.8596958493280707,1
+QgMMmJFk,2026-04-07,Los Angeles Lakers,Oklahoma City Thunder,0.0829,0.10201414073822426,0
+YJPUocp2,2026-04-07,Los Angeles Clippers,Dallas Mavericks,0.8333,0.8194237109792776,1
+na7H90x9,2026-04-07,Phoenix Suns,Houston Rockets,0.4844,0.501661684685553,0
+KC5P7v7L,2026-04-08,Cleveland Cavaliers,Atlanta Hawks,0.607,0.6629897749840659,1
+nNk40dae,2026-04-08,Detroit Pistons,Milwaukee Bucks,0.9363,0.9401951655610401,1
+vcnd2IUr,2026-04-08,Orlando Magic,Minnesota Timberwolves,0.7983,0.8652519366395328,1
+EZQbMwME,2026-04-08,Denver Nuggets,Memphis Grizzlies,0.9495,0.9435735705649853,1
+8xvDbzU7,2026-04-08,San Antonio Spurs,Portland Trail Blazers,0.5867,0.5929341866986878,1
+8zqX3V5m,2026-04-08,Los Angeles Clippers,Oklahoma City Thunder,0.256,0.2528359822985593,0
+tlsu29z0,2026-04-08,Phoenix Suns,Dallas Mavericks,0.8403,0.8583463269264247,1
+693T2Ryg,2026-04-09,Toronto Raptors,Miami Heat,0.6076,0.6236201325855796,1
+xGzl0m5C,2026-04-09,Washington Wizards,Chicago Bulls,0.308,0.3240855507986628,0
+UNhebRZO,2026-04-09,Brooklyn Nets,Indiana Pacers,0.4148,0.4174069265703046,0
+YyJ5IUKt,2026-04-09,New York Knicks,Boston Celtics,0.603,0.6076326861227476,1
+t2MDG8kg,2026-04-09,Houston Rockets,Philadelphia 76ers,0.6772,0.7335149034410128,1
+xUFMEnK5,2026-04-09,Golden State Warriors,Los Angeles Lakers,0.5288,0.521996045019365,0
+AsEUCQlI,2026-04-10,Charlotte Hornets,Detroit Pistons,0.6507,0.7073019481642805,0
+K89uV74n,2026-04-10,Atlanta Hawks,Cleveland Cavaliers,0.748,0.7751999070734221,1
+UqUVA4JU,2026-04-10,Washington Wizards,Miami Heat,0.1004,0.13666589638272691,0
+EZ6y1565,2026-04-10,New York Knicks,Toronto Raptors,0.6951,0.7275329861982777,1
+ll1dRP3B,2026-04-10,Indiana Pacers,Philadelphia 76ers,0.1199,0.15598449345511967,0
+tOclToZb,2026-04-10,Boston Celtics,New Orleans Pelicans,0.9129,0.9113029911797796,1
+bNOuI3t4,2026-04-10,San Antonio Spurs,Dallas Mavericks,0.9202,0.9119268880511247,1
+jcLXJPBi,2026-04-10,Milwaukee Bucks,Brooklyn Nets,0.7983,0.8090867800787894,1
+rmf5P3YN,2026-04-10,Chicago Bulls,Orlando Magic,0.1107,0.1405808448427198,0
+h4QeELuT,2026-04-10,Denver Nuggets,Oklahoma City Thunder,0.5527,0.4768451108071493,1
+KxDlGsBG,2026-04-10,Utah Jazz,Memphis Grizzlies,0.6173,0.6660468120890464,1
+vJuyKsdo,2026-04-10,Houston Rockets,Minnesota Timberwolves,0.7931,0.8131413761390717,0
+4rfEW2ec,2026-04-10,Sacramento Kings,Golden State Warriors,0.2017,0.22203849746529386,1
+Cl7S8a3j,2026-04-10,Portland Trail Blazers,Los Angeles Clippers,0.5326,0.5680330892462432,1
+0AmNUtQ9,2026-04-10,Los Angeles Lakers,Phoenix Suns,0.4545,0.4317444670896191,1
+42jVOBgl,2026-04-12,Philadelphia 76ers,Milwaukee Bucks,0.8955,0.8713655438040236,1
+4tFfCY9r,2026-04-12,Boston Celtics,Orlando Magic,0.1551,0.1684593180479798,1
+A10paqyI,2026-04-12,Toronto Raptors,Brooklyn Nets,0.9508,0.9545155898462361,1
+Msm6UXVQ,2026-04-12,New York Knicks,Charlotte Hornets,0.1369,0.1304546879358211,0
+Qe33ACve,2026-04-12,Cleveland Cavaliers,Washington Wizards,0.7983,0.7493444729089742,1
+YL6B8j97,2026-04-12,Indiana Pacers,Detroit Pistons,0.1158,0.12913568319193758,0
+lUlbWg1E,2026-04-12,Miami Heat,Atlanta Hawks,0.7867,0.866988201753567,1
+0lzYrXpK,2026-04-12,Minnesota Timberwolves,New Orleans Pelicans,0.6076,0.6021966870351126,1
+4GV3wB8s,2026-04-12,Oklahoma City Thunder,Phoenix Suns,0.7219,0.7507543861121273,0
+CSgwNkO0,2026-04-12,Dallas Mavericks,Chicago Bulls,0.6432,0.6838212856941922,1
+MH3FeAUP,2026-04-12,Portland Trail Blazers,Sacramento Kings,0.921,0.9123545199234273,1
+YeNKZS76,2026-04-12,Los Angeles Lakers,Utah Jazz,0.8741,0.8648416622936466,1
+YsrnLThD,2026-04-12,Houston Rockets,Memphis Grizzlies,0.8746,0.8655805722213953,1
+tMQSX6xJ,2026-04-12,Los Angeles Clippers,Golden State Warriors,0.6045,0.6176862807664018,1
+xUTBykwf,2026-04-12,San Antonio Spurs,Denver Nuggets,0.7758,0.7293785950352821,0
+nu8AhKz3,2026-04-14,Charlotte Hornets,Miami Heat,0.6818,0.7255943873793282,1
+WSD3sfS1,2026-04-14,Phoenix Suns,Portland Trail Blazers,0.574,0.5527154281642425,0
+f5BIjb5F,2026-04-15,Philadelphia 76ers,Orlando Magic,0.5165,0.5755174649866995,1
+O2AeqGck,2026-04-15,Los Angeles Clippers,Golden State Warriors,0.6588,0.7114824074722158,0
+WU2OvsLa,2026-04-17,Orlando Magic,Charlotte Hornets,0.4286,0.447403693455291,1
+z3PGNro1,2026-04-17,Phoenix Suns,Golden State Warriors,0.5714,0.6079175329145293,1
+YFhydgse,2026-04-18,Cleveland Cavaliers,Toronto Raptors,0.759,0.7868065217983028,1
+OM0k5cK8,2026-04-18,Denver Nuggets,Minnesota Timberwolves,0.7065,0.7597126193522536,1
+02fTcFCr,2026-04-18,New York Knicks,Atlanta Hawks,0.6818,0.7314092234993939,1
+Wn4c3ykL,2026-04-18,Los Angeles Lakers,Houston Rockets,0.4373,0.4839491386351266,1
+4r1WxLkC,2026-04-19,Boston Celtics,Philadelphia 76ers,0.8577,0.8479993731534039,1
+EsxrDaDD,2026-04-19,Oklahoma City Thunder,Phoenix Suns,0.8955,0.9054327207068884,1
+rcKhFUxp,2026-04-19,Detroit Pistons,Orlando Magic,0.7656,0.7803471285207833,0
+K4jqtN05,2026-04-19,San Antonio Spurs,Portland Trail Blazers,0.8403,0.8529199264797661,1
+EsMlE7Cl,2026-04-20,Cleveland Cavaliers,Toronto Raptors,0.7829,0.7888573914135576,1
+nTPkYS3K,2026-04-20,New York Knicks,Atlanta Hawks,0.6818,0.7331367294204655,0
+Yomw7j5L,2026-04-20,Denver Nuggets,Minnesota Timberwolves,0.7188,0.7549966642973074,0
+C84vyaKO,2026-04-21,Boston Celtics,Philadelphia 76ers,0.8571,0.8639578367186267,0
+ruuPcnS7,2026-04-21,San Antonio Spurs,Portland Trail Blazers,0.8244,0.8252402523334795,0
+dMHyPOQ6,2026-04-21,Los Angeles Lakers,Houston Rockets,0.3365,0.3706790306463617,1
+lfN0D87d,2026-04-22,Detroit Pistons,Orlando Magic,0.7619,0.7818887943754647,1
+tlUTz35K,2026-04-22,Oklahoma City Thunder,Phoenix Suns,0.9058,0.8850184233122248,1
+raBLS6Rs,2026-04-23,Atlanta Hawks,New York Knicks,0.4789,0.4771508997143559,1
+neKdCos1,2026-04-23,Toronto Raptors,Cleveland Cavaliers,0.4304,0.46777326011009895,1
+UHY81USr,2026-04-23,Minnesota Timberwolves,Denver Nuggets,0.517,0.5900947026684991,1
+2Xqle25t,2026-04-24,Philadelphia 76ers,Boston Celtics,0.2462,0.26386219797690247,0
+UZFqN2eJ,2026-04-24,Houston Rockets,Los Angeles Lakers,0.6795,0.7135788897768839,0
+zZRALkKE,2026-04-24,Portland Trail Blazers,San Antonio Spurs,0.4675,0.49901907321396366,0
+tlAnyCa3,2026-04-25,Orlando Magic,Detroit Pistons,0.4619,0.44510967764384873,1
+xKFaVtTs,2026-04-25,Phoenix Suns,Oklahoma City Thunder,0.2381,0.26127198993294665,0
+jPETQpdf,2026-04-25,Atlanta Hawks,New York Knicks,0.4574,0.4539250018741243,0
+xrxHa8ce,2026-04-25,Minnesota Timberwolves,Denver Nuggets,0.4737,0.4855295267741464,1
+KMX3APBD,2026-04-26,Toronto Raptors,Cleveland Cavaliers,0.3827,0.371999397011181,1
+raVIJTlR,2026-04-26,Portland Trail Blazers,San Antonio Spurs,0.3306,0.3378403606974328,0
+zordgtzg,2026-04-26,Philadelphia 76ers,Boston Celtics,0.3299,0.3408383104455858,0
+fFWfUJ2n,2026-04-26,Houston Rockets,Los Angeles Lakers,0.6,0.6663335767455418,1
+lEDfZkUF,2026-04-27,Orlando Magic,Detroit Pistons,0.3955,0.43080478987784904,1
+ppJ7TKcf,2026-04-27,Phoenix Suns,Oklahoma City Thunder,0.1953,0.21719277141719096,0
+ddMtJqop,2026-04-27,Denver Nuggets,Minnesota Timberwolves,0.8023,0.8413741740776978,1
+fyOn1VtJ,2026-04-28,Boston Celtics,Philadelphia 76ers,0.8036,0.8077967081636754,0
+2wPpteVr,2026-04-28,New York Knicks,Atlanta Hawks,0.6874,0.7257702858286386,1
+p81SD8QO,2026-04-28,San Antonio Spurs,Portland Trail Blazers,0.8164,0.8396457927421307,1
+zeZEbjEi,2026-04-29,Detroit Pistons,Orlando Magic,0.7857,0.8196602392186322,1
+tdQHddH0,2026-04-29,Cleveland Cavaliers,Toronto Raptors,0.7742,0.8076773198301452,1
+t4dHSMHt,2026-04-29,Los Angeles Lakers,Houston Rockets,0.5912,0.6618222576730424,0
+dMoeHo5C,2026-04-30,Atlanta Hawks,New York Knicks,0.4182,0.4184266636342782,0
+UJ1paB9T,2026-04-30,Philadelphia 76ers,Boston Celtics,0.3261,0.32964415161834904,1
+dKAFe7rA,2026-04-30,Minnesota Timberwolves,Denver Nuggets,0.2865,0.2884070335365379,1
+xKw4DMM9,2026-05-01,Orlando Magic,Detroit Pistons,0.4052,0.42060488402223134,0
+WEpAzr2c,2026-05-01,Toronto Raptors,Cleveland Cavaliers,0.3639,0.37295393274097144,1
+IipUAN14,2026-05-01,Houston Rockets,Los Angeles Lakers,0.6247,0.6669444477820174,0
+dEFUt8Jk,2026-05-02,Boston Celtics,Philadelphia 76ers,0.5987,0.6020130713512182,0
+h0FSCof3,2026-05-03,Detroit Pistons,Orlando Magic,0.7332,0.7701156030279013,1
+Aw1GN28L,2026-05-03,Cleveland Cavaliers,Toronto Raptors,0.7347,0.7722124515632048,1
+GCyQmumf,2026-05-04,New York Knicks,Philadelphia 76ers,0.7097,0.7659171208344444,1
+xOu7E1cB,2026-05-04,San Antonio Spurs,Minnesota Timberwolves,0.7741,0.793075492901381,0
+CWMFS9CF,2026-05-05,Detroit Pistons,Cleveland Cavaliers,0.5904,0.6454264168359485,1
+nungPz1N,2026-05-05,Oklahoma City Thunder,Los Angeles Lakers,0.8631,0.885022997579261,1
+OxuYoJH6,2026-05-06,New York Knicks,Philadelphia 76ers,0.7846,0.8235956302930681,1
+rN7vdgsp,2026-05-06,San Antonio Spurs,Minnesota Timberwolves,0.7741,0.8209580687080941,1
+ppLNQmsS,2026-05-07,Detroit Pistons,Cleveland Cavaliers,0.6,0.6397097627655238,1
+INxPJEOp,2026-05-07,Oklahoma City Thunder,Los Angeles Lakers,0.8721,0.8809650233699582,1
+djwtpcnJ,2026-05-08,Philadelphia 76ers,New York Knicks,0.5897,0.6924581115437659,0
+Gz6nfXBd,2026-05-08,Minnesota Timberwolves,San Antonio Spurs,0.3412,0.345082348706433,0
+fJ6gLR4k,2026-05-09,Cleveland Cavaliers,Detroit Pistons,0.6293,0.6773177562481401,1
+pUUAsIGi,2026-05-09,Los Angeles Lakers,Oklahoma City Thunder,0.2442,0.248724530799573,0
+OdVR70vQ,2026-05-10,Philadelphia 76ers,New York Knicks,0.4675,0.4977818915520582,0
+8r8XHz43,2026-05-10,Minnesota Timberwolves,San Antonio Spurs,0.3614,0.37004823742358184,1
+2qA1J5Z1,2026-05-11,Cleveland Cavaliers,Detroit Pistons,0.5925,0.6396904824016366,1
+IsTIudo4,2026-05-11,Los Angeles Lakers,Oklahoma City Thunder,0.1761,0.18341262448910126,0
+tIX8jmHN,2026-05-12,San Antonio Spurs,Minnesota Timberwolves,0.7745,0.8227761186626249,1
+OrtqKUnf,2026-05-13,Detroit Pistons,Cleveland Cavaliers,0.6067,0.6639142616666043,0
+be3wSNq2,2026-05-15,Cleveland Cavaliers,Detroit Pistons,0.6127,0.6706138219688201,0
+xd7fkBrC,2026-05-15,Minnesota Timberwolves,San Antonio Spurs,0.3303,0.34795842354615286,0
+WC5fCNwI,2026-05-17,Detroit Pistons,Cleveland Cavaliers,0.6214,0.6759432946454254,0
+xGVOXkNh,2026-05-18,Oklahoma City Thunder,San Antonio Spurs,0.6859,0.730452252520024,0
+vZEx3Osh,2026-05-19,New York Knicks,Cleveland Cavaliers,0.6705,0.7174218217047741,1
+UNmWVTi5,2026-05-20,Oklahoma City Thunder,San Antonio Spurs,0.6969,0.7446726225732249,1
+CnDp12C4,2026-05-21,New York Knicks,Cleveland Cavaliers,0.6449,0.6912988760063681,1
+2ynvU7MH,2026-05-22,San Antonio Spurs,Oklahoma City Thunder,0.5606,0.6235645576379582,0
+KCGhatsH,2026-05-23,Cleveland Cavaliers,New York Knicks,0.5641,0.6551662450496375,0
+A1knSoiU,2026-05-24,San Antonio Spurs,Oklahoma City Thunder,0.5714,0.6186251616524668,1
+SxK0cKBT,2026-05-25,Cleveland Cavaliers,New York Knicks,0.4563,0.464597485570138,0
+E7kGMPvJ,2026-05-26,Oklahoma City Thunder,San Antonio Spurs,0.5919,0.6290216312429489,1
+ShY82sph,2026-05-28,San Antonio Spurs,Oklahoma City Thunder,0.5919,0.6495229701359339,1
+zqDwM7Sa,2026-05-30,Oklahoma City Thunder,San Antonio Spurs,0.573,0.6405172816432688,0
+4zPsYSbC,2026-06-03,San Antonio Spurs,New York Knicks,0.6279,0.6538212286055507,0
+C0SkW6TO,2026-06-05,San Antonio Spurs,New York Knicks,0.678,0.7455735609862713,0
+0d7ajAEt,2026-06-08,New York Knicks,San Antonio Spurs,0.5325,0.5605097981157015,0
+Y957llqg,2026-06-10,New York Knicks,San Antonio Spurs,0.5518,0.6105139359035525,1
+pnOhtTOH,2026-06-13,San Antonio Spurs,New York Knicks,0.6386,0.6892237532056474,0

@@ -56,6 +56,9 @@ const DEFENSIVE_HINTS = [
   '严禁', '禁止', '替代', '替换', '清洗', '映射', '中性化', '禁用', '红线',
   '防御', '兜底', '术语约束', 'sanitizer', 'red_line', 'red-line',
   'DERIVATION_SANITIZERS', 'TERM_CONSTRAINT', 'whitelist', 'red_terms',
+  // 既有代码的合规守卫变量名（防御性红线词检测器本身，命中即扣分，非泄漏）：
+  // vercel-deploy/src/lib/automation/seo-factory.ts:215 的 redLineTerms 检测表
+  'redLineTerms',
   // 排除逻辑（防御性：显式拒绝某前缀进入 sitemap/robots）
   'startswith', '!p.url', 'excluded', '排除', 'redirect',
   // 死代码标注 / 合规改造说明

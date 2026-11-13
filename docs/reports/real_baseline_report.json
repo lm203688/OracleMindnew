@@ -1,0 +1,67 @@
+{
+  "description": "真实数据主轨基线（跨赛季 hold-out：2024-25 训练 -> 2025-26 测试）",
+  "data_source": "Kaggle minmaxer/nba-closing-lines-ats (CC BY 4.0), 2024-25 & 2025-26",
+  "honesty_notes": [
+    "CodaBench 官方 game_id 未取得（Anubis 拦截），本评估使用 Kaggle 数据内部 game_id，非官方测试集。",
+    "仅用赛前特征，严格剔除赛后字段以避免泄漏。",
+    "模型与收盘线（市场基线）的差距如实披露；负 gap 表示劣于市场。"
+  ],
+  "features": [
+    "open_home_win_prob",
+    "close_home_win_prob",
+    "open_spread_home",
+    "close_spread_home",
+    "open_total",
+    "close_total",
+    "log_bookmakers"
+  ],
+  "baseline_brier_constant": 0.24805165771263224,
+  "baseline_constant_value": 0.5441400304414004,
+  "models": [
+    {
+      "name": "market_close_line",
+      "n": 1315,
+      "home_win_rate": 0.555893536121673,
+      "log_loss": 0.5761091202791486,
+      "brier": 0.1970446805703422,
+      "ece": 0.02410593155893529,
+      "bss_vs_constant": 0.20563046267314855,
+      "log_loss_gap_vs_close_line": 0.0,
+      "brier_gap_vs_close_line": 0.0
+    },
+    {
+      "name": "market_open_line",
+      "n": 1315,
+      "home_win_rate": 0.555893536121673,
+      "log_loss": 0.5860846909222027,
+      "brier": 0.20129314082889735,
+      "ece": 0.017622281368821303,
+      "bss_vs_constant": 0.1885031421072163,
+      "log_loss_gap_vs_close_line": 0.009975570643054099,
+      "brier_gap_vs_close_line": 0.004248460258555159
+    },
+    {
+      "name": "logistic_reg_features",
+      "n": 1315,
+      "home_win_rate": 0.555893536121673,
+      "log_loss": 0.5760210914822465,
+      "brier": 0.19678343830821304,
+      "ece": 0.030896845620932808,
+      "bss_vs_constant": 0.2066836395175936,
+      "log_loss_gap_vs_close_line": -8.802879690217313e-05,
+      "brier_gap_vs_close_line": -0.0002612422621291466
+    },
+    {
+      "name": "constant_train_mean",
+      "n": 1315,
+      "home_win_rate": 0.555893536121673,
+      "log_loss": 0.687164802079733,
+      "brier": 0.24701405751559144,
+      "ece": 0.01175350568027278,
+      "bss_vs_constant": 0.004183000454860308,
+      "log_loss_gap_vs_close_line": 0.11105568180058434,
+      "brier_gap_vs_close_line": 0.04996937694524925
+    }
+  ],
+  "generated_at": "2026-11-12T06:42:20.306862"
+}
